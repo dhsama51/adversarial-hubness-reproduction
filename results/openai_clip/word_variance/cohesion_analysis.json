@@ -1,0 +1,48 @@
+{
+  "cohesion": {
+    "dog": 0.5676108598709106,
+    "bicycle": 0.6451349258422852,
+    "pizza": 0.7084524631500244,
+    "cat": 0.5459436774253845,
+    "elephant": 0.6968982815742493,
+    "umbrella": 0.6437093615531921,
+    "skateboard": 0.7755971550941467,
+    "surfboard": 0.7703211307525635,
+    "motorcycle": 0.6785789132118225,
+    "kite": 0.7278038859367371
+  },
+  "pool_sizes": {
+    "dog": 863,
+    "bicycle": 143,
+    "pizza": 582,
+    "cat": 1053,
+    "elephant": 431,
+    "umbrella": 441,
+    "skateboard": 501,
+    "surfboard": 303,
+    "motorcycle": 417,
+    "kite": 352
+  },
+  "mean_asr": {
+    "bicycle": 0.19783333333333336,
+    "cat": 0.35533333333333333,
+    "dog": 0.3972413793103448,
+    "elephant": 0.12283333333333334,
+    "kite": 0.10349999999999998,
+    "motorcycle": 0.18025,
+    "pizza": 0.1648333333333333,
+    "skateboard": 0.19841666666666669,
+    "surfboard": 0.15766666666666665,
+    "umbrella": 0.11850000000000001
+  },
+  "correlation_cohesion_asr": {
+    "pearson_r": -0.7382981026817507,
+    "pearson_p": 0.014753225024660303,
+    "spearman_r": -0.3939393939393939,
+    "spearman_p": 0.25999776683488757
+  },
+  "correlation_pool_cohesion": {
+    "pearson_r": -0.6628456492445691,
+    "pearson_p": 0.03671820996065955
+  }
+}

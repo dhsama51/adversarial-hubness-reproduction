@@ -1,0 +1,19 @@
+# 대용량 데이터 및 캐시 (재생성 가능)
+data/
+embeddings/
+index/
+
+# 외부 저장소 및 중간 산출물
+external/
+
+# 실행 로그
+logs/
+
+# OS/에디터 메타파일
+*.Zone.Identifier
+__pycache__/
+*.pyc
+
+# 압축 백업
+*.zip
+.checkpoints/

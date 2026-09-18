@@ -1,0 +1,3906 @@
+{
+  "config": {
+    "top_k": 10,
+    "n_clusters": 20,
+    "z_threshold": 3.5,
+    "n_bootstrap": 30,
+    "n_hubs_evaluated": 480,
+    "n_queries": 25014
+  },
+  "clean_gallery_stats": {
+    "median_Nk": 0.0,
+    "mad": 0.0
+  },
+  "detector_performance": {
+    "roc_auc": 0.9939968749999999,
+    "precision": 0.2839285714285714,
+    "recall": 0.99375,
+    "best_threshold": 5396000.0,
+    "best_threshold_precision": 0.8574074074074074,
+    "best_threshold_recall": 0.9645833333333333
+  },
+  "hub_details": [
+    {
+      "tag": "cluster267_gc0",
+      "Nk": 672,
+      "z_score": 453264000.00000006,
+      "cluster_spread": 0.48330729676354317,
+      "stability_cv": 0.04502740051008144,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc10",
+      "Nk": 612,
+      "z_score": 412794000.0,
+      "cluster_spread": 0.3206006283635023,
+      "stability_cv": 0.029856197279293617,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc11",
+      "Nk": 2008,
+      "z_score": 1354396000.0,
+      "cluster_spread": 0.5384403049730964,
+      "stability_cv": 0.023568478658048817,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc12",
+      "Nk": 64,
+      "z_score": 43168000.0,
+      "cluster_spread": 0.4517963548431598,
+      "stability_cv": 0.12113708886500212,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc13",
+      "Nk": 584,
+      "z_score": 393908000.00000006,
+      "cluster_spread": 0.3814514939948513,
+      "stability_cv": 0.043418028921188914,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc14",
+      "Nk": 815,
+      "z_score": 549717500.0,
+      "cluster_spread": 0.38905454740940004,
+      "stability_cv": 0.040439820126344554,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc15",
+      "Nk": 6,
+      "z_score": 4047000.0,
+      "cluster_spread": 0.15040102643477574,
+      "stability_cv": 0.3837300959263272,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc16",
+      "Nk": 207,
+      "z_score": 139621500.0,
+      "cluster_spread": 0.26088511129649605,
+      "stability_cv": 0.08173368883165466,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc17",
+      "Nk": 66,
+      "z_score": 44517000.0,
+      "cluster_spread": 0.304104313271313,
+      "stability_cv": 0.10831013761641857,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc18",
+      "Nk": 469,
+      "z_score": 316340500.00000006,
+      "cluster_spread": 0.27348567577937893,
+      "stability_cv": 0.050295421662828965,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc19",
+      "Nk": 51,
+      "z_score": 34399500.0,
+      "cluster_spread": 0.381550744156194,
+      "stability_cv": 0.152074400405642,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc1",
+      "Nk": 143,
+      "z_score": 96453500.00000001,
+      "cluster_spread": 0.30751546016037495,
+      "stability_cv": 0.07876841981958221,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc20",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.13690019028364875,
+      "stability_cv": 0.24944865373205888,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc21",
+      "Nk": 136,
+      "z_score": 91732000.0,
+      "cluster_spread": 0.482941438206297,
+      "stability_cv": 0.08907647816971775,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc22",
+      "Nk": 263,
+      "z_score": 177393500.0,
+      "cluster_spread": 0.3587798348316858,
+      "stability_cv": 0.060250084028576165,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc23",
+      "Nk": 626,
+      "z_score": 422237000.0,
+      "cluster_spread": 0.2914664557834882,
+      "stability_cv": 0.03478043427709866,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc24",
+      "Nk": 470,
+      "z_score": 317015000.0,
+      "cluster_spread": 0.43380314911095513,
+      "stability_cv": 0.05041916268101193,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc25",
+      "Nk": 61,
+      "z_score": 41144500.0,
+      "cluster_spread": 0.3999637467295541,
+      "stability_cv": 0.12697570019108442,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc26",
+      "Nk": 37,
+      "z_score": 24956500.0,
+      "cluster_spread": 0.08270125793237734,
+      "stability_cv": 0.14716719365276404,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc27",
+      "Nk": 991,
+      "z_score": 668429500.0,
+      "cluster_spread": 0.3929354637342945,
+      "stability_cv": 0.033589922239623905,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc28",
+      "Nk": 372,
+      "z_score": 250914000.0,
+      "cluster_spread": 0.29094795038860927,
+      "stability_cv": 0.047966431321756424,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc29",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.23972771617651617,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc2",
+      "Nk": 418,
+      "z_score": 281941000.0,
+      "cluster_spread": 0.37081206686434653,
+      "stability_cv": 0.05179558793989567,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc3",
+      "Nk": 203,
+      "z_score": 136923500.0,
+      "cluster_spread": 0.2065840035959466,
+      "stability_cv": 0.07631570577226295,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc4",
+      "Nk": 66,
+      "z_score": 44517000.0,
+      "cluster_spread": 0.05234059804100714,
+      "stability_cv": 0.09741286093940381,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc5",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": 0.10169002752299781,
+      "stability_cv": 0.2591800605805986,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc6",
+      "Nk": 180,
+      "z_score": 121410000.0,
+      "cluster_spread": 0.3906197267299153,
+      "stability_cv": 0.09552459533559207,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc7",
+      "Nk": 635,
+      "z_score": 428307500.0,
+      "cluster_spread": 0.2525040960884589,
+      "stability_cv": 0.037492009753324146,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc8",
+      "Nk": 386,
+      "z_score": 260356999.99999997,
+      "cluster_spread": 0.19250050337175273,
+      "stability_cv": 0.043340116073267355,
+      "detected": true
+    },
+    {
+      "tag": "cluster267_gc9",
+      "Nk": 919,
+      "z_score": 619865500.0,
+      "cluster_spread": 0.41689430608455674,
+      "stability_cv": 0.03289308178028443,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc0",
+      "Nk": 100,
+      "z_score": 67450000.0,
+      "cluster_spread": 0.06356961708497384,
+      "stability_cv": 0.10113132223789716,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc10",
+      "Nk": 216,
+      "z_score": 145692000.0,
+      "cluster_spread": 0.07737561144462882,
+      "stability_cv": 0.05365936056511773,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc11",
+      "Nk": 1117,
+      "z_score": 753416500.0000001,
+      "cluster_spread": 0.2572849792136937,
+      "stability_cv": 0.023810814803370346,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc12",
+      "Nk": 491,
+      "z_score": 331179500.00000006,
+      "cluster_spread": 0.1886834639910794,
+      "stability_cv": 0.041829812972103184,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc13",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.46977444650779304,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc14",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.34049670172685986,
+      "stability_cv": 0.2976578593553205,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc15",
+      "Nk": 268,
+      "z_score": 180766000.0,
+      "cluster_spread": 0.09360268540094145,
+      "stability_cv": 0.045151621052762526,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc16",
+      "Nk": 769,
+      "z_score": 518690500.00000006,
+      "cluster_spread": 0.11611233061635749,
+      "stability_cv": 0.029432920765799217,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc17",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.339687065273189,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc18",
+      "Nk": 259,
+      "z_score": 174695500.00000003,
+      "cluster_spread": 0.09793968154432871,
+      "stability_cv": 0.06505796737333243,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc19",
+      "Nk": 105,
+      "z_score": 70822500.00000001,
+      "cluster_spread": 0.3439052100886681,
+      "stability_cv": 0.08432199791914027,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc1",
+      "Nk": 55,
+      "z_score": 37097500.0,
+      "cluster_spread": 0.2079295829321313,
+      "stability_cv": 0.11689566187011532,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc20",
+      "Nk": 276,
+      "z_score": 186162000.0,
+      "cluster_spread": 0.050912488870055506,
+      "stability_cv": 0.048637281348336905,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc21",
+      "Nk": 6,
+      "z_score": 4047000.0,
+      "cluster_spread": 0.2895997202888316,
+      "stability_cv": 0.35309267934339994,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc22",
+      "Nk": 172,
+      "z_score": 116014000.0,
+      "cluster_spread": 0.03687013277109771,
+      "stability_cv": 0.07120513440876008,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc23",
+      "Nk": 604,
+      "z_score": 407398000.0,
+      "cluster_spread": 0.13399260593525397,
+      "stability_cv": 0.04167284494279393,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc24",
+      "Nk": 506,
+      "z_score": 341297000.0,
+      "cluster_spread": 0.07317604202975735,
+      "stability_cv": 0.03969963925367796,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc25",
+      "Nk": 70,
+      "z_score": 47215000.0,
+      "cluster_spread": 0.08384125672432355,
+      "stability_cv": 0.11774387052030759,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc26",
+      "Nk": 20,
+      "z_score": 13490000.0,
+      "cluster_spread": 0.06626601619188212,
+      "stability_cv": 0.22421934286463216,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc27",
+      "Nk": 975,
+      "z_score": 657637500.0000001,
+      "cluster_spread": 0.17584692319358675,
+      "stability_cv": 0.02413835426639806,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc28",
+      "Nk": 388,
+      "z_score": 261706000.00000003,
+      "cluster_spread": 0.04208949662357827,
+      "stability_cv": 0.04614660196540597,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc29",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.31902046105700177,
+      "stability_cv": 0.377957088002176,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc2",
+      "Nk": 630,
+      "z_score": 424935000.0,
+      "cluster_spread": 0.09239570566448053,
+      "stability_cv": 0.02873114463337971,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc3",
+      "Nk": 166,
+      "z_score": 111967000.0,
+      "cluster_spread": 0.19584275520135525,
+      "stability_cv": 0.06669796491040575,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc4",
+      "Nk": 198,
+      "z_score": 133551000.0,
+      "cluster_spread": 0.09592585427168945,
+      "stability_cv": 0.05640874142264916,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc5",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.2658153557991708,
+      "stability_cv": 0.33977298997698996,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc6",
+      "Nk": 206,
+      "z_score": 138947000.0,
+      "cluster_spread": 0.07054395748220806,
+      "stability_cv": 0.07314239559952325,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc7",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.24805617570365004,
+      "stability_cv": 0.17059179546845868,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc8",
+      "Nk": 341,
+      "z_score": 230004500.00000003,
+      "cluster_spread": 0.12081255774412945,
+      "stability_cv": 0.0547936786290788,
+      "detected": true
+    },
+    {
+      "tag": "cluster302_gc9",
+      "Nk": 562,
+      "z_score": 379069000.00000006,
+      "cluster_spread": 0.09864569235297459,
+      "stability_cv": 0.037245683949663363,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc0",
+      "Nk": 225,
+      "z_score": 151762500.0,
+      "cluster_spread": 0.45069289546009683,
+      "stability_cv": 0.061009003729482085,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc10",
+      "Nk": 20,
+      "z_score": 13490000.0,
+      "cluster_spread": 0.34486195466694186,
+      "stability_cv": 0.16115581747726324,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc11",
+      "Nk": 818,
+      "z_score": 551741000.0,
+      "cluster_spread": 0.4835160267360864,
+      "stability_cv": 0.037876231407749004,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc12",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.2658153557991708,
+      "stability_cv": 0.22706641371238573,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc13",
+      "Nk": 332,
+      "z_score": 223934000.0,
+      "cluster_spread": 0.3312660125755062,
+      "stability_cv": 0.054978387131592955,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc14",
+      "Nk": 507,
+      "z_score": 341971500.0,
+      "cluster_spread": 0.373835899262185,
+      "stability_cv": 0.04353286438330429,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc15",
+      "Nk": 220,
+      "z_score": 148390000.0,
+      "cluster_spread": 0.32048364945730917,
+      "stability_cv": 0.07990044082735821,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc16",
+      "Nk": 30,
+      "z_score": 20235000.0,
+      "cluster_spread": 0.32462149787615163,
+      "stability_cv": 0.18578008946509858,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc17",
+      "Nk": 111,
+      "z_score": 74869500.0,
+      "cluster_spread": 0.37168242448659805,
+      "stability_cv": 0.09192526829519404,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc18",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": 0.27573521513042226,
+      "stability_cv": 0.14192073824691925,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc19",
+      "Nk": 359,
+      "z_score": 242145500.0,
+      "cluster_spread": 0.39590427829460934,
+      "stability_cv": 0.05236742234740171,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc1",
+      "Nk": 16,
+      "z_score": 10792000.0,
+      "cluster_spread": 0.12576896960470202,
+      "stability_cv": 0.2052494487570803,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc20",
+      "Nk": 86,
+      "z_score": 58007000.0,
+      "cluster_spread": 0.3957162029852148,
+      "stability_cv": 0.10721809103969931,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc21",
+      "Nk": 269,
+      "z_score": 181440500.0,
+      "cluster_spread": 0.4535645450296951,
+      "stability_cv": 0.061345384013245075,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc22",
+      "Nk": 181,
+      "z_score": 122084500.0,
+      "cluster_spread": 0.37794152711358664,
+      "stability_cv": 0.07148175598445028,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc23",
+      "Nk": 93,
+      "z_score": 62728500.0,
+      "cluster_spread": 0.37517181200634153,
+      "stability_cv": 0.12111123640505887,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc24",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": 0.12576896960470202,
+      "stability_cv": 0.3043219351886886,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc25",
+      "Nk": 178,
+      "z_score": 120061000.0,
+      "cluster_spread": 0.4406633092947541,
+      "stability_cv": 0.06325370896226103,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc26",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.16995422073504293,
+      "stability_cv": 0.2743148359305015,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc27",
+      "Nk": 237,
+      "z_score": 159856500.00000003,
+      "cluster_spread": 0.4451288753439866,
+      "stability_cv": 0.06605923981953851,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc28",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.3171187495054689,
+      "stability_cv": 0.1869825482061324,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc29",
+      "Nk": 112,
+      "z_score": 75544000.0,
+      "cluster_spread": 0.3593154672954242,
+      "stability_cv": 0.08910016023418231,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc2",
+      "Nk": 513,
+      "z_score": 346018500.00000006,
+      "cluster_spread": 0.39203644220715056,
+      "stability_cv": 0.04847121135835993,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc3",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.846153195266773,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc4",
+      "Nk": 147,
+      "z_score": 99151500.0,
+      "cluster_spread": 0.445135757936487,
+      "stability_cv": 0.07540168816472091,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc5",
+      "Nk": 5,
+      "z_score": 3372500.0,
+      "cluster_spread": 0.3521410031526743,
+      "stability_cv": 0.428478332185378,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc6",
+      "Nk": 341,
+      "z_score": 230004500.00000003,
+      "cluster_spread": 0.4673556680622751,
+      "stability_cv": 0.05005816085785778,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc7",
+      "Nk": 94,
+      "z_score": 63403000.0,
+      "cluster_spread": 0.3932604315291856,
+      "stability_cv": 0.12756964625098535,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc8",
+      "Nk": 85,
+      "z_score": 57332500.0,
+      "cluster_spread": 0.2906127052901387,
+      "stability_cv": 0.10899849301723176,
+      "detected": true
+    },
+    {
+      "tag": "cluster357_gc9",
+      "Nk": 829,
+      "z_score": 559160500.0,
+      "cluster_spread": 0.4891983356177479,
+      "stability_cv": 0.03163012888205006,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc0",
+      "Nk": 355,
+      "z_score": 239447500.0,
+      "cluster_spread": 0.3831808069146223,
+      "stability_cv": 0.05686306774390622,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc10",
+      "Nk": 355,
+      "z_score": 239447500.0,
+      "cluster_spread": 0.2479045364326291,
+      "stability_cv": 0.05294954414509741,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc11",
+      "Nk": 969,
+      "z_score": 653590500.0,
+      "cluster_spread": 0.42834611392837535,
+      "stability_cv": 0.031324143305938926,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc12",
+      "Nk": 258,
+      "z_score": 174021000.0,
+      "cluster_spread": 0.37843952864545827,
+      "stability_cv": 0.04876502320322279,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc13",
+      "Nk": 262,
+      "z_score": 176719000.0,
+      "cluster_spread": 0.2988884556377914,
+      "stability_cv": 0.048970237294468415,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc14",
+      "Nk": 253,
+      "z_score": 170648500.0,
+      "cluster_spread": 0.4772089780906111,
+      "stability_cv": 0.04506070952557284,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc15",
+      "Nk": 159,
+      "z_score": 107245500.0,
+      "cluster_spread": 0.06456478063345757,
+      "stability_cv": 0.07618514468105421,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc16",
+      "Nk": 42,
+      "z_score": 28329000.000000004,
+      "cluster_spread": 0.39088844368826003,
+      "stability_cv": 0.17338571402747138,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc17",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": 0.2804895556619609,
+      "stability_cv": 0.15404225696451151,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc18",
+      "Nk": 366,
+      "z_score": 246867000.0,
+      "cluster_spread": 0.3119625153662612,
+      "stability_cv": 0.03959478500499866,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc19",
+      "Nk": 404,
+      "z_score": 272498000.0,
+      "cluster_spread": 0.3917940601987531,
+      "stability_cv": 0.05351519575599308,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc1",
+      "Nk": 44,
+      "z_score": 29678000.000000004,
+      "cluster_spread": 0.2504754038714525,
+      "stability_cv": 0.16430056031299067,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc20",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": 0.4128155509949363,
+      "stability_cv": 0.2605792678769344,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc21",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": 0.29561191412010585,
+      "stability_cv": 0.3175967692653226,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc22",
+      "Nk": 134,
+      "z_score": 90383000.0,
+      "cluster_spread": 0.24990202702753275,
+      "stability_cv": 0.0696879650178082,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc23",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.46048884777010296,
+      "stability_cv": 0.09527239812928666,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc24",
+      "Nk": 382,
+      "z_score": 257659000.0,
+      "cluster_spread": 0.3610495615166972,
+      "stability_cv": 0.05113645015992688,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc25",
+      "Nk": 360,
+      "z_score": 242820000.0,
+      "cluster_spread": 0.3936035089489915,
+      "stability_cv": 0.05617916348589408,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc26",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.5940374250764724,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc27",
+      "Nk": 898,
+      "z_score": 605701000.0,
+      "cluster_spread": 0.3705850097076937,
+      "stability_cv": 0.030807900388926814,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc28",
+      "Nk": 84,
+      "z_score": 56658000.00000001,
+      "cluster_spread": 0.37734421416665054,
+      "stability_cv": 0.10178905274536665,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc29",
+      "Nk": 123,
+      "z_score": 82963500.0,
+      "cluster_spread": 0.35912596189693086,
+      "stability_cv": 0.08156733034222716,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc2",
+      "Nk": 336,
+      "z_score": 226632000.00000003,
+      "cluster_spread": 0.1220312368550095,
+      "stability_cv": 0.047083889729290514,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc3",
+      "Nk": 69,
+      "z_score": 46540500.0,
+      "cluster_spread": 0.5269713926816472,
+      "stability_cv": 0.14654964557425101,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc4",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.3794049001733825,
+      "stability_cv": 0.09675862988605188,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc5",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.3603754415630097,
+      "stability_cv": 0.15567384152189379,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc6",
+      "Nk": 124,
+      "z_score": 83638000.00000001,
+      "cluster_spread": 0.5195991889563302,
+      "stability_cv": 0.07940904946838362,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc7",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.20751546660304737,
+      "stability_cv": 0.09322797727733824,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc8",
+      "Nk": 104,
+      "z_score": 70148000.0,
+      "cluster_spread": 0.22448747911865494,
+      "stability_cv": 0.08309396298088421,
+      "detected": true
+    },
+    {
+      "tag": "cluster55_gc9",
+      "Nk": 48,
+      "z_score": 32376000.0,
+      "cluster_spread": 0.4560578008767431,
+      "stability_cv": 0.12928149553473822,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc0",
+      "Nk": 806,
+      "z_score": 543647000.0,
+      "cluster_spread": 0.2649839401334047,
+      "stability_cv": 0.03585613131418798,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc10",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": 0.39667750579203276,
+      "stability_cv": 0.21779183355290022,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc11",
+      "Nk": 774,
+      "z_score": 522063000.0,
+      "cluster_spread": 0.27672152615071005,
+      "stability_cv": 0.041000674583833815,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc12",
+      "Nk": 143,
+      "z_score": 96453500.00000001,
+      "cluster_spread": 0.26129452604394227,
+      "stability_cv": 0.0788853592650185,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc13",
+      "Nk": 852,
+      "z_score": 574674000.0,
+      "cluster_spread": 0.21624206003058666,
+      "stability_cv": 0.030936260534661378,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc14",
+      "Nk": 208,
+      "z_score": 140296000.0,
+      "cluster_spread": 0.2850445382359766,
+      "stability_cv": 0.07701421422592512,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc15",
+      "Nk": 341,
+      "z_score": 230004500.00000003,
+      "cluster_spread": 0.29366609749138306,
+      "stability_cv": 0.058496579622771556,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc16",
+      "Nk": 237,
+      "z_score": 159856500.00000003,
+      "cluster_spread": 0.04848170528656428,
+      "stability_cv": 0.04622565664830214,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc17",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.32554927840964654,
+      "stability_cv": 0.13318185546608544,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc18",
+      "Nk": 66,
+      "z_score": 44517000.0,
+      "cluster_spread": 0.32397347626176987,
+      "stability_cv": 0.15856749818237226,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc19",
+      "Nk": 83,
+      "z_score": 55983500.0,
+      "cluster_spread": 0.4396252072034672,
+      "stability_cv": 0.08446239849048463,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc1",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.37951208186044555,
+      "stability_cv": 0.30229781968804553,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc20",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": 0.12576896960470202,
+      "stability_cv": 0.3708098780035484,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc21",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.16703843262486698,
+      "stability_cv": 0.31736125148592137,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc22",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.4021975585694623,
+      "stability_cv": 0.24872679058721822,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc23",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.14467209807656892,
+      "stability_cv": 0.1786370665583328,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc24",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.3963358487258709,
+      "stability_cv": 0.23066572028317656,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc25",
+      "Nk": 735,
+      "z_score": 495757500.0,
+      "cluster_spread": 0.20076288704074308,
+      "stability_cv": 0.03225259058774061,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc26",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.6219967053831236,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc27",
+      "Nk": 383,
+      "z_score": 258333500.00000003,
+      "cluster_spread": 0.04452173953418768,
+      "stability_cv": 0.046911941243251994,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc28",
+      "Nk": 147,
+      "z_score": 99151500.0,
+      "cluster_spread": 0.24890068752072914,
+      "stability_cv": 0.0721516409006435,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc29",
+      "Nk": 161,
+      "z_score": 108594500.0,
+      "cluster_spread": 0.1240476692648526,
+      "stability_cv": 0.07013081938302063,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc2",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.42175981652929884,
+      "stability_cv": 0.25015725923016363,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc3",
+      "Nk": 192,
+      "z_score": 129504000.0,
+      "cluster_spread": 0.08267439970045969,
+      "stability_cv": 0.07835888009467562,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc4",
+      "Nk": 248,
+      "z_score": 167276000.00000003,
+      "cluster_spread": 0.04853784465417543,
+      "stability_cv": 0.05464406024932835,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc5",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.9049002956366904,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc6",
+      "Nk": 854,
+      "z_score": 576023000.0,
+      "cluster_spread": 0.25504007762242226,
+      "stability_cv": 0.03298359884657585,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc7",
+      "Nk": 314,
+      "z_score": 211793000.00000003,
+      "cluster_spread": 0.24185303505592784,
+      "stability_cv": 0.05590339536097155,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc8",
+      "Nk": 303,
+      "z_score": 204373500.00000003,
+      "cluster_spread": 0.24693464406090637,
+      "stability_cv": 0.060855511964343426,
+      "detected": true
+    },
+    {
+      "tag": "cluster6_gc9",
+      "Nk": 1154,
+      "z_score": 778373000.0,
+      "cluster_spread": 0.3749086698111484,
+      "stability_cv": 0.02829182019825053,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc0",
+      "Nk": 78,
+      "z_score": 52611000.0,
+      "cluster_spread": 0.43583584433502365,
+      "stability_cv": 0.12669751747855199,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc10",
+      "Nk": 393,
+      "z_score": 265078500.00000003,
+      "cluster_spread": 0.4753269273873356,
+      "stability_cv": 0.05146716570786874,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc11",
+      "Nk": 2982,
+      "z_score": 2011359000.0,
+      "cluster_spread": 0.8018119998008865,
+      "stability_cv": 0.017428327690851148,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc12",
+      "Nk": 552,
+      "z_score": 372324000.0,
+      "cluster_spread": 0.5233879930454441,
+      "stability_cv": 0.048965774789263575,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc13",
+      "Nk": 34,
+      "z_score": 22933000.0,
+      "cluster_spread": 0.35292893814799364,
+      "stability_cv": 0.13948273518877233,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc14",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.3848681934450461,
+      "stability_cv": 0.17437437854663732,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc15",
+      "Nk": 24,
+      "z_score": 16188000.0,
+      "cluster_spread": 0.20562270659467755,
+      "stability_cv": 0.21343091504680078,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc16",
+      "Nk": 40,
+      "z_score": 26980000.0,
+      "cluster_spread": 0.48217985065219543,
+      "stability_cv": 0.1308009445825144,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc17",
+      "Nk": 44,
+      "z_score": 29678000.000000004,
+      "cluster_spread": 0.5875814454052564,
+      "stability_cv": 0.10521176777076754,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc18",
+      "Nk": 237,
+      "z_score": 159856500.00000003,
+      "cluster_spread": 0.4653534348644825,
+      "stability_cv": 0.06981660281009738,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc19",
+      "Nk": 270,
+      "z_score": 182115000.00000003,
+      "cluster_spread": 0.503088642384676,
+      "stability_cv": 0.07039645351347941,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc1",
+      "Nk": 26,
+      "z_score": 17537000.0,
+      "cluster_spread": 0.3171929007577734,
+      "stability_cv": 0.16840055871821688,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc20",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": 0.3005128526390367,
+      "stability_cv": 0.27221693566733063,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc21",
+      "Nk": 164,
+      "z_score": 110618000.0,
+      "cluster_spread": 0.34785498297468,
+      "stability_cv": 0.08213684352799258,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc22",
+      "Nk": 23,
+      "z_score": 15513500.000000002,
+      "cluster_spread": 0.17708846511863238,
+      "stability_cv": 0.17122960307964083,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc23",
+      "Nk": 41,
+      "z_score": 27654500.0,
+      "cluster_spread": 0.4696083829327969,
+      "stability_cv": 0.12396914635802408,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc24",
+      "Nk": 233,
+      "z_score": 157158500.0,
+      "cluster_spread": 0.45520511448428214,
+      "stability_cv": 0.06777479901862764,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc25",
+      "Nk": 263,
+      "z_score": 177393500.0,
+      "cluster_spread": 0.4530781020811234,
+      "stability_cv": 0.06926962974749672,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc26",
+      "Nk": 16,
+      "z_score": 10792000.0,
+      "cluster_spread": 0.49167870296448823,
+      "stability_cv": 0.16697348257475322,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc27",
+      "Nk": 215,
+      "z_score": 145017500.0,
+      "cluster_spread": 0.29535229544256864,
+      "stability_cv": 0.07143356342781768,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc28",
+      "Nk": 54,
+      "z_score": 36423000.0,
+      "cluster_spread": 0.3777377329083883,
+      "stability_cv": 0.10187123778447339,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc29",
+      "Nk": 42,
+      "z_score": 28329000.000000004,
+      "cluster_spread": 0.507417671069526,
+      "stability_cv": 0.13425649159720027,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc2",
+      "Nk": 525,
+      "z_score": 354112500.0,
+      "cluster_spread": 0.5088719589714039,
+      "stability_cv": 0.034651520441182325,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc3",
+      "Nk": 755,
+      "z_score": 509247500.0,
+      "cluster_spread": 0.5537259825955357,
+      "stability_cv": 0.03905953214103452,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc4",
+      "Nk": 38,
+      "z_score": 25631000.0,
+      "cluster_spread": 0.34222923349889506,
+      "stability_cv": 0.1495767212591228,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc5",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.44121293870304795,
+      "stability_cv": 0.24683647552608945,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc6",
+      "Nk": 475,
+      "z_score": 320387500.0,
+      "cluster_spread": 0.5906888522276347,
+      "stability_cv": 0.04714499091405376,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc7",
+      "Nk": 74,
+      "z_score": 49913000.0,
+      "cluster_spread": 0.352626332697782,
+      "stability_cv": 0.11334422860829725,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc8",
+      "Nk": 78,
+      "z_score": 52611000.0,
+      "cluster_spread": 0.6057991853216262,
+      "stability_cv": 0.11494415227817284,
+      "detected": true
+    },
+    {
+      "tag": "domain_bicycle_gc9",
+      "Nk": 194,
+      "z_score": 130853000.00000001,
+      "cluster_spread": 0.43095055162350115,
+      "stability_cv": 0.07118454795678658,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc0",
+      "Nk": 2041,
+      "z_score": 1376654500.0,
+      "cluster_spread": 0.6616564925859661,
+      "stability_cv": 0.01765912547191741,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc10",
+      "Nk": 231,
+      "z_score": 155809500.0,
+      "cluster_spread": 0.5016100094828297,
+      "stability_cv": 0.06691923138606969,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc11",
+      "Nk": 3762,
+      "z_score": 2537469000.0,
+      "cluster_spread": 0.6990567057205069,
+      "stability_cv": 0.012878808929396152,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc12",
+      "Nk": 879,
+      "z_score": 592885500.0,
+      "cluster_spread": 0.5396496546085331,
+      "stability_cv": 0.027914279549760137,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc13",
+      "Nk": 3064,
+      "z_score": 2066668000.0000002,
+      "cluster_spread": 0.7090571214239074,
+      "stability_cv": 0.014900278335920128,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc14",
+      "Nk": 884,
+      "z_score": 596258000.0000001,
+      "cluster_spread": 0.5257402315460529,
+      "stability_cv": 0.035460986059145945,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc15",
+      "Nk": 18,
+      "z_score": 12141000.0,
+      "cluster_spread": 0.325011995161428,
+      "stability_cv": 0.2111849957040315,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc16",
+      "Nk": 468,
+      "z_score": 315666000.0,
+      "cluster_spread": 0.5643261407298614,
+      "stability_cv": 0.043125414580485404,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc17",
+      "Nk": 839,
+      "z_score": 565905500.0,
+      "cluster_spread": 0.5493782012105416,
+      "stability_cv": 0.033171737396955926,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc18",
+      "Nk": 722,
+      "z_score": 486989000.0,
+      "cluster_spread": 0.696455563742134,
+      "stability_cv": 0.032094885298642795,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc19",
+      "Nk": 263,
+      "z_score": 177393500.0,
+      "cluster_spread": 0.5955243838329491,
+      "stability_cv": 0.06394381967036941,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc1",
+      "Nk": 191,
+      "z_score": 128829500.0,
+      "cluster_spread": 0.47898916776013456,
+      "stability_cv": 0.08204272934161705,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc20",
+      "Nk": 294,
+      "z_score": 198303000.0,
+      "cluster_spread": 0.45780401264054194,
+      "stability_cv": 0.055775650333496796,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc21",
+      "Nk": 425,
+      "z_score": 286662500.00000006,
+      "cluster_spread": 0.3766618577528314,
+      "stability_cv": 0.056908477228698275,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc22",
+      "Nk": 322,
+      "z_score": 217189000.0,
+      "cluster_spread": 0.5083319609121675,
+      "stability_cv": 0.058592402551237814,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc23",
+      "Nk": 107,
+      "z_score": 72171500.0,
+      "cluster_spread": 0.32933230390734014,
+      "stability_cv": 0.09182121958064697,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc24",
+      "Nk": 653,
+      "z_score": 440448500.0,
+      "cluster_spread": 0.5262333098713086,
+      "stability_cv": 0.039597554879955074,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc25",
+      "Nk": 1340,
+      "z_score": 903830000.0000001,
+      "cluster_spread": 0.5754308289825572,
+      "stability_cv": 0.029607418097326404,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc26",
+      "Nk": 465,
+      "z_score": 313642500.0,
+      "cluster_spread": 0.5175579860845294,
+      "stability_cv": 0.03532304860331371,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc27",
+      "Nk": 3201,
+      "z_score": 2159074500.0000005,
+      "cluster_spread": 0.6468052923137972,
+      "stability_cv": 0.01431207038352908,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc28",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.5929294680256514,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc29",
+      "Nk": 735,
+      "z_score": 495757500.0,
+      "cluster_spread": 0.4435342070459201,
+      "stability_cv": 0.042672926326886775,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc2",
+      "Nk": 845,
+      "z_score": 569952500.0,
+      "cluster_spread": 0.40864189720963073,
+      "stability_cv": 0.03399133020175349,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc3",
+      "Nk": 211,
+      "z_score": 142319500.0,
+      "cluster_spread": 0.4310934663806067,
+      "stability_cv": 0.06208993791514077,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc4",
+      "Nk": 726,
+      "z_score": 489687000.00000006,
+      "cluster_spread": 0.5440367412627941,
+      "stability_cv": 0.04260855528581873,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc5",
+      "Nk": 46,
+      "z_score": 31027000.000000004,
+      "cluster_spread": 0.38844200792917505,
+      "stability_cv": 0.14727954594109693,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc6",
+      "Nk": 138,
+      "z_score": 93081000.0,
+      "cluster_spread": 0.4713763240061405,
+      "stability_cv": 0.07978811242732428,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc7",
+      "Nk": 520,
+      "z_score": 350740000.0,
+      "cluster_spread": 0.44971935707274363,
+      "stability_cv": 0.034255174276135225,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc8",
+      "Nk": 95,
+      "z_score": 64077500.0,
+      "cluster_spread": 0.48541291525414293,
+      "stability_cv": 0.08706159505816549,
+      "detected": true
+    },
+    {
+      "tag": "domain_cat_gc9",
+      "Nk": 321,
+      "z_score": 216514500.0,
+      "cluster_spread": 0.703435798599797,
+      "stability_cv": 0.0391208916473018,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc0",
+      "Nk": 1854,
+      "z_score": 1250523000.0,
+      "cluster_spread": 0.7506747133763537,
+      "stability_cv": 0.018289962941999513,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc10",
+      "Nk": 600,
+      "z_score": 404700000.0,
+      "cluster_spread": 0.6805912188717435,
+      "stability_cv": 0.04643704709797272,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc11",
+      "Nk": 3144,
+      "z_score": 2120628000.0000002,
+      "cluster_spread": 0.7390216507229224,
+      "stability_cv": 0.013533073010683752,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc12",
+      "Nk": 800,
+      "z_score": 539600000.0,
+      "cluster_spread": 0.7477723283707062,
+      "stability_cv": 0.034889708046969586,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc13",
+      "Nk": 220,
+      "z_score": 148390000.0,
+      "cluster_spread": 0.6461051186898792,
+      "stability_cv": 0.07085362359189291,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc14",
+      "Nk": 172,
+      "z_score": 116014000.0,
+      "cluster_spread": 0.6672650350761893,
+      "stability_cv": 0.10389929867102905,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc15",
+      "Nk": 122,
+      "z_score": 82289000.0,
+      "cluster_spread": 0.5765919259170177,
+      "stability_cv": 0.1031910164459771,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc16",
+      "Nk": 362,
+      "z_score": 244169000.0,
+      "cluster_spread": 0.6046281584645251,
+      "stability_cv": 0.06754615035742666,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc17",
+      "Nk": 309,
+      "z_score": 208420500.0,
+      "cluster_spread": 0.7576115663753474,
+      "stability_cv": 0.06773303216728445,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc18",
+      "Nk": 181,
+      "z_score": 122084500.0,
+      "cluster_spread": 0.5551005541316715,
+      "stability_cv": 0.06979977795792382,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc19",
+      "Nk": 47,
+      "z_score": 31701500.0,
+      "cluster_spread": 0.707384326579446,
+      "stability_cv": 0.13800911956342543,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc1",
+      "Nk": 41,
+      "z_score": 27654500.0,
+      "cluster_spread": 0.18837481768668513,
+      "stability_cv": 0.15215909102531566,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc20",
+      "Nk": 99,
+      "z_score": 66775500.0,
+      "cluster_spread": 0.5774496038831719,
+      "stability_cv": 0.10019154408480142,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc21",
+      "Nk": 394,
+      "z_score": 265753000.0,
+      "cluster_spread": 0.7056089776734484,
+      "stability_cv": 0.04291453906724298,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc22",
+      "Nk": 290,
+      "z_score": 195605000.0,
+      "cluster_spread": 0.6031401877741456,
+      "stability_cv": 0.05175681015326854,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc23",
+      "Nk": 437,
+      "z_score": 294756500.00000006,
+      "cluster_spread": 0.7049240844251642,
+      "stability_cv": 0.04541135613274376,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc24",
+      "Nk": 229,
+      "z_score": 154460500.0,
+      "cluster_spread": 0.63380131922548,
+      "stability_cv": 0.05790241255850109,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc25",
+      "Nk": 958,
+      "z_score": 646171000.0,
+      "cluster_spread": 0.7756559200630911,
+      "stability_cv": 0.032493908014298675,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc26",
+      "Nk": 317,
+      "z_score": 213816500.0,
+      "cluster_spread": 0.7042156195527314,
+      "stability_cv": 0.05606179101077357,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc27",
+      "Nk": 2314,
+      "z_score": 1560793000.0,
+      "cluster_spread": 0.7764176571057043,
+      "stability_cv": 0.019527714771799102,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc28",
+      "Nk": 110,
+      "z_score": 74195000.0,
+      "cluster_spread": 0.5132815098514164,
+      "stability_cv": 0.09661157179446811,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc2",
+      "Nk": 439,
+      "z_score": 296105500.0,
+      "cluster_spread": 0.6480770383445655,
+      "stability_cv": 0.04676291379285148,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc3",
+      "Nk": 473,
+      "z_score": 319038500.0,
+      "cluster_spread": 0.6720654838012805,
+      "stability_cv": 0.04708627963629809,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc4",
+      "Nk": 280,
+      "z_score": 188860000.0,
+      "cluster_spread": 0.5472587804698321,
+      "stability_cv": 0.056085452624913275,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc5",
+      "Nk": 19,
+      "z_score": 12815500.0,
+      "cluster_spread": 0.4865729804413039,
+      "stability_cv": 0.19531838393675427,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc6",
+      "Nk": 484,
+      "z_score": 326458000.0,
+      "cluster_spread": 0.6480466211456685,
+      "stability_cv": 0.038603922290982015,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc7",
+      "Nk": 612,
+      "z_score": 412794000.0,
+      "cluster_spread": 0.7040741604616826,
+      "stability_cv": 0.03387436191521437,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc8",
+      "Nk": 67,
+      "z_score": 45191500.0,
+      "cluster_spread": 0.4873350995432838,
+      "stability_cv": 0.08412787774158288,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog_gc9",
+      "Nk": 645,
+      "z_score": 435052500.0,
+      "cluster_spread": 0.7084368217849255,
+      "stability_cv": 0.03876446923683884,
+      "detected": true
+    },
+    {
+      "tag": "domain_dog",
+      "Nk": 138,
+      "z_score": 93081000.0,
+      "cluster_spread": 0.5899238186620583,
+      "stability_cv": 0.07809843622109973,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc0",
+      "Nk": 1078,
+      "z_score": 727111000.0,
+      "cluster_spread": 0.2620268828463959,
+      "stability_cv": 0.024012728580075082,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc10",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0,
+      "detected": false
+    },
+    {
+      "tag": "domain_elephant_gc11",
+      "Nk": 2582,
+      "z_score": 1741559000.0,
+      "cluster_spread": 0.5056460678492214,
+      "stability_cv": 0.018620957726341033,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc12",
+      "Nk": 256,
+      "z_score": 172672000.0,
+      "cluster_spread": 0.2787571770920216,
+      "stability_cv": 0.05419420815832003,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc13",
+      "Nk": 381,
+      "z_score": 256984499.99999997,
+      "cluster_spread": 0.2328651600308505,
+      "stability_cv": 0.040390717488033565,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc14",
+      "Nk": 155,
+      "z_score": 104547500.0,
+      "cluster_spread": 0.2485305981043875,
+      "stability_cv": 0.07987117331672028,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc15",
+      "Nk": 190,
+      "z_score": 128155000.0,
+      "cluster_spread": 0.2079941994347021,
+      "stability_cv": 0.0732423562651883,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc16",
+      "Nk": 83,
+      "z_score": 55983500.0,
+      "cluster_spread": 0.3561020329509842,
+      "stability_cv": 0.10077397539077872,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc17",
+      "Nk": 42,
+      "z_score": 28329000.000000004,
+      "cluster_spread": 0.21133006976157134,
+      "stability_cv": 0.1331402932124947,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc18",
+      "Nk": 273,
+      "z_score": 184138500.0,
+      "cluster_spread": 0.45371873110718786,
+      "stability_cv": 0.05601313325263469,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc19",
+      "Nk": 148,
+      "z_score": 99826000.0,
+      "cluster_spread": 0.246298226037267,
+      "stability_cv": 0.05788590966328773,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc1",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.22574959786331342,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc20",
+      "Nk": 158,
+      "z_score": 106571000.0,
+      "cluster_spread": 0.19012328031205414,
+      "stability_cv": 0.07122292463969464,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc21",
+      "Nk": 430,
+      "z_score": 290035000.0,
+      "cluster_spread": 0.1342980233721299,
+      "stability_cv": 0.049162268002691405,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc22",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.21756168497642178,
+      "stability_cv": 0.23962814364924914,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc23",
+      "Nk": 110,
+      "z_score": 74195000.0,
+      "cluster_spread": 0.14735956598313044,
+      "stability_cv": 0.09835191147358413,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc24",
+      "Nk": 347,
+      "z_score": 234051500.00000003,
+      "cluster_spread": 0.28042242517485566,
+      "stability_cv": 0.0641017901365717,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc25",
+      "Nk": 387,
+      "z_score": 261031500.0,
+      "cluster_spread": 0.23782319209424047,
+      "stability_cv": 0.0506743487154609,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc26",
+      "Nk": 59,
+      "z_score": 39795500.0,
+      "cluster_spread": 0.3021126502099833,
+      "stability_cv": 0.11039110049814466,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc27",
+      "Nk": 1364,
+      "z_score": 920018000.0000001,
+      "cluster_spread": 0.3992039591364389,
+      "stability_cv": 0.020613507905036674,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc28",
+      "Nk": 399,
+      "z_score": 269125500.0,
+      "cluster_spread": 0.15753255017750273,
+      "stability_cv": 0.04680484247257109,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc29",
+      "Nk": 129,
+      "z_score": 87010500.0,
+      "cluster_spread": 0.22731901112819686,
+      "stability_cv": 0.08396270459913008,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc2",
+      "Nk": 213,
+      "z_score": 143668500.0,
+      "cluster_spread": 0.16849143829493524,
+      "stability_cv": 0.06615505833354604,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc3",
+      "Nk": 49,
+      "z_score": 33050500.0,
+      "cluster_spread": 0.20165915810915078,
+      "stability_cv": 0.11446260154379713,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc4",
+      "Nk": 107,
+      "z_score": 72171500.0,
+      "cluster_spread": 0.20348567580943064,
+      "stability_cv": 0.0927888713058724,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc5",
+      "Nk": 135,
+      "z_score": 91057500.00000001,
+      "cluster_spread": 0.1540246060735095,
+      "stability_cv": 0.10142352965715522,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc6",
+      "Nk": 550,
+      "z_score": 370975000.0,
+      "cluster_spread": 0.25616633544099277,
+      "stability_cv": 0.050794242486224564,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc7",
+      "Nk": 500,
+      "z_score": 337250000.0,
+      "cluster_spread": 0.3325304091802,
+      "stability_cv": 0.03246843888170133,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc8",
+      "Nk": 50,
+      "z_score": 33725000.0,
+      "cluster_spread": 0.3239728352511608,
+      "stability_cv": 0.15743518746347498,
+      "detected": true
+    },
+    {
+      "tag": "domain_elephant_gc9",
+      "Nk": 434,
+      "z_score": 292733000.0,
+      "cluster_spread": 0.28175651859583745,
+      "stability_cv": 0.051255950789395405,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc0",
+      "Nk": 28,
+      "z_score": 18886000.0,
+      "cluster_spread": 0.3844683934153284,
+      "stability_cv": 0.14378564279729303,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc10",
+      "Nk": 355,
+      "z_score": 239447500.0,
+      "cluster_spread": 0.33847775010250347,
+      "stability_cv": 0.07128221566849582,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc11",
+      "Nk": 1084,
+      "z_score": 731158000.0,
+      "cluster_spread": 0.4917062864065218,
+      "stability_cv": 0.035537616701071896,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc12",
+      "Nk": 57,
+      "z_score": 38446500.0,
+      "cluster_spread": 0.46214554623122106,
+      "stability_cv": 0.1144092398814984,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc13",
+      "Nk": 141,
+      "z_score": 95104500.0,
+      "cluster_spread": 0.34364678796741677,
+      "stability_cv": 0.09243468521335457,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc14",
+      "Nk": 492,
+      "z_score": 331854000.0,
+      "cluster_spread": 0.3525533676304859,
+      "stability_cv": 0.04341539215433464,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc15",
+      "Nk": 104,
+      "z_score": 70148000.0,
+      "cluster_spread": 0.20289303509450346,
+      "stability_cv": 0.11991994917234382,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc16",
+      "Nk": 348,
+      "z_score": 234726000.0,
+      "cluster_spread": 0.18249026830143983,
+      "stability_cv": 0.052950848452875204,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc17",
+      "Nk": 71,
+      "z_score": 47889500.0,
+      "cluster_spread": 0.1682797024615655,
+      "stability_cv": 0.1256811823286659,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc18",
+      "Nk": 146,
+      "z_score": 98477000.00000001,
+      "cluster_spread": 0.42118112555444237,
+      "stability_cv": 0.08335163238338646,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc19",
+      "Nk": 113,
+      "z_score": 76218500.0,
+      "cluster_spread": 0.2449021853090457,
+      "stability_cv": 0.08066533025880004,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc1",
+      "Nk": 31,
+      "z_score": 20909500.000000004,
+      "cluster_spread": 0.4131943760853759,
+      "stability_cv": 0.17088582834502064,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc20",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.31240406142196886,
+      "stability_cv": 0.17165135142490695,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc21",
+      "Nk": 579,
+      "z_score": 390535500.00000006,
+      "cluster_spread": 0.43036798886196415,
+      "stability_cv": 0.0321541240186861,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc22",
+      "Nk": 320,
+      "z_score": 215840000.0,
+      "cluster_spread": 0.22620344383385785,
+      "stability_cv": 0.06012008780867566,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc23",
+      "Nk": 5,
+      "z_score": 3372500.0,
+      "cluster_spread": 0.5372435736804817,
+      "stability_cv": 0.3468215424660437,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc24",
+      "Nk": 294,
+      "z_score": 198303000.0,
+      "cluster_spread": 0.26997119334535324,
+      "stability_cv": 0.05002118136640387,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc25",
+      "Nk": 558,
+      "z_score": 376371000.0,
+      "cluster_spread": 0.4121582104484554,
+      "stability_cv": 0.045913546131635743,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc26",
+      "Nk": 113,
+      "z_score": 76218500.0,
+      "cluster_spread": 0.3780189155619311,
+      "stability_cv": 0.08931836387753735,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc27",
+      "Nk": 211,
+      "z_score": 142319500.0,
+      "cluster_spread": 0.21370817891786228,
+      "stability_cv": 0.06922752024811264,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc28",
+      "Nk": 62,
+      "z_score": 41819000.00000001,
+      "cluster_spread": 0.28673496657879993,
+      "stability_cv": 0.10345039140965205,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc29",
+      "Nk": 298,
+      "z_score": 201001000.0,
+      "cluster_spread": 0.3319646119861518,
+      "stability_cv": 0.06205024605291115,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc2",
+      "Nk": 590,
+      "z_score": 397955000.0,
+      "cluster_spread": 0.40756238962065683,
+      "stability_cv": 0.031095707231273313,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc3",
+      "Nk": 270,
+      "z_score": 182115000.00000003,
+      "cluster_spread": 0.2731679730670756,
+      "stability_cv": 0.06105578253436433,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc4",
+      "Nk": 130,
+      "z_score": 87685000.0,
+      "cluster_spread": 0.37505429456719225,
+      "stability_cv": 0.07792961704266495,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc5",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0,
+      "detected": false
+    },
+    {
+      "tag": "domain_kite_gc6",
+      "Nk": 90,
+      "z_score": 60705000.0,
+      "cluster_spread": 0.25709516606504573,
+      "stability_cv": 0.10309216605598978,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc7",
+      "Nk": 271,
+      "z_score": 182789500.0,
+      "cluster_spread": 0.24480494397810346,
+      "stability_cv": 0.054114979973423,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc8",
+      "Nk": 128,
+      "z_score": 86336000.0,
+      "cluster_spread": 0.34298202572768133,
+      "stability_cv": 0.07094750759704056,
+      "detected": true
+    },
+    {
+      "tag": "domain_kite_gc9",
+      "Nk": 547,
+      "z_score": 368951500.0,
+      "cluster_spread": 0.3128809997661758,
+      "stability_cv": 0.04570183579473884,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc0",
+      "Nk": 297,
+      "z_score": 200326500.00000003,
+      "cluster_spread": 0.16264074173598086,
+      "stability_cv": 0.05442748220399158,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc10",
+      "Nk": 215,
+      "z_score": 145017500.0,
+      "cluster_spread": 0.26114384950043196,
+      "stability_cv": 0.07549708691626493,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc11",
+      "Nk": 980,
+      "z_score": 661010000.0,
+      "cluster_spread": 0.4942539912446842,
+      "stability_cv": 0.03214228508261605,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc12",
+      "Nk": 277,
+      "z_score": 186836500.0,
+      "cluster_spread": 0.11688688771894219,
+      "stability_cv": 0.05006086816173794,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc13",
+      "Nk": 246,
+      "z_score": 165927000.0,
+      "cluster_spread": 0.4916644025716516,
+      "stability_cv": 0.056469618168549916,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc14",
+      "Nk": 516,
+      "z_score": 348042000.0,
+      "cluster_spread": 0.3129455414104239,
+      "stability_cv": 0.03313157650042816,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc15",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.10851536242448849,
+      "stability_cv": 0.2923673888991881,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc16",
+      "Nk": 111,
+      "z_score": 74869500.0,
+      "cluster_spread": 0.03428581073839899,
+      "stability_cv": 0.10024639485402767,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc17",
+      "Nk": 30,
+      "z_score": 20235000.0,
+      "cluster_spread": 0.3708333446565633,
+      "stability_cv": 0.2091944493621248,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc18",
+      "Nk": 206,
+      "z_score": 138947000.0,
+      "cluster_spread": 0.3484663345316293,
+      "stability_cv": 0.07928798561798954,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc19",
+      "Nk": 152,
+      "z_score": 102524000.0,
+      "cluster_spread": 0.13578375467595574,
+      "stability_cv": 0.07328086845383881,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc1",
+      "Nk": 393,
+      "z_score": 265078500.00000003,
+      "cluster_spread": 0.2939067748285882,
+      "stability_cv": 0.05297141047770185,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc20",
+      "Nk": 37,
+      "z_score": 24956500.0,
+      "cluster_spread": 0.04147594846392122,
+      "stability_cv": 0.17510808678351125,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc21",
+      "Nk": 190,
+      "z_score": 128155000.0,
+      "cluster_spread": 0.3135080996407851,
+      "stability_cv": 0.08051427259224804,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc22",
+      "Nk": 147,
+      "z_score": 99151500.0,
+      "cluster_spread": 0.06467216819725202,
+      "stability_cv": 0.08805129505646672,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc23",
+      "Nk": 316,
+      "z_score": 213142000.0,
+      "cluster_spread": 0.1843792232868202,
+      "stability_cv": 0.05724780707811415,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc24",
+      "Nk": 44,
+      "z_score": 29678000.000000004,
+      "cluster_spread": 0.07224079771871089,
+      "stability_cv": 0.1514261041954805,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc25",
+      "Nk": 9,
+      "z_score": 6070500.0,
+      "cluster_spread": 0.3347155796829401,
+      "stability_cv": 0.32948777136613216,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc26",
+      "Nk": 159,
+      "z_score": 107245500.0,
+      "cluster_spread": 0.15121753928689588,
+      "stability_cv": 0.07311543633069577,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc27",
+      "Nk": 609,
+      "z_score": 410770500.0,
+      "cluster_spread": 0.345309622890505,
+      "stability_cv": 0.03630450761778421,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc28",
+      "Nk": 26,
+      "z_score": 17537000.0,
+      "cluster_spread": 0.5531147467957399,
+      "stability_cv": 0.19089148174855544,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc29",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.4999998437500488,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc2",
+      "Nk": 49,
+      "z_score": 33050500.0,
+      "cluster_spread": 0.41396109269497183,
+      "stability_cv": 0.11026545881001729,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc3",
+      "Nk": 436,
+      "z_score": 294082000.0,
+      "cluster_spread": 0.350071932645966,
+      "stability_cv": 0.05009778899045489,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc4",
+      "Nk": 98,
+      "z_score": 66101000.0,
+      "cluster_spread": 0.1966405549138179,
+      "stability_cv": 0.08445511709434465,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc5",
+      "Nk": 43,
+      "z_score": 29003500.0,
+      "cluster_spread": 0.11005133780985808,
+      "stability_cv": 0.14639635048140587,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc6",
+      "Nk": 127,
+      "z_score": 85661500.00000001,
+      "cluster_spread": 0.061276367816050205,
+      "stability_cv": 0.10152770048780912,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc7",
+      "Nk": 564,
+      "z_score": 380418000.0,
+      "cluster_spread": 0.3884845245054326,
+      "stability_cv": 0.036733462256300496,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc8",
+      "Nk": 5,
+      "z_score": 3372500.0,
+      "cluster_spread": 0.16703843262486698,
+      "stability_cv": 0.47076265059506034,
+      "detected": true
+    },
+    {
+      "tag": "domain_motorcycle_gc9",
+      "Nk": 615,
+      "z_score": 414817500.0,
+      "cluster_spread": 0.25644933711683776,
+      "stability_cv": 0.04162606820617845,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc0",
+      "Nk": 70,
+      "z_score": 47215000.0,
+      "cluster_spread": 0.07311485199215471,
+      "stability_cv": 0.10131692332392528,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc10",
+      "Nk": 97,
+      "z_score": 65426500.00000001,
+      "cluster_spread": 0.3898297838174381,
+      "stability_cv": 0.09765420734633462,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc11",
+      "Nk": 3305,
+      "z_score": 2229222500.0,
+      "cluster_spread": 0.5101761744185762,
+      "stability_cv": 0.014958424155811997,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc12",
+      "Nk": 1428,
+      "z_score": 963186000.0000001,
+      "cluster_spread": 0.2353915595493106,
+      "stability_cv": 0.01982210151499227,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc13",
+      "Nk": 294,
+      "z_score": 198303000.0,
+      "cluster_spread": 0.41126114651870427,
+      "stability_cv": 0.053052374124697654,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc14",
+      "Nk": 288,
+      "z_score": 194256000.0,
+      "cluster_spread": 0.2819754378870245,
+      "stability_cv": 0.04702221560732066,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc15",
+      "Nk": 404,
+      "z_score": 272498000.0,
+      "cluster_spread": 0.30175208504985246,
+      "stability_cv": 0.04750140929352513,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc16",
+      "Nk": 581,
+      "z_score": 391884500.0,
+      "cluster_spread": 0.34183125260220326,
+      "stability_cv": 0.039775949723986646,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc17",
+      "Nk": 91,
+      "z_score": 61379500.0,
+      "cluster_spread": 0.11922346695945912,
+      "stability_cv": 0.11316498873560038,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc18",
+      "Nk": 328,
+      "z_score": 221236000.0,
+      "cluster_spread": 0.4453459569186823,
+      "stability_cv": 0.04993739925516306,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc19",
+      "Nk": 487,
+      "z_score": 328481500.0,
+      "cluster_spread": 0.25421866818736083,
+      "stability_cv": 0.04199104909553794,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc1",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.24950023597661633,
+      "stability_cv": 0.22186733572305226,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc20",
+      "Nk": 417,
+      "z_score": 281266500.0,
+      "cluster_spread": 0.28497880942290355,
+      "stability_cv": 0.046948288658061776,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc21",
+      "Nk": 38,
+      "z_score": 25631000.0,
+      "cluster_spread": 0.4769039586767565,
+      "stability_cv": 0.18320940989584406,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc22",
+      "Nk": 170,
+      "z_score": 114665000.0,
+      "cluster_spread": 0.1236256876545801,
+      "stability_cv": 0.06965139814648698,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc23",
+      "Nk": 821,
+      "z_score": 553764500.0,
+      "cluster_spread": 0.4802687030648948,
+      "stability_cv": 0.03457198609091098,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc24",
+      "Nk": 130,
+      "z_score": 87685000.0,
+      "cluster_spread": 0.277564956669657,
+      "stability_cv": 0.06964392310966654,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc25",
+      "Nk": 73,
+      "z_score": 49238500.00000001,
+      "cluster_spread": 0.44143491573792076,
+      "stability_cv": 0.11970333540376053,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc26",
+      "Nk": 514,
+      "z_score": 346693000.0,
+      "cluster_spread": 0.26060541381592645,
+      "stability_cv": 0.03289319966926295,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc27",
+      "Nk": 903,
+      "z_score": 609073500.0,
+      "cluster_spread": 0.34209064526390054,
+      "stability_cv": 0.03161685012671531,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc28",
+      "Nk": 460,
+      "z_score": 310270000.0,
+      "cluster_spread": 0.258667350904888,
+      "stability_cv": 0.04770116919670314,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc29",
+      "Nk": 24,
+      "z_score": 16188000.0,
+      "cluster_spread": 0.3179565661751026,
+      "stability_cv": 0.1800603352282145,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc2",
+      "Nk": 910,
+      "z_score": 613795000.0,
+      "cluster_spread": 0.22696296117209322,
+      "stability_cv": 0.03134444522894083,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc3",
+      "Nk": 833,
+      "z_score": 561858500.0,
+      "cluster_spread": 0.32656680568844904,
+      "stability_cv": 0.033552817068765006,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc4",
+      "Nk": 370,
+      "z_score": 249565000.0,
+      "cluster_spread": 0.17291707775513876,
+      "stability_cv": 0.04343739903294276,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc5",
+      "Nk": 117,
+      "z_score": 78916500.0,
+      "cluster_spread": 0.2641597514236795,
+      "stability_cv": 0.11350288205423333,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc6",
+      "Nk": 1632,
+      "z_score": 1100784000.0,
+      "cluster_spread": 0.3533290441649581,
+      "stability_cv": 0.023493147228890315,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc7",
+      "Nk": 389,
+      "z_score": 262380500.0,
+      "cluster_spread": 0.4435536451051797,
+      "stability_cv": 0.054459432226336014,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc8",
+      "Nk": 748,
+      "z_score": 504526000.00000006,
+      "cluster_spread": 0.29178118952849147,
+      "stability_cv": 0.030134282319656338,
+      "detected": true
+    },
+    {
+      "tag": "domain_pizza_gc9",
+      "Nk": 472,
+      "z_score": 318364000.0,
+      "cluster_spread": 0.3667101304559031,
+      "stability_cv": 0.04023160715215954,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc0",
+      "Nk": 393,
+      "z_score": 265078500.00000003,
+      "cluster_spread": 0.2381236337000117,
+      "stability_cv": 0.04174419094186095,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc10",
+      "Nk": 9,
+      "z_score": 6070500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.3505336945930813,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc11",
+      "Nk": 2310,
+      "z_score": 1558095000.0,
+      "cluster_spread": 0.620622792306783,
+      "stability_cv": 0.018997572413797723,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc12",
+      "Nk": 74,
+      "z_score": 49913000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.1303564477909079,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc13",
+      "Nk": 308,
+      "z_score": 207746000.00000003,
+      "cluster_spread": 0.2680976478033616,
+      "stability_cv": 0.06146112018861791,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc14",
+      "Nk": 254,
+      "z_score": 171323000.00000003,
+      "cluster_spread": 0.06241058791420887,
+      "stability_cv": 0.06261965212881844,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc15",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": 0.3005128526390367,
+      "stability_cv": 0.37209297998918844,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc16",
+      "Nk": 361,
+      "z_score": 243494500.0,
+      "cluster_spread": 0.2559141854465822,
+      "stability_cv": 0.03982893793880105,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc17",
+      "Nk": 33,
+      "z_score": 22258500.0,
+      "cluster_spread": 0.12100581381714132,
+      "stability_cv": 0.19057419329817293,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc18",
+      "Nk": 474,
+      "z_score": 319713000.00000006,
+      "cluster_spread": 0.324073393734338,
+      "stability_cv": 0.0475596008125541,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc19",
+      "Nk": 87,
+      "z_score": 58681500.0,
+      "cluster_spread": 0.2809500010611961,
+      "stability_cv": 0.11420749262108604,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc1",
+      "Nk": 199,
+      "z_score": 134225500.00000003,
+      "cluster_spread": 0.6088327350488828,
+      "stability_cv": 0.07096667028453109,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc20",
+      "Nk": 81,
+      "z_score": 54634500.0,
+      "cluster_spread": 0.4086139878695613,
+      "stability_cv": 0.09810227332402034,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc21",
+      "Nk": 745,
+      "z_score": 502502500.0,
+      "cluster_spread": 0.3730147688618485,
+      "stability_cv": 0.02771497890106275,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc22",
+      "Nk": 1386,
+      "z_score": 934857000.0,
+      "cluster_spread": 0.44551810575231554,
+      "stability_cv": 0.022191775821962443,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc23",
+      "Nk": 605,
+      "z_score": 408072500.0,
+      "cluster_spread": 0.22630082372623292,
+      "stability_cv": 0.0354349576770486,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc24",
+      "Nk": 201,
+      "z_score": 135574500.0,
+      "cluster_spread": 0.36235331479901656,
+      "stability_cv": 0.059798310153424336,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc25",
+      "Nk": 907,
+      "z_score": 611771500.0,
+      "cluster_spread": 0.5713546878395588,
+      "stability_cv": 0.030573128462036837,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc26",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": 0.4368232097392948,
+      "stability_cv": 0.3357610888028341,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc27",
+      "Nk": 502,
+      "z_score": 338599000.0,
+      "cluster_spread": 0.23527695007535418,
+      "stability_cv": 0.04380402020447281,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc28",
+      "Nk": 15,
+      "z_score": 10117500.0,
+      "cluster_spread": 0.2861317251909061,
+      "stability_cv": 0.27545260454627224,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc29",
+      "Nk": 340,
+      "z_score": 229330000.0,
+      "cluster_spread": 0.3657986815256785,
+      "stability_cv": 0.039566282151658735,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc2",
+      "Nk": 23,
+      "z_score": 15513500.000000002,
+      "cluster_spread": 0.43240840681628095,
+      "stability_cv": 0.16486664536330226,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc3",
+      "Nk": 421,
+      "z_score": 283964500.0,
+      "cluster_spread": 0.06974451811707039,
+      "stability_cv": 0.05368201939222263,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc4",
+      "Nk": 438,
+      "z_score": 295431000.0,
+      "cluster_spread": 0.2605067543165052,
+      "stability_cv": 0.05340639664547654,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc5",
+      "Nk": 29,
+      "z_score": 19560500.000000004,
+      "cluster_spread": 0.15344929986788985,
+      "stability_cv": 0.18424410809621036,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc6",
+      "Nk": 251,
+      "z_score": 169299500.0,
+      "cluster_spread": 0.5035179671031912,
+      "stability_cv": 0.05094365269162105,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc7",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.11873491291987713,
+      "stability_cv": 0.14652011095552397,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc8",
+      "Nk": 531,
+      "z_score": 358159500.0,
+      "cluster_spread": 0.4660201289918161,
+      "stability_cv": 0.04093048899479763,
+      "detected": true
+    },
+    {
+      "tag": "domain_skateboard_gc9",
+      "Nk": 940,
+      "z_score": 634030000.0,
+      "cluster_spread": 0.45434005233165187,
+      "stability_cv": 0.02938610156292,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc0",
+      "Nk": 499,
+      "z_score": 336575500.0,
+      "cluster_spread": 0.11817707127017527,
+      "stability_cv": 0.04098907964072054,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc10",
+      "Nk": 259,
+      "z_score": 174695500.00000003,
+      "cluster_spread": 0.10117520343452692,
+      "stability_cv": 0.06788401500425557,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc11",
+      "Nk": 1642,
+      "z_score": 1107529000.0,
+      "cluster_spread": 0.3371699944094667,
+      "stability_cv": 0.023411637972377386,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc12",
+      "Nk": 1120,
+      "z_score": 755440000.0,
+      "cluster_spread": 0.1743147247487573,
+      "stability_cv": 0.029075725506158744,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc13",
+      "Nk": 219,
+      "z_score": 147715500.0,
+      "cluster_spread": 0.17256605293872937,
+      "stability_cv": 0.05244989987138644,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc14",
+      "Nk": 86,
+      "z_score": 58007000.0,
+      "cluster_spread": 0.33384498461799633,
+      "stability_cv": 0.10559709375502974,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc15",
+      "Nk": 46,
+      "z_score": 31027000.000000004,
+      "cluster_spread": 0.4922874069793483,
+      "stability_cv": 0.1294365027197818,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc16",
+      "Nk": 550,
+      "z_score": 370975000.0,
+      "cluster_spread": 0.2217207379437577,
+      "stability_cv": 0.04451943994329142,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc17",
+      "Nk": 47,
+      "z_score": 31701500.0,
+      "cluster_spread": 0.0928008035723358,
+      "stability_cv": 0.1411335135256467,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc18",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.28147300394288616,
+      "stability_cv": 0.08147939310865335,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc19",
+      "Nk": 34,
+      "z_score": 22933000.0,
+      "cluster_spread": 0.26644333267613823,
+      "stability_cv": 0.13234290197909848,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc1",
+      "Nk": 302,
+      "z_score": 203699000.0,
+      "cluster_spread": 0.2168329481339958,
+      "stability_cv": 0.04797076653180692,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc20",
+      "Nk": 502,
+      "z_score": 338599000.0,
+      "cluster_spread": 0.11913939194045815,
+      "stability_cv": 0.04608312232731437,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc21",
+      "Nk": 302,
+      "z_score": 203699000.0,
+      "cluster_spread": 0.48014716710868316,
+      "stability_cv": 0.05045490880697072,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc22",
+      "Nk": 125,
+      "z_score": 84312500.0,
+      "cluster_spread": 0.2654014783246719,
+      "stability_cv": 0.0702073377739387,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc23",
+      "Nk": 207,
+      "z_score": 139621500.0,
+      "cluster_spread": 0.2457207872346694,
+      "stability_cv": 0.051417276538757134,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc24",
+      "Nk": 708,
+      "z_score": 477546000.0,
+      "cluster_spread": 0.12956037310775212,
+      "stability_cv": 0.03697550444327855,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc25",
+      "Nk": 253,
+      "z_score": 170648500.0,
+      "cluster_spread": 0.14625968631380404,
+      "stability_cv": 0.06135843404458416,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc26",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": 0.49186717988405454,
+      "stability_cv": 0.23009708207478854,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc27",
+      "Nk": 523,
+      "z_score": 352763500.00000006,
+      "cluster_spread": 0.09641493672005574,
+      "stability_cv": 0.04290070829727619,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc28",
+      "Nk": 513,
+      "z_score": 346018500.00000006,
+      "cluster_spread": 0.06896156405259238,
+      "stability_cv": 0.03810870081155224,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc29",
+      "Nk": 622,
+      "z_score": 419539000.0,
+      "cluster_spread": 0.08419523480316372,
+      "stability_cv": 0.04393561065758288,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc2",
+      "Nk": 692,
+      "z_score": 466754000.00000006,
+      "cluster_spread": 0.18093397259367872,
+      "stability_cv": 0.03118568541074445,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc3",
+      "Nk": 103,
+      "z_score": 69473500.0,
+      "cluster_spread": 0.30771311656980777,
+      "stability_cv": 0.09935382045764893,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc4",
+      "Nk": 56,
+      "z_score": 37772000.0,
+      "cluster_spread": 0.5161301419794191,
+      "stability_cv": 0.13611206072810803,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc5",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0,
+      "detected": false
+    },
+    {
+      "tag": "domain_surfboard_gc6",
+      "Nk": 722,
+      "z_score": 486989000.0,
+      "cluster_spread": 0.12372431877411039,
+      "stability_cv": 0.03127308769772166,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc7",
+      "Nk": 219,
+      "z_score": 147715500.0,
+      "cluster_spread": 0.4124523000609202,
+      "stability_cv": 0.04833061435900674,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc8",
+      "Nk": 58,
+      "z_score": 39121000.00000001,
+      "cluster_spread": 0.30277204340548036,
+      "stability_cv": 0.14678458018720272,
+      "detected": true
+    },
+    {
+      "tag": "domain_surfboard_gc9",
+      "Nk": 538,
+      "z_score": 362881000.0,
+      "cluster_spread": 0.2393369891519408,
+      "stability_cv": 0.042439717980052,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc0",
+      "Nk": 95,
+      "z_score": 64077500.0,
+      "cluster_spread": 0.3698857264728576,
+      "stability_cv": 0.10527524374756128,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc10",
+      "Nk": 212,
+      "z_score": 142994000.0,
+      "cluster_spread": 0.4177636653131731,
+      "stability_cv": 0.05807841591273949,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc11",
+      "Nk": 525,
+      "z_score": 354112500.0,
+      "cluster_spread": 0.5233600929358788,
+      "stability_cv": 0.05467919572390578,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc12",
+      "Nk": 503,
+      "z_score": 339273500.0,
+      "cluster_spread": 0.5248144846627162,
+      "stability_cv": 0.05923200512691481,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc13",
+      "Nk": 97,
+      "z_score": 65426500.00000001,
+      "cluster_spread": 0.19954104896714076,
+      "stability_cv": 0.10874179529093735,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc14",
+      "Nk": 281,
+      "z_score": 189534500.00000003,
+      "cluster_spread": 0.41594417558860053,
+      "stability_cv": 0.07019689836483692,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc15",
+      "Nk": 35,
+      "z_score": 23607500.0,
+      "cluster_spread": 0.4674915502878324,
+      "stability_cv": 0.16648735998893105,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc16",
+      "Nk": 128,
+      "z_score": 86336000.0,
+      "cluster_spread": 0.5142172336619893,
+      "stability_cv": 0.0767560571284974,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc17",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.5034995768240544,
+      "stability_cv": 0.09067343257141633,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc18",
+      "Nk": 31,
+      "z_score": 20909500.000000004,
+      "cluster_spread": 0.512744692059996,
+      "stability_cv": 0.2124428139221413,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc19",
+      "Nk": 140,
+      "z_score": 94430000.0,
+      "cluster_spread": 0.49907178864276847,
+      "stability_cv": 0.09909562319235402,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc1",
+      "Nk": 18,
+      "z_score": 12141000.0,
+      "cluster_spread": 0.5115711247307034,
+      "stability_cv": 0.25959086883388627,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc20",
+      "Nk": 235,
+      "z_score": 158507500.0,
+      "cluster_spread": 0.472965388109886,
+      "stability_cv": 0.09432756921022441,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc21",
+      "Nk": 287,
+      "z_score": 193581500.0,
+      "cluster_spread": 0.6323752932595793,
+      "stability_cv": 0.06417203948558196,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc22",
+      "Nk": 227,
+      "z_score": 153111500.0,
+      "cluster_spread": 0.6136854579433584,
+      "stability_cv": 0.05782984065785933,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc23",
+      "Nk": 426,
+      "z_score": 287337000.0,
+      "cluster_spread": 0.36514845561225695,
+      "stability_cv": 0.06658012596681902,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc24",
+      "Nk": 121,
+      "z_score": 81614500.0,
+      "cluster_spread": 0.676692790137916,
+      "stability_cv": 0.08543940969908506,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc25",
+      "Nk": 158,
+      "z_score": 106571000.0,
+      "cluster_spread": 0.530658156430778,
+      "stability_cv": 0.10185866916589909,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc26",
+      "Nk": 175,
+      "z_score": 118037500.0,
+      "cluster_spread": 0.5127381058281578,
+      "stability_cv": 0.09143404927355965,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc27",
+      "Nk": 163,
+      "z_score": 109943500.0,
+      "cluster_spread": 0.5602907502285484,
+      "stability_cv": 0.08824731389357664,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc28",
+      "Nk": 67,
+      "z_score": 45191500.0,
+      "cluster_spread": 0.5792173494407068,
+      "stability_cv": 0.11855928249782709,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc29",
+      "Nk": 78,
+      "z_score": 52611000.0,
+      "cluster_spread": 0.2655109063741828,
+      "stability_cv": 0.13111471982717138,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc2",
+      "Nk": 448,
+      "z_score": 302176000.0,
+      "cluster_spread": 0.5003306433943092,
+      "stability_cv": 0.0605418716246009,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc3",
+      "Nk": 196,
+      "z_score": 132202000.0,
+      "cluster_spread": 0.5983054393729024,
+      "stability_cv": 0.07539080491601416,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc4",
+      "Nk": 131,
+      "z_score": 88359500.0,
+      "cluster_spread": 0.4080235413644713,
+      "stability_cv": 0.11368479072972025,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc5",
+      "Nk": 55,
+      "z_score": 37097500.0,
+      "cluster_spread": 0.5489992787059234,
+      "stability_cv": 0.12019200297633531,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc6",
+      "Nk": 412,
+      "z_score": 277894000.0,
+      "cluster_spread": 0.43861926706617693,
+      "stability_cv": 0.06849617856143365,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc7",
+      "Nk": 148,
+      "z_score": 99826000.0,
+      "cluster_spread": 0.6347106519477081,
+      "stability_cv": 0.08236065726425101,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc8",
+      "Nk": 45,
+      "z_score": 30352500.0,
+      "cluster_spread": 0.47268596692634496,
+      "stability_cv": 0.15561188295032422,
+      "detected": true
+    },
+    {
+      "tag": "domain_umbrella_gc9",
+      "Nk": 80,
+      "z_score": 53960000.0,
+      "cluster_spread": 0.4764144247075328,
+      "stability_cv": 0.10494076012667651,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc0",
+      "Nk": 4277,
+      "z_score": 2884836500.0,
+      "cluster_spread": 0.797642330029106,
+      "stability_cv": 0.013107713628947954,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc10",
+      "Nk": 468,
+      "z_score": 315666000.0,
+      "cluster_spread": 0.48765425917224237,
+      "stability_cv": 0.036764360456255835,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc11",
+      "Nk": 16693,
+      "z_score": 11259428500.0,
+      "cluster_spread": 0.9179525929922335,
+      "stability_cv": 0.004585776369000893,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc12",
+      "Nk": 4073,
+      "z_score": 2747238500.0,
+      "cluster_spread": 0.7999268959927327,
+      "stability_cv": 0.009743585376970006,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc13",
+      "Nk": 1895,
+      "z_score": 1278177500.0,
+      "cluster_spread": 0.7779923021478241,
+      "stability_cv": 0.021959218881231247,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc14",
+      "Nk": 3028,
+      "z_score": 2042386000.0,
+      "cluster_spread": 0.7898520090563917,
+      "stability_cv": 0.016746070154764158,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc15",
+      "Nk": 324,
+      "z_score": 218538000.0,
+      "cluster_spread": 0.6347646828106048,
+      "stability_cv": 0.047700961346302966,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc16",
+      "Nk": 604,
+      "z_score": 407398000.0,
+      "cluster_spread": 0.6142307450618363,
+      "stability_cv": 0.03404462925653568,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc17",
+      "Nk": 416,
+      "z_score": 280592000.0,
+      "cluster_spread": 0.5816108173768573,
+      "stability_cv": 0.040749027702812995,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc18",
+      "Nk": 779,
+      "z_score": 525435500.00000006,
+      "cluster_spread": 0.7873288076399705,
+      "stability_cv": 0.03954164383248212,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc19",
+      "Nk": 3257,
+      "z_score": 2196846500.0,
+      "cluster_spread": 0.7993252516919116,
+      "stability_cv": 0.013923666085446755,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc1",
+      "Nk": 255,
+      "z_score": 171997500.0,
+      "cluster_spread": 0.6177315973593256,
+      "stability_cv": 0.0594218297317157,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc20",
+      "Nk": 1035,
+      "z_score": 698107500.0,
+      "cluster_spread": 0.8024012268258345,
+      "stability_cv": 0.03255246621181209,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc21",
+      "Nk": 4568,
+      "z_score": 3081116000.0,
+      "cluster_spread": 0.8163422212297013,
+      "stability_cv": 0.012584796067625944,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc22",
+      "Nk": 4459,
+      "z_score": 3007595500.0,
+      "cluster_spread": 0.813647963362801,
+      "stability_cv": 0.011284237931426811,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc23",
+      "Nk": 1087,
+      "z_score": 733181500.0000001,
+      "cluster_spread": 0.7300741256462172,
+      "stability_cv": 0.033973331720785226,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc24",
+      "Nk": 1032,
+      "z_score": 696084000.0,
+      "cluster_spread": 0.8293982485911915,
+      "stability_cv": 0.02544230328543441,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc25",
+      "Nk": 1258,
+      "z_score": 848521000.0,
+      "cluster_spread": 0.5612644976882479,
+      "stability_cv": 0.027943198044496693,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc26",
+      "Nk": 1911,
+      "z_score": 1288969500.0,
+      "cluster_spread": 0.688859769193665,
+      "stability_cv": 0.01896321194699511,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc2",
+      "Nk": 1681,
+      "z_score": 1133834500.0,
+      "cluster_spread": 0.7529442562099163,
+      "stability_cv": 0.018484787523503278,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc3",
+      "Nk": 3524,
+      "z_score": 2376938000.0,
+      "cluster_spread": 0.8124542455142872,
+      "stability_cv": 0.01241464302761217,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc42",
+      "Nk": 7636,
+      "z_score": 5150482000.0,
+      "cluster_spread": 0.877000754838994,
+      "stability_cv": 0.008804990123864608,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc4",
+      "Nk": 865,
+      "z_score": 583442500.0,
+      "cluster_spread": 0.7014754029113804,
+      "stability_cv": 0.03624595707220938,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc5",
+      "Nk": 446,
+      "z_score": 300827000.0,
+      "cluster_spread": 0.3140469460210573,
+      "stability_cv": 0.04103978669460439,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc6",
+      "Nk": 5265,
+      "z_score": 3551242500.0,
+      "cluster_spread": 0.8617569270952262,
+      "stability_cv": 0.01141016633672442,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc7",
+      "Nk": 3296,
+      "z_score": 2223152000.0,
+      "cluster_spread": 0.769012731040841,
+      "stability_cv": 0.015494035472313037,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc8",
+      "Nk": 306,
+      "z_score": 206397000.0,
+      "cluster_spread": 0.6257672425897964,
+      "stability_cv": 0.07192789602900147,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc99",
+      "Nk": 1876,
+      "z_score": 1265362000.0000002,
+      "cluster_spread": 0.6403029521978655,
+      "stability_cv": 0.020824289841374456,
+      "detected": true
+    },
+    {
+      "tag": "universal_gc9",
+      "Nk": 8997,
+      "z_score": 6068476500.0,
+      "cluster_spread": 0.8725338227111331,
+      "stability_cv": 0.0086051261597739,
+      "detected": true
+    },
+    {
+      "tag": "universal",
+      "Nk": 2801,
+      "z_score": 1889274500.0,
+      "cluster_spread": 0.6848521752749641,
+      "stability_cv": 0.016645921970346363,
+      "detected": true
+    }
+  ],
+  "natural_hub_top5": [
+    {
+      "record_id": 1063,
+      "caption": "A red stop sign behind a chain link fence.",
+      "Nk": 61,
+      "z_score": 41144500.0,
+      "cluster_spread": 0.027922957384757,
+      "stability_cv": 0.120826105885185
+    },
+    {
+      "record_id": 971,
+      "caption": "A fire hydrant is standing amid some grass.",
+      "Nk": 56,
+      "z_score": 37772000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.13394967484398057
+    },
+    {
+      "record_id": 897,
+      "caption": "A grey and orange fire hydrant next to a street.",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.1278829365648297
+    },
+    {
+      "record_id": 1008,
+      "caption": "a red fire hydrant near a dirt road with trees in the background",
+      "Nk": 30,
+      "z_score": 20235000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.15429004596722987
+    },
+    {
+      "record_id": 1255,
+      "caption": "A red and gold painted fire hydrant on the street",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.1724789308599717
+    }
+  ]
+}

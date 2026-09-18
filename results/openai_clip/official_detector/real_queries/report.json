@@ -1,0 +1,3243 @@
+{
+  "scan_info": {
+    "timestamp": "2026-09-15T20:47:12.865166",
+    "num_documents": 5480,
+    "num_queries": 5000,
+    "k": 10,
+    "runtime_seconds": 3.7765493392944336,
+    "index_type": "hnsw",
+    "metric": "cosine",
+    "ranking_method": "vector"
+  },
+  "summary": {
+    "verdict_counts": {
+      "LOW": 5452,
+      "MEDIUM": 16,
+      "HIGH": 12
+    },
+    "mean_risk_score": -0.29360491037368774,
+    "max_risk_score": 38.65870666503906,
+    "median_risk_score": -0.34459203481674194
+  },
+  "detector_summary": {
+    "hubness": {
+      "mean_score": -1.1137801791960555e-08,
+      "max_score": 64.62669372558594,
+      "median_score": -0.07432007789611816,
+      "ranking_method": "vector",
+      "hybrid_alpha": null
+    },
+    "cluster_spread": {
+      "mean_score": 0.030551593891526865,
+      "max_score": 0.9128191811913514,
+      "median_score": 0.0
+    },
+    "dedup": {
+      "mean_score": 0.9990510948905108,
+      "max_score": 1.0,
+      "median_score": 1.0
+    }
+  },
+  "suspicious_documents": [
+    {
+      "doc_index": 5452,
+      "risk_score": 38.65870666503906,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 64.62669372558594,
+        "hub_rate": 0.20392611622810364,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.9128191811913514,
+        "entropy": 3.6412211511701646
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc11"
+      }
+    },
+    {
+      "doc_index": 5478,
+      "risk_score": 7.562295913696289,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 12.813349723815918,
+        "hub_rate": 0.04061964899301529,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          13,
+          17,
+          18,
+          21,
+          24
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8713065245847585,
+        "entropy": 3.475627826235965
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc9"
+      }
+    },
+    {
+      "doc_index": 5332,
+      "risk_score": 6.2558183670043945,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 10.728388786315918,
+        "hub_rate": 0.03404822200536728,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          7,
+          12,
+          26,
+          40,
+          43,
+          48,
+          54,
+          56,
+          57
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5938217477750419,
+        "entropy": 2.368745478377557
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc11"
+      }
+    },
+    {
+      "doc_index": 5471,
+      "risk_score": 5.446506023406982,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 9.285943031311035,
+        "hub_rate": 0.029501890763640404,
+        "hits": null,
+        "example_query_indices": [
+          4,
+          5,
+          14,
+          16,
+          21,
+          24,
+          27,
+          28,
+          32,
+          39
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8746121171106409,
+        "entropy": 3.4888137820861513
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc42"
+      }
+    },
+    {
+      "doc_index": 5242,
+      "risk_score": 5.193589687347412,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 8.95654010772705,
+        "hub_rate": 0.02846366912126541,
+        "hits": null,
+        "example_query_indices": [
+          5,
+          17,
+          22,
+          33,
+          51,
+          58,
+          64,
+          84,
+          102,
+          105
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5982407050193227,
+        "entropy": 2.3863726283274422
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_elephant_gc11"
+      }
+    },
+    {
+      "doc_index": 5182,
+      "risk_score": 4.94362211227417,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 8.4974365234375,
+        "hub_rate": 0.02701665833592415,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          8,
+          11,
+          16,
+          36,
+          48,
+          50,
+          72,
+          73,
+          77
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7257197222930744,
+        "entropy": 2.894884394504129
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc11"
+      }
+    },
+    {
+      "doc_index": 5362,
+      "risk_score": 4.866381645202637,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 8.421470642089844,
+        "hub_rate": 0.026777224615216255,
+        "hits": null,
+        "example_query_indices": [
+          1,
+          13,
+          27,
+          41,
+          52,
+          86,
+          130,
+          136,
+          142,
+          146
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5674160644972763,
+        "entropy": 2.263413629043921
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_skateboard_gc11"
+      }
+    },
+    {
+      "doc_index": 5392,
+      "risk_score": 4.214431285858154,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 7.355672359466553,
+        "hub_rate": 0.023418018594384193,
+        "hits": null,
+        "example_query_indices": [
+          10,
+          19,
+          20,
+          25,
+          79,
+          86,
+          101,
+          120,
+          121,
+          140
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5050676833103455,
+        "entropy": 2.0147069311601453
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_surfboard_gc11"
+      }
+    },
+    {
+      "doc_index": 5199,
+      "risk_score": 3.9200494289398193,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 6.81794548034668,
+        "hub_rate": 0.021723199635744095,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          48,
+          50,
+          72,
+          73,
+          76,
+          78,
+          80,
+          85,
+          88
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6463434088240984,
+        "entropy": 2.578253546401299
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc27"
+      }
+    },
+    {
+      "doc_index": 5474,
+      "risk_score": 3.8337831497192383,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 6.6071553230285645,
+        "hub_rate": 0.02105882577598095,
+        "hits": null,
+        "example_query_indices": [
+          4,
+          6,
+          11,
+          28,
+          32,
+          39,
+          50,
+          51,
+          53,
+          61
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8473857698278193,
+        "entropy": 3.3802083171287576
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc6"
+      }
+    },
+    {
+      "doc_index": 5002,
+      "risk_score": 3.6615078449249268,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 6.385842800140381,
+        "hub_rate": 0.020361287519335747,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          38,
+          45,
+          46,
+          56,
+          58,
+          61,
+          68,
+          112
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6499481089648861,
+        "entropy": 2.5926326377555493
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc11"
+      }
+    },
+    {
+      "doc_index": 5463,
+      "risk_score": 3.571746587753296,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 6.187182426452637,
+        "hub_rate": 0.019735146313905716,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          5,
+          9,
+          13,
+          18,
+          21,
+          26,
+          27,
+          28,
+          38
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.797127108324417,
+        "entropy": 3.179727318190012
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc21"
+      }
+    },
+    {
+      "doc_index": 5464,
+      "risk_score": 3.1620962619781494,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.492396831512451,
+        "hub_rate": 0.01754530519247055,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          3,
+          4,
+          12,
+          18,
+          21,
+          26,
+          27,
+          28,
+          39
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8332377286998627,
+        "entropy": 3.3237720067792034
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc22"
+      }
+    },
+    {
+      "doc_index": 5450,
+      "risk_score": 3.1506264209747314,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.481607913970947,
+        "hub_rate": 0.01751130074262619,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          8,
+          14,
+          16,
+          18,
+          24,
+          28,
+          32,
+          39,
+          43
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8082545200981307,
+        "entropy": 3.2241143862349073
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc0"
+      }
+    },
+    {
+      "doc_index": 5032,
+      "risk_score": 2.8571789264678955,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.164010047912598,
+        "hub_rate": 0.016510287299752235,
+        "hits": null,
+        "example_query_indices": [
+          71,
+          151,
+          156,
+          221,
+          231,
+          273,
+          308,
+          320,
+          329,
+          354
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2938137196883606,
+        "entropy": 1.1720182404985782
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster302_gc11"
+      }
+    },
+    {
+      "doc_index": 5184,
+      "risk_score": 2.8240084648132324,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.969632148742676,
+        "hub_rate": 0.015897642821073532,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          2,
+          28,
+          46,
+          48,
+          67,
+          72,
+          76,
+          80,
+          85
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7110981899189804,
+        "entropy": 2.8365593351275455
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc13"
+      }
+    },
+    {
+      "doc_index": 5272,
+      "risk_score": 2.724307060241699,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.855629920959473,
+        "hub_rate": 0.015538327395915985,
+        "hits": null,
+        "example_query_indices": [
+          60,
+          70,
+          116,
+          125,
+          143,
+          144,
+          146,
+          148,
+          154,
+          163
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5545978519528806,
+        "entropy": 2.212281983698856
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc11"
+      }
+    },
+    {
+      "doc_index": 5212,
+      "risk_score": 2.710578441619873,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.764586925506592,
+        "hub_rate": 0.01525137573480606,
+        "hits": null,
+        "example_query_indices": [
+          7,
+          18,
+          31,
+          57,
+          63,
+          69,
+          77,
+          78,
+          83,
+          91
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7590851358877151,
+        "entropy": 3.02797849704017
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc11"
+      }
+    },
+    {
+      "doc_index": 5152,
+      "risk_score": 2.6239736080169678,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.621492385864258,
+        "hub_rate": 0.014800366945564747,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          14,
+          16,
+          32,
+          38,
+          41,
+          42,
+          44,
+          49,
+          81
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7553455720257789,
+        "entropy": 3.013061436453798
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_bicycle_gc11"
+      }
+    },
+    {
+      "doc_index": 5453,
+      "risk_score": 2.4550087451934814,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.322613716125488,
+        "hub_rate": 0.013858355581760406,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          4,
+          5,
+          6,
+          9,
+          12,
+          18,
+          26,
+          27,
+          28
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.807160477392806,
+        "entropy": 3.219750267337107
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc12"
+      }
+    },
+    {
+      "doc_index": 5460,
+      "risk_score": 2.259389638900757,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.008254051208496,
+        "hub_rate": 0.012867549434304237,
+        "hits": null,
+        "example_query_indices": [
+          4,
+          5,
+          11,
+          12,
+          17,
+          42,
+          50,
+          51,
+          56,
+          61
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7721477941397029,
+        "entropy": 3.0800852324130705
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc19"
+      }
+    },
+    {
+      "doc_index": 5455,
+      "risk_score": 2.154019355773926,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.817899703979492,
+        "hub_rate": 0.012267585843801498,
+        "hits": null,
+        "example_query_indices": [
+          4,
+          8,
+          11,
+          16,
+          17,
+          24,
+          32,
+          39,
+          42,
+          45
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.8163606909378055,
+        "entropy": 3.2564497723930943
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc14"
+      }
+    },
+    {
+      "doc_index": 5470,
+      "risk_score": 2.0854201316833496,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7038910388946533,
+        "hub_rate": 0.011908250860869884,
+        "hits": null,
+        "example_query_indices": [
+          5,
+          13,
+          16,
+          32,
+          41,
+          45,
+          53,
+          81,
+          82,
+          87
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.815391554801244,
+        "entropy": 3.2525839038054016
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc3"
+      }
+    },
+    {
+      "doc_index": 5475,
+      "risk_score": 2.0747737884521484,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6958742141723633,
+        "hub_rate": 0.011882983148097992,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          9,
+          11,
+          16,
+          38,
+          45,
+          46,
+          59,
+          62,
+          68
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7862107711257815,
+        "entropy": 3.1361822232577388
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc7"
+      }
+    },
+    {
+      "doc_index": 5229,
+      "risk_score": 2.0722594261169434,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.700695276260376,
+        "hub_rate": 0.011898178607225418,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          18,
+          31,
+          57,
+          58,
+          63,
+          67,
+          77,
+          99,
+          104
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7591745509405351,
+        "entropy": 3.028335172259392
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc27"
+      }
+    },
+    {
+      "doc_index": 5479,
+      "risk_score": 2.048626184463501,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.677825450897217,
+        "hub_rate": 0.011826097033917904,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          12,
+          26,
+          38,
+          51,
+          54,
+          59,
+          62,
+          65,
+          66
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7096185853005713,
+        "entropy": 2.830657215909489
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal"
+      }
+    },
+    {
+      "doc_index": 5210,
+      "risk_score": 1.9930952787399292,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.585963726043701,
+        "hub_rate": 0.01153656467795372,
+        "hits": null,
+        "example_query_indices": [
+          18,
+          31,
+          77,
+          93,
+          104,
+          113,
+          123,
+          132,
+          166,
+          179
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7075510953166289,
+        "entropy": 2.8224100313471108
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc0"
+      }
+    },
+    {
+      "doc_index": 5302,
+      "risk_score": 1.9383721351623535,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.5555498600006104,
+        "hub_rate": 0.011440705507993698,
+        "hits": null,
+        "example_query_indices": [
+          5,
+          34,
+          55,
+          173,
+          204,
+          210,
+          224,
+          230,
+          263,
+          271
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5251770355081168,
+        "entropy": 2.0949228162637974
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_motorcycle_gc11"
+      }
+    },
+    {
+      "doc_index": 5356,
+      "risk_score": 1.5294969081878662,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.893049478530884,
+        "hub_rate": 0.009352622553706169,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          7,
+          43,
+          57,
+          66,
+          69,
+          83,
+          92,
+          103,
+          114
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4683079268707207,
+        "entropy": 1.8680728491668939
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc6"
+      }
+    },
+    {
+      "doc_index": 5149,
+      "risk_score": 1.368807077407837,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.6469671726226807,
+        "hub_rate": 0.008577014319598675,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          33,
+          47,
+          111,
+          199,
+          206,
+          243,
+          258,
+          292,
+          314
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.403107677810789,
+        "entropy": 1.6079900958348088
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc9"
+      }
+    },
+    {
+      "doc_index": 5180,
+      "risk_score": 1.3264914751052856,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.493884563446045,
+        "hub_rate": 0.008094524964690208,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          67,
+          72,
+          76,
+          80,
+          107,
+          108,
+          123,
+          124,
+          130
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6507793369930679,
+        "entropy": 2.5959483930990235
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc0"
+      }
+    },
+    {
+      "doc_index": 5122,
+      "risk_score": 1.2345607280731201,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.4605391025543213,
+        "hub_rate": 0.007989426143467426,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          47,
+          111,
+          199,
+          206,
+          317,
+          349,
+          383,
+          410,
+          416
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2911618543115176,
+        "entropy": 1.161439991816715
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc11"
+      }
+    },
+    {
+      "doc_index": 5092,
+      "risk_score": 1.1616426706314087,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.301365375518799,
+        "hub_rate": 0.0074877385050058365,
+        "hits": null,
+        "example_query_indices": [
+          30,
+          35,
+          54,
+          74,
+          92,
+          96,
+          209,
+          211,
+          234,
+          239
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.40409498856411397,
+        "entropy": 1.6119284626788235
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster55_gc11"
+      }
+    },
+    {
+      "doc_index": 5477,
+      "risk_score": 1.1600486040115356,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.2131845951080322,
+        "hub_rate": 0.0072098090313375,
+        "hits": null,
+        "example_query_indices": [
+          24,
+          32,
+          42,
+          61,
+          62,
+          75,
+          84,
+          91,
+          95,
+          146
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6606674377087365,
+        "entropy": 2.6353918691046463
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc99"
+      }
+    },
+    {
+      "doc_index": 5049,
+      "risk_score": 1.1375178098678589,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.3185079097747803,
+        "hub_rate": 0.0075417691841721535,
+        "hits": null,
+        "example_query_indices": [
+          36,
+          71,
+          151,
+          156,
+          221,
+          231,
+          273,
+          320,
+          329,
+          354
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.23204209726152594,
+        "entropy": 0.9256122241075427
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster302_gc27"
+      }
+    },
+    {
+      "doc_index": 5393,
+      "risk_score": 1.101266860961914,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 2.201528549194336,
+        "hub_rate": 0.0071730706840753555,
+        "hits": null,
+        "example_query_indices": [
+          10,
+          19,
+          20,
+          25,
+          79,
+          86,
+          101,
+          120,
+          121,
+          140
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4017273749069815,
+        "entropy": 1.6024840895720944
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_surfboard_gc12"
+      }
+    },
+    {
+      "doc_index": 5062,
+      "risk_score": 1.001166582107544,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.984702229499817,
+        "hub_rate": 0.006489673163741827,
+        "hits": null,
+        "example_query_indices": [
+          29,
+          149,
+          167,
+          177,
+          274,
+          301,
+          351,
+          354,
+          380,
+          421
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5517069750848567,
+        "entropy": 2.200750321991727
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster357_gc11"
+      }
+    },
+    {
+      "doc_index": 5333,
+      "risk_score": 0.9379675984382629,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.9268673658370972,
+        "hub_rate": 0.006307387724518776,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          7,
+          40,
+          43,
+          65,
+          66,
+          83,
+          92,
+          103,
+          109
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.40921686858292317,
+        "entropy": 1.6323595603622698
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc12"
+      }
+    },
+    {
+      "doc_index": 5259,
+      "risk_score": 0.9154026508331299,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.856297492980957,
+        "hub_rate": 0.006084964144974947,
+        "hits": null,
+        "example_query_indices": [
+          17,
+          22,
+          51,
+          64,
+          105,
+          111,
+          122,
+          133,
+          181,
+          187
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.508102286886434,
+        "entropy": 2.0268119164128096
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_elephant_gc27"
+      }
+    },
+    {
+      "doc_index": 5468,
+      "risk_score": 0.8691453337669373,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.7229751348495483,
+        "hub_rate": 0.005664755590260029,
+        "hits": null,
+        "example_query_indices": [
+          24,
+          26,
+          39,
+          54,
+          59,
+          65,
+          66,
+          73,
+          82,
+          89
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6767838253484264,
+        "entropy": 2.699679882287615
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc26"
+      }
+    },
+    {
+      "doc_index": 5454,
+      "risk_score": 0.8539353609085083,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.6843494176864624,
+        "hub_rate": 0.005543014500290155,
+        "hits": null,
+        "example_query_indices": [
+          4,
+          11,
+          42,
+          48,
+          50,
+          53,
+          56,
+          62,
+          78,
+          82
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7166120777788109,
+        "entropy": 2.8585541458349537
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc13"
+      }
+    },
+    {
+      "doc_index": 5109,
+      "risk_score": 0.83408522605896,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.7523223161697388,
+        "hub_rate": 0.005757252685725689,
+        "hits": null,
+        "example_query_indices": [
+          30,
+          35,
+          54,
+          74,
+          92,
+          129,
+          209,
+          211,
+          234,
+          244
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4134419773076367,
+        "entropy": 1.6492134516601515
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster55_gc27"
+      }
+    },
+    {
+      "doc_index": 5377,
+      "risk_score": 0.7422449588775635,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.5837280750274658,
+        "hub_rate": 0.005225873552262783,
+        "hits": null,
+        "example_query_indices": [
+          1,
+          136,
+          185,
+          270,
+          288,
+          297,
+          306,
+          381,
+          406,
+          411
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.46002476367937556,
+        "entropy": 1.8350314433415296
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_skateboard_gc25"
+      }
+    },
+    {
+      "doc_index": 5374,
+      "risk_score": 0.7391517162322998,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.570420265197754,
+        "hub_rate": 0.005183929577469826,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          13,
+          27,
+          41,
+          52,
+          86,
+          130,
+          136,
+          148,
+          155
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.48448241423684246,
+        "entropy": 1.9325926212317088
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_skateboard_gc22"
+      }
+    },
+    {
+      "doc_index": 5389,
+      "risk_score": 0.7357273697853088,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.5864123106002808,
+        "hub_rate": 0.005234334152191877,
+        "hits": null,
+        "example_query_indices": [
+          1,
+          52,
+          130,
+          185,
+          270,
+          288,
+          306,
+          345,
+          381,
+          393
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4193839015871247,
+        "entropy": 1.6729156928169222
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_skateboard_gc9"
+      }
+    },
+    {
+      "doc_index": 5019,
+      "risk_score": 0.7098999619483948,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.4986417293548584,
+        "hub_rate": 0.0049576968885958195,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          134,
+          165,
+          193,
+          197,
+          214,
+          233,
+          235,
+          254
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5535593935281395,
+        "entropy": 2.208139589609544
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc27"
+      }
+    },
+    {
+      "doc_index": 5146,
+      "risk_score": 0.6883497834205627,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.555298089981079,
+        "hub_rate": 0.005136267282068729,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          33,
+          47,
+          199,
+          206,
+          258,
+          317,
+          332,
+          349,
+          379
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.27583915999772285,
+        "entropy": 1.1003180086486068
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc6"
+      }
+    },
+    {
+      "doc_index": 5423,
+      "risk_score": 0.6881923079490662,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.5639780759811401,
+        "hub_rate": 0.005163624882698059,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          100,
+          218,
+          220,
+          378,
+          648,
+          703,
+          773,
+          804,
+          837
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.24901177036632471,
+        "entropy": 0.9933039793979959
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_umbrella_gc12"
+      }
+    },
+    {
+      "doc_index": 5089,
+      "risk_score": 0.6564472317695618,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.3881109952926636,
+        "hub_rate": 0.004609323106706142,
+        "hits": null,
+        "example_query_indices": [
+          13,
+          29,
+          38,
+          144,
+          149,
+          177,
+          266,
+          301,
+          313,
+          351
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6178892547511725,
+        "entropy": 2.464750379745916
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster357_gc9"
+      }
+    },
+    {
+      "doc_index": 5197,
+      "risk_score": 0.6389003396034241,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.3657019138336182,
+        "hub_rate": 0.004538693465292454,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          11,
+          48,
+          72,
+          80,
+          85,
+          107,
+          135,
+          176,
+          186
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5973820510268094,
+        "entropy": 2.3829474712497882
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc25"
+      }
+    },
+    {
+      "doc_index": 5446,
+      "risk_score": 0.6291831135749817,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.5189839601516724,
+        "hub_rate": 0.005021811928600073,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          100,
+          220,
+          648,
+          703,
+          773,
+          804,
+          837,
+          969,
+          1062
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.08894858309438541,
+        "entropy": 0.35481447892800017
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_umbrella_gc6"
+      }
+    },
+    {
+      "doc_index": 5124,
+      "risk_score": 0.625884473323822,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.4558570384979248,
+        "hub_rate": 0.004822846967726946,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          33,
+          47,
+          258,
+          292,
+          314,
+          349,
+          379,
+          383,
+          410
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2618369718203501,
+        "entropy": 1.044463503392076
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc13"
+      }
+    },
+    {
+      "doc_index": 5469,
+      "risk_score": 0.6201655268669128,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.2894715070724487,
+        "hub_rate": 0.004298429470509291,
+        "hits": null,
+        "example_query_indices": [
+          9,
+          17,
+          32,
+          33,
+          73,
+          82,
+          117,
+          140,
+          152,
+          236
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7324001095769755,
+        "entropy": 2.921532352804482
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc2"
+      }
+    },
+    {
+      "doc_index": 5329,
+      "risk_score": 0.5463593006134033,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.2914633750915527,
+        "hub_rate": 0.004304707515984774,
+        "hits": null,
+        "example_query_indices": [
+          34,
+          55,
+          173,
+          204,
+          224,
+          230,
+          271,
+          285,
+          298,
+          307
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.357393150015948,
+        "entropy": 1.425635573764969
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_motorcycle_gc9"
+      }
+    },
+    {
+      "doc_index": 5412,
+      "risk_score": 0.5348429083824158,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.2915476560592651,
+        "hub_rate": 0.004304972477257252,
+        "hits": null,
+        "example_query_indices": [
+          10,
+          19,
+          25,
+          79,
+          160,
+          180,
+          183,
+          192,
+          360,
+          401
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2995584810851141,
+        "entropy": 1.1949340020615462
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_surfboard_gc2"
+      }
+    },
+    {
+      "doc_index": 5358,
+      "risk_score": 0.5290425419807434,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.3005186319351196,
+        "hub_rate": 0.004333247430622578,
+        "hits": null,
+        "example_query_indices": [
+          40,
+          65,
+          103,
+          118,
+          131,
+          138,
+          278,
+          283,
+          300,
+          316
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2436438367204426,
+        "entropy": 0.9718913777215565
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc8"
+      }
+    },
+    {
+      "doc_index": 5240,
+      "risk_score": 0.5274918079376221,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.2192202806472778,
+        "hub_rate": 0.004077009856700897,
+        "hits": null,
+        "example_query_indices": [
+          17,
+          105,
+          111,
+          122,
+          133,
+          187,
+          275,
+          292,
+          314,
+          332
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.47978601234309076,
+        "entropy": 1.913858749001279
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_elephant_gc0"
+      }
+    },
+    {
+      "doc_index": 5422,
+      "risk_score": 0.4876197576522827,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.218310832977295,
+        "hub_rate": 0.004074143245816231,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          100,
+          220,
+          348,
+          648,
+          703,
+          773,
+          804,
+          837,
+          914
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2831538939593468,
+        "entropy": 1.1294963657263868
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_umbrella_gc11"
+      }
+    },
+    {
+      "doc_index": 5373,
+      "risk_score": 0.4750451445579529,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.1986889839172363,
+        "hub_rate": 0.00401229877024889,
+        "hits": null,
+        "example_query_indices": [
+          1,
+          136,
+          185,
+          270,
+          306,
+          368,
+          381,
+          406,
+          411,
+          425
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.279146315752706,
+        "entropy": 1.113510200194738
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_skateboard_gc21"
+      }
+    },
+    {
+      "doc_index": 5029,
+      "risk_score": 0.45714643597602844,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0935328006744385,
+        "hub_rate": 0.0036808650474995375,
+        "hits": null,
+        "example_query_indices": [
+          37,
+          134,
+          165,
+          193,
+          197,
+          214,
+          235,
+          245,
+          257,
+          319
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5051225689088438,
+        "entropy": 2.0149258689369414
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc9"
+      }
+    },
+    {
+      "doc_index": 5462,
+      "risk_score": 0.45472392439842224,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.021299958229065,
+        "hub_rate": 0.0034531999845057726,
+        "hits": null,
+        "example_query_indices": [
+          5,
+          9,
+          11,
+          20,
+          87,
+          94,
+          101,
+          121,
+          124,
+          140
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7097093537398638,
+        "entropy": 2.831019289765758
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc20"
+      }
+    },
+    {
+      "doc_index": 5183,
+      "risk_score": 0.4227381646633148,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0360524654388428,
+        "hub_rate": 0.0034996974281966686,
+        "hits": null,
+        "example_query_indices": [
+          72,
+          78,
+          88,
+          123,
+          126,
+          161,
+          176,
+          198,
+          238,
+          260
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5055228794375146,
+        "entropy": 2.016522701249481
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc12"
+      }
+    },
+    {
+      "doc_index": 5467,
+      "risk_score": 0.41761133074760437,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9828100204467773,
+        "hub_rate": 0.0033318866044282913,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          21,
+          27,
+          81,
+          84,
+          89,
+          106,
+          117,
+          142,
+          155
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6396163945898987,
+        "entropy": 2.551419593940066
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc25"
+      }
+    },
+    {
+      "doc_index": 5292,
+      "risk_score": 0.3969411253929138,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0162301063537598,
+        "hub_rate": 0.003437220584601164,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          52,
+          125,
+          128,
+          143,
+          195,
+          229,
+          305,
+          385,
+          391
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.43600498490506906,
+        "entropy": 1.7392169290088177
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc2"
+      }
+    },
+    {
+      "doc_index": 5287,
+      "risk_score": 0.3900355100631714,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0010710954666138,
+        "hub_rate": 0.0033894421067088842,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          24,
+          52,
+          60,
+          70,
+          116,
+          125,
+          128,
+          143,
+          148
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4469540854763862,
+        "entropy": 1.7828927165120296
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc25"
+      }
+    },
+    {
+      "doc_index": 5466,
+      "risk_score": 0.3841668367385864,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8838787078857422,
+        "hub_rate": 0.003020072588697076,
+        "hits": null,
+        "example_query_indices": [
+          2,
+          9,
+          12,
+          39,
+          58,
+          66,
+          75,
+          84,
+          87,
+          98
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7691889989192696,
+        "entropy": 3.0682826454817116
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc24"
+      }
+    },
+    {
+      "doc_index": 5435,
+      "risk_score": 0.3815070688724518,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0419507026672363,
+        "hub_rate": 0.003518287558108568,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          144,
+          220,
+          648,
+          703,
+          773,
+          804,
+          837,
+          969,
+          975
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.28167224092703724,
+        "entropy": 1.1235860754179603
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_umbrella_gc23"
+      }
+    },
+    {
+      "doc_index": 5213,
+      "risk_score": 0.3809663951396942,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9080894589424133,
+        "hub_rate": 0.003096380503848195,
+        "hits": null,
+        "example_query_indices": [
+          18,
+          93,
+          104,
+          132,
+          196,
+          228,
+          290,
+          364,
+          394,
+          408
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6805543604720037,
+        "entropy": 2.7147204867425754
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc12"
+      }
+    },
+    {
+      "doc_index": 5000,
+      "risk_score": 0.37687408924102783,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9085514545440674,
+        "hub_rate": 0.0030978366266936064,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          112,
+          134,
+          164,
+          165,
+          235,
+          344,
+          419,
+          470
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.658706634018941,
+        "entropy": 2.627570254467608
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc0"
+      }
+    },
+    {
+      "doc_index": 5465,
+      "risk_score": 0.37622901797294617,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.876007080078125,
+        "hub_rate": 0.002995262620970607,
+        "hits": null,
+        "example_query_indices": [
+          9,
+          87,
+          90,
+          94,
+          98,
+          164,
+          167,
+          208,
+          212,
+          264
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7531148770282735,
+        "entropy": 3.0041632296959984
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc23"
+      }
+    },
+    {
+      "doc_index": 5001,
+      "risk_score": 0.37433451414108276,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9916213154792786,
+        "hub_rate": 0.0033596581779420376,
+        "hits": null,
+        "example_query_indices": [
+          193,
+          214,
+          235,
+          254,
+          319,
+          493,
+          501,
+          505,
+          514,
+          538
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3967984589291106,
+        "entropy": 1.5828227223695117
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc10"
+      }
+    },
+    {
+      "doc_index": 5037,
+      "risk_score": 0.36048752069473267,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 1.0388809442520142,
+        "hub_rate": 0.003508612047880888,
+        "hits": null,
+        "example_query_indices": [
+          71,
+          151,
+          156,
+          221,
+          231,
+          273,
+          320,
+          355,
+          356,
+          404
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1857843548870464,
+        "entropy": 0.7410908277456636
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster302_gc16"
+      }
+    },
+    {
+      "doc_index": 5005,
+      "risk_score": 0.35881954431533813,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.912007212638855,
+        "hub_rate": 0.003108728677034378,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          45,
+          68,
+          112,
+          134,
+          165,
+          214,
+          233,
+          235
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5580665651162539,
+        "entropy": 2.2261186251696596
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc14"
+      }
+    },
+    {
+      "doc_index": 5353,
+      "risk_score": 0.3396289348602295,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9243809580802917,
+        "hub_rate": 0.003147728508338332,
+        "hits": null,
+        "example_query_indices": [
+          103,
+          114,
+          138,
+          182,
+          241,
+          370,
+          374,
+          377,
+          387,
+          398
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.42499210820920036,
+        "entropy": 1.695286739562218
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc3"
+      }
+    },
+    {
+      "doc_index": 5185,
+      "risk_score": 0.3287244141101837,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8779988884925842,
+        "hub_rate": 0.003001540433615446,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          43,
+          72,
+          80,
+          88,
+          108,
+          113,
+          126,
+          172,
+          174
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5096162834079574,
+        "entropy": 2.03285122438372
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc14"
+      }
+    },
+    {
+      "doc_index": 5137,
+      "risk_score": 0.32063499093055725,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.9603729248046875,
+        "hub_rate": 0.003261168720200658,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          33,
+          47,
+          199,
+          317,
+          332,
+          349,
+          383,
+          410,
+          416
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.22204612147438388,
+        "entropy": 0.8857384361627902
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc25"
+      }
+    },
+    {
+      "doc_index": 5082,
+      "risk_score": 0.31608688831329346,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8555861115455627,
+        "hub_rate": 0.0029308993835002184,
+        "hits": null,
+        "example_query_indices": [
+          13,
+          29,
+          177,
+          351,
+          354,
+          380,
+          435,
+          458,
+          482,
+          643
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5136671102214562,
+        "entropy": 2.0490099079181614
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster357_gc2"
+      }
+    },
+    {
+      "doc_index": 5227,
+      "risk_score": 0.3141684830188751,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.779615044593811,
+        "hub_rate": 0.0026914519257843494,
+        "hits": null,
+        "example_query_indices": [
+          16,
+          31,
+          75,
+          77,
+          117,
+          158,
+          203,
+          225,
+          261,
+          262
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7319890362009488,
+        "entropy": 2.919892587665544
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc25"
+      }
+    },
+    {
+      "doc_index": 5173,
+      "risk_score": 0.31274980306625366,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8258110880851746,
+        "hub_rate": 0.002837053732946515,
+        "hits": null,
+        "example_query_indices": [
+          8,
+          44,
+          61,
+          141,
+          170,
+          245,
+          311,
+          335,
+          336,
+          368
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.586307183803921,
+        "entropy": 2.3387700025798686
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_bicycle_gc3"
+      }
+    },
+    {
+      "doc_index": 5442,
+      "risk_score": 0.3017818331718445,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8991251587867737,
+        "hub_rate": 0.0030681267380714417,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          87,
+          100,
+          218,
+          220,
+          348,
+          647,
+          648,
+          703,
+          773
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.31152450867183806,
+        "entropy": 1.2426662952057361
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_umbrella_gc2"
+      }
+    },
+    {
+      "doc_index": 5283,
+      "risk_score": 0.2994684875011444,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8386009931564331,
+        "hub_rate": 0.002877365332096815,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          52,
+          125,
+          143,
+          146,
+          154,
+          195,
+          229,
+          249,
+          305
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4815308484210845,
+        "entropy": 1.920818872280266
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc21"
+      }
+    },
+    {
+      "doc_index": 5238,
+      "risk_score": 0.2865787446498871,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7789098620414734,
+        "hub_rate": 0.0026892293244600296,
+        "hits": null,
+        "example_query_indices": [
+          31,
+          63,
+          93,
+          113,
+          179,
+          212,
+          240,
+          268,
+          276,
+          394
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5961559927070222,
+        "entropy": 2.3780567441719995
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc9"
+      }
+    },
+    {
+      "doc_index": 5406,
+      "risk_score": 0.2858642637729645,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8575782179832458,
+        "hub_rate": 0.0029371781274676323,
+        "hits": null,
+        "example_query_indices": [
+          19,
+          20,
+          25,
+          79,
+          86,
+          101,
+          120,
+          121,
+          159,
+          160
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.35657765006150527,
+        "entropy": 1.422382557456723
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_surfboard_gc24"
+      }
+    },
+    {
+      "doc_index": 5188,
+      "risk_score": 0.28362444043159485,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7919312715530396,
+        "hub_rate": 0.002730270614847541,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          80,
+          88,
+          137,
+          145,
+          161,
+          172,
+          176,
+          198,
+          200
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.5423201151550369,
+        "entropy": 2.1633062874843425
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc17"
+      }
+    },
+    {
+      "doc_index": 5319,
+      "risk_score": 0.27632060647010803,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8247488141059875,
+        "hub_rate": 0.0028337056282907724,
+        "hits": null,
+        "example_query_indices": [
+          34,
+          147,
+          204,
+          224,
+          227,
+          259,
+          263,
+          271,
+          285,
+          402
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4073479910603094,
+        "entropy": 1.6249046377395808
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_motorcycle_gc27"
+      }
+    },
+    {
+      "doc_index": 5352,
+      "risk_score": 0.27209359407424927,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.8300653100013733,
+        "hub_rate": 0.0028504622168838978,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          7,
+          26,
+          35,
+          40,
+          83,
+          92,
+          109,
+          118,
+          150
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.370263367460983,
+        "entropy": 1.4769746658290268
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc2"
+      }
+    },
+    {
+      "doc_index": 5120,
+      "risk_score": 0.2690978944301605,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.858270525932312,
+        "hub_rate": 0.0029393602162599564,
+        "hits": null,
+        "example_query_indices": [
+          22,
+          33,
+          111,
+          199,
+          206,
+          292,
+          314,
+          317,
+          332,
+          349
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2706688857592402,
+        "entropy": 1.0796938671949372
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster6_gc0"
+      }
+    },
+    {
+      "doc_index": 5015,
+      "risk_score": 0.26701897382736206,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7943391799926758,
+        "hub_rate": 0.0027378599625080824,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          165,
+          193,
+          214,
+          254,
+          420,
+          493,
+          501,
+          514
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.45206896851650175,
+        "entropy": 1.8032959033590927
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc23"
+      }
+    },
+    {
+      "doc_index": 5004,
+      "risk_score": 0.266500324010849,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7324017882347107,
+        "hub_rate": 0.0025426442734897137,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          46,
+          68,
+          134,
+          165,
+          235,
+          419,
+          420,
+          431,
+          470
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6352884736162908,
+        "entropy": 2.5341555862215532
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc13"
+      }
+    },
+    {
+      "doc_index": 5472,
+      "risk_score": 0.25667962431907654,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.714360237121582,
+        "hub_rate": 0.0024857805110514164,
+        "hits": null,
+        "example_query_indices": [
+          51,
+          66,
+          89,
+          98,
+          106,
+          119,
+          175,
+          201,
+          208,
+          248
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6403099037856533,
+        "entropy": 2.554185991058077
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc4"
+      }
+    },
+    {
+      "doc_index": 5027,
+      "risk_score": 0.24578262865543365,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7777973413467407,
+        "hub_rate": 0.0026857228949666023,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          37,
+          45,
+          112,
+          134,
+          193,
+          197,
+          214,
+          235,
+          254
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3955130358958305,
+        "entropy": 1.577695190396671
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_cluster267_gc7"
+      }
+    },
+    {
+      "doc_index": 5275,
+      "risk_score": 0.23658379912376404,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7581698894500732,
+        "hub_rate": 0.0026238607242703438,
+        "hits": null,
+        "example_query_indices": [
+          70,
+          116,
+          144,
+          146,
+          154,
+          163,
+          249,
+          321,
+          343,
+          365
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4084014581606942,
+        "entropy": 1.6291069011965962
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc14"
+      }
+    },
+    {
+      "doc_index": 5345,
+      "risk_score": 0.2332247495651245,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7258336544036865,
+        "hub_rate": 0.002521942602470517,
+        "hits": null,
+        "example_query_indices": [
+          7,
+          40,
+          57,
+          83,
+          103,
+          114,
+          138,
+          150,
+          241,
+          247
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4886151595180991,
+        "entropy": 1.9490780762271553
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc23"
+      }
+    },
+    {
+      "doc_index": 5211,
+      "risk_score": 0.2325642853975296,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.6781172752380371,
+        "hub_rate": 0.002371549140661955,
+        "hits": null,
+        "example_query_indices": [
+          26,
+          56,
+          57,
+          238,
+          239,
+          267,
+          310,
+          436,
+          438,
+          447
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.6284622869738679,
+        "entropy": 2.5069260366060577
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_dog_gc10"
+      }
+    },
+    {
+      "doc_index": 5202,
+      "risk_score": 0.23225343227386475,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7520610690116882,
+        "hub_rate": 0.002604606794193387,
+        "hits": null,
+        "example_query_indices": [
+          0,
+          72,
+          76,
+          78,
+          80,
+          85,
+          172,
+          174,
+          176,
+          186
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4050759281235273,
+        "entropy": 1.615841414931967
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_cat_gc2"
+      }
+    },
+    {
+      "doc_index": 5459,
+      "risk_score": 0.23171518743038177,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.6208791732788086,
+        "hub_rate": 0.0021911447402089834,
+        "hits": null,
+        "example_query_indices": [
+          16,
+          104,
+          175,
+          202,
+          203,
+          215,
+          233,
+          236,
+          378,
+          440
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.7959316806632508,
+        "entropy": 3.174958776320798
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_universal_gc18"
+      }
+    },
+    {
+      "doc_index": 5416,
+      "risk_score": 0.2267570048570633,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7599331736564636,
+        "hub_rate": 0.002629418158903718,
+        "hits": null,
+        "example_query_indices": [
+          10,
+          19,
+          20,
+          25,
+          101,
+          120,
+          159,
+          160,
+          180,
+          183
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3539775631218666,
+        "entropy": 1.4120108521348245
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_surfboard_gc6"
+      }
+    },
+    {
+      "doc_index": 5349,
+      "risk_score": 0.2253619283437729,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7232543230056763,
+        "hub_rate": 0.0025138130877166986,
+        "hits": null,
+        "example_query_indices": [
+          57,
+          69,
+          150,
+          182,
+          233,
+          234,
+          251,
+          283,
+          316,
+          363
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.45703904762193265,
+        "entropy": 1.8231214696208191
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_pizza_gc27"
+      }
+    },
+    {
+      "doc_index": 5327,
+      "risk_score": 0.22173939645290375,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7301828265190125,
+        "hub_rate": 0.0025356505066156387,
+        "hits": null,
+        "example_query_indices": [
+          34,
+          53,
+          173,
+          224,
+          230,
+          263,
+          276,
+          285,
+          298,
+          402
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4181407565814995,
+        "entropy": 1.6679568072219173
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_motorcycle_gc7"
+      }
+    },
+    {
+      "doc_index": 5299,
+      "risk_score": 0.211806982755661,
+      "verdict": "LOW",
+      "hubness": {
+        "hub_z": 0.7291114926338196,
+        "hub_rate": 0.0025322737637907267,
+        "hits": null,
+        "example_query_indices": [
+          6,
+          60,
+          70,
+          116,
+          125,
+          195,
+          229,
+          249,
+          305,
+          343
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3716928649806181,
+        "entropy": 1.4826769086294544
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "hub_domain_kite_gc9"
+      }
+    }
+  ]
+}

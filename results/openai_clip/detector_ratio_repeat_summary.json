@@ -1,0 +1,116 @@
+{
+  "individual_aucs": [
+    {
+      "target": 10,
+      "seed": "seed100",
+      "n_hubs": 10,
+      "roc_auc": 0.47485999999999995
+    },
+    {
+      "target": 10,
+      "seed": "seed101",
+      "n_hubs": 10,
+      "roc_auc": 0.40806
+    },
+    {
+      "target": 10,
+      "seed": "seed102",
+      "n_hubs": 10,
+      "roc_auc": 0.40149999999999997
+    },
+    {
+      "target": 10,
+      "seed": "seed103",
+      "n_hubs": 10,
+      "roc_auc": 0.4055
+    },
+    {
+      "target": 10,
+      "seed": "seed104",
+      "n_hubs": 10,
+      "roc_auc": 0.38727
+    },
+    {
+      "target": 10,
+      "seed": "seed105",
+      "n_hubs": 10,
+      "roc_auc": 0.38072000000000006
+    },
+    {
+      "target": 10,
+      "seed": "seed106",
+      "n_hubs": 10,
+      "roc_auc": 0.42835
+    },
+    {
+      "target": 10,
+      "seed": "seed107",
+      "n_hubs": 10,
+      "roc_auc": 0.42462
+    },
+    {
+      "target": 100,
+      "seed": "seed100",
+      "n_hubs": 100,
+      "roc_auc": 0.5799199999999999
+    },
+    {
+      "target": 100,
+      "seed": "seed101",
+      "n_hubs": 100,
+      "roc_auc": 0.569362
+    },
+    {
+      "target": 100,
+      "seed": "seed102",
+      "n_hubs": 100,
+      "roc_auc": 0.555462
+    },
+    {
+      "target": 100,
+      "seed": "seed103",
+      "n_hubs": 100,
+      "roc_auc": 0.5685799999999999
+    },
+    {
+      "target": 100,
+      "seed": "seed104",
+      "n_hubs": 100,
+      "roc_auc": 0.559654
+    },
+    {
+      "target": 100,
+      "seed": "seed105",
+      "n_hubs": 100,
+      "roc_auc": 0.5729690000000001
+    },
+    {
+      "target": 100,
+      "seed": "seed106",
+      "n_hubs": 100,
+      "roc_auc": 0.561644
+    },
+    {
+      "target": 100,
+      "seed": "seed107",
+      "n_hubs": 100,
+      "roc_auc": 0.5598160000000001
+    }
+  ],
+  "by_target": {
+    "10": {
+      "mean_auc": 0.41386,
+      "std_auc": 0.02763223796582533,
+      "min_auc": 0.38072000000000006,
+      "max_auc": 0.47485999999999995,
+      "n": 8
+    },
+    "100": {
+      "mean_auc": 0.565925875,
+      "std_auc": 0.007654954285256996,
+      "min_auc": 0.555462,
+      "max_auc": 0.5799199999999999,
+      "n": 8
+    }
+  }
+}

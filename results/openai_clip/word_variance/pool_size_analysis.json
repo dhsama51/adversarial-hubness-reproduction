@@ -1,0 +1,32 @@
+{
+  "pool_sizes": {
+    "dog": 863,
+    "bicycle": 143,
+    "pizza": 582,
+    "cat": 1053,
+    "elephant": 431,
+    "umbrella": 441,
+    "skateboard": 501,
+    "surfboard": 303,
+    "motorcycle": 417,
+    "kite": 352
+  },
+  "mean_asr": {
+    "bicycle": 0.19783333333333336,
+    "cat": 0.35533333333333333,
+    "dog": 0.3972413793103448,
+    "elephant": 0.12283333333333334,
+    "kite": 0.10349999999999998,
+    "motorcycle": 0.18025,
+    "pizza": 0.1648333333333333,
+    "skateboard": 0.19841666666666669,
+    "surfboard": 0.15766666666666665,
+    "umbrella": 0.11850000000000001
+  },
+  "correlation": {
+    "pearson_r": 0.793913963915052,
+    "pearson_p": 0.0061027337530327585,
+    "spearman_r": 0.5151515151515151,
+    "spearman_p": 0.12755286970323426
+  }
+}

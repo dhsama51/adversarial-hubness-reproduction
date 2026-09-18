@@ -1,0 +1,7 @@
+{
+  "n_hubs_true": 10,
+  "n_total": 5010,
+  "roc_auc": 0.36231,
+  "precision": 0.0023461939520333683,
+  "recall": 0.9
+}

@@ -1,0 +1,3243 @@
+{
+  "scan_info": {
+    "timestamp": "2026-09-16T21:41:51.585075",
+    "num_documents": 5010,
+    "num_queries": 5000,
+    "k": 10,
+    "runtime_seconds": 33.59546256065369,
+    "index_type": "hnsw",
+    "metric": "cosine",
+    "ranking_method": "vector"
+  },
+  "summary": {
+    "verdict_counts": {
+      "LOW": 4847,
+      "MEDIUM": 157,
+      "HIGH": 6
+    },
+    "mean_risk_score": -0.14151446521282196,
+    "max_risk_score": 4.706258296966553,
+    "median_risk_score": -0.27646157145500183
+  },
+  "detector_summary": {
+    "hubness": {
+      "mean_score": 0.22397848963737488,
+      "max_score": 8.310995101928711,
+      "median_score": -5.037873052060604e-08,
+      "ranking_method": "vector",
+      "hybrid_alpha": null
+    },
+    "cluster_spread": {
+      "mean_score": 0.11680805405656616,
+      "max_score": 0.5287580094721734,
+      "median_score": 0.10974450337712918
+    },
+    "dedup": {
+      "mean_score": 0.9975449101796406,
+      "max_score": 1.0,
+      "median_score": 1.0
+    }
+  },
+  "suspicious_documents": [
+    {
+      "doc_index": 202,
+      "risk_score": 4.706258296966553,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 8.310995101928711,
+        "hub_rate": 0.0028343908488750458,
+        "hits": null,
+        "example_query_indices": [
+          153,
+          165,
+          166,
+          172,
+          243,
+          249,
+          343,
+          484,
+          600,
+          807
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09829771430859538,
+        "entropy": 0.38454291975622856
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_202"
+      }
+    },
+    {
+      "doc_index": 287,
+      "risk_score": 4.653921127319336,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 8.224428176879883,
+        "hub_rate": 0.0028093864675611258,
+        "hits": null,
+        "example_query_indices": [
+          164,
+          175,
+          280,
+          348,
+          568,
+          598,
+          799,
+          873,
+          920,
+          953
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09631082453596197,
+        "entropy": 0.37677016125643675
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_287"
+      }
+    },
+    {
+      "doc_index": 550,
+      "risk_score": 4.172490119934082,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 7.417959213256836,
+        "hub_rate": 0.002576444996520877,
+        "hits": null,
+        "example_query_indices": [
+          164,
+          175,
+          185,
+          216,
+          280,
+          348,
+          372,
+          392,
+          568,
+          598
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.10856551036478439,
+        "entropy": 0.42471077414308434
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_550"
+      }
+    },
+    {
+      "doc_index": 342,
+      "risk_score": 4.084634304046631,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 7.298640727996826,
+        "hub_rate": 0.0025419811718165874,
+        "hits": null,
+        "example_query_indices": [
+          118,
+          175,
+          214,
+          216,
+          280,
+          372,
+          392,
+          452,
+          568,
+          598
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.027240626826619856,
+        "entropy": 0.10656595882801999
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_342"
+      }
+    },
+    {
+      "doc_index": 1890,
+      "risk_score": 4.040108680725098,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 7.131232738494873,
+        "hub_rate": 0.002493626670911908,
+        "hits": null,
+        "example_query_indices": [
+          81,
+          326,
+          514,
+          585,
+          684,
+          759,
+          794,
+          803,
+          980,
+          1034
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.30683747081508966,
+        "entropy": 1.2003552447560182
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1890"
+      }
+    },
+    {
+      "doc_index": 3443,
+      "risk_score": 3.5227811336517334,
+      "verdict": "HIGH",
+      "hubness": {
+        "hub_z": 6.3712992668151855,
+        "hub_rate": 0.002274126512929797,
+        "hits": null,
+        "example_query_indices": [
+          8,
+          23,
+          158,
+          298,
+          341,
+          358,
+          525,
+          694,
+          791,
+          837
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3443"
+      }
+    },
+    {
+      "doc_index": 1252,
+      "risk_score": 3.265702247619629,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.879638671875,
+        "hub_rate": 0.0021321147214621305,
+        "hits": null,
+        "example_query_indices": [
+          121,
+          310,
+          327,
+          378,
+          1096,
+          1097,
+          1102,
+          1211,
+          1364,
+          1578
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.18958848013199894,
+        "entropy": 0.7416744958405368
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1252"
+      }
+    },
+    {
+      "doc_index": 218,
+      "risk_score": 3.2182486057281494,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.697840213775635,
+        "hub_rate": 0.0020796037279069424,
+        "hits": null,
+        "example_query_indices": [
+          60,
+          110,
+          128,
+          140,
+          218,
+          341,
+          404,
+          433,
+          471,
+          511
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.4977153803185509,
+        "entropy": 1.9470740179615902
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_218"
+      }
+    },
+    {
+      "doc_index": 1295,
+      "risk_score": 3.1965811252593994,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.767178535461426,
+        "hub_rate": 0.0020996315870434046,
+        "hits": null,
+        "example_query_indices": [
+          104,
+          159,
+          315,
+          333,
+          471,
+          492,
+          519,
+          709,
+          714,
+          762
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.18136401984972708,
+        "entropy": 0.7095002180090593
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1295"
+      }
+    },
+    {
+      "doc_index": 751,
+      "risk_score": 3.16385555267334,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.742618083953857,
+        "hub_rate": 0.002092537470161915,
+        "hits": null,
+        "example_query_indices": [
+          18,
+          241,
+          323,
+          410,
+          509,
+          892,
+          939,
+          1055,
+          1057,
+          1183
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09141744804593284,
+        "entropy": 0.3576271598532216
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_751"
+      }
+    },
+    {
+      "doc_index": 657,
+      "risk_score": 3.092778205871582,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.621996879577637,
+        "hub_rate": 0.002057697158306837,
+        "hits": null,
+        "example_query_indices": [
+          18,
+          88,
+          169,
+          509,
+          527,
+          564,
+          713,
+          939,
+          1007,
+          1078
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09789319496235499,
+        "entropy": 0.3829604307675954
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_657"
+      }
+    },
+    {
+      "doc_index": 1595,
+      "risk_score": 3.0680949687957764,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.56857967376709,
+        "hub_rate": 0.0020422679372131824,
+        "hits": null,
+        "example_query_indices": [
+          111,
+          492,
+          519,
+          531,
+          616,
+          714,
+          762,
+          907,
+          964,
+          1338
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1347293693125529,
+        "entropy": 0.5270643922575318
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1595"
+      }
+    },
+    {
+      "doc_index": 1585,
+      "risk_score": 3.065678596496582,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.537457466125488,
+        "hub_rate": 0.00203327857889235,
+        "hits": null,
+        "example_query_indices": [
+          11,
+          81,
+          283,
+          320,
+          433,
+          585,
+          794,
+          825,
+          853,
+          862
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.21601508035882444,
+        "entropy": 0.8450559638831309
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1585"
+      }
+    },
+    {
+      "doc_index": 3236,
+      "risk_score": 3.0142428874969482,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.523736000061035,
+        "hub_rate": 0.002029315335676074,
+        "hits": null,
+        "example_query_indices": [
+          15,
+          139,
+          194,
+          222,
+          412,
+          449,
+          459,
+          478,
+          619,
+          668
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3236"
+      }
+    },
+    {
+      "doc_index": 3728,
+      "risk_score": 2.9429142475128174,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.404854774475098,
+        "hub_rate": 0.0019949774723500013,
+        "hits": null,
+        "example_query_indices": [
+          131,
+          215,
+          565,
+          566,
+          578,
+          582,
+          663,
+          771,
+          1035,
+          1184
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3728"
+      }
+    },
+    {
+      "doc_index": 1069,
+      "risk_score": 2.942761182785034,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.274775981903076,
+        "hub_rate": 0.0019574053585529327,
+        "hits": null,
+        "example_query_indices": [
+          96,
+          378,
+          514,
+          647,
+          759,
+          907,
+          981,
+          1135,
+          1207,
+          1394
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3894710904835622,
+        "entropy": 1.5236198659208824
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1069"
+      }
+    },
+    {
+      "doc_index": 3437,
+      "risk_score": 2.850127935409546,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.211148262023926,
+        "hub_rate": 0.0019390271045267582,
+        "hits": null,
+        "example_query_indices": [
+          45,
+          76,
+          114,
+          371,
+          501,
+          520,
+          819,
+          847,
+          1088,
+          1523
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1171886767943703,
+        "entropy": 0.45844479959526013
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3437"
+      }
+    },
+    {
+      "doc_index": 1483,
+      "risk_score": 2.7827203273773193,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.105901718139648,
+        "hub_rate": 0.0019086274551227689,
+        "hits": null,
+        "example_query_indices": [
+          11,
+          29,
+          34,
+          81,
+          205,
+          223,
+          225,
+          353,
+          529,
+          647
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09588982867042528,
+        "entropy": 0.3751232157452671
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1483"
+      }
+    },
+    {
+      "doc_index": 553,
+      "risk_score": 2.7800323963165283,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.133385181427002,
+        "hub_rate": 0.0019165659323334694,
+        "hits": null,
+        "example_query_indices": [
+          198,
+          262,
+          360,
+          479,
+          497,
+          629,
+          640,
+          658,
+          992,
+          1103
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_553"
+      }
+    },
+    {
+      "doc_index": 1400,
+      "risk_score": 2.7768726348876953,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.997354030609131,
+        "hub_rate": 0.0018772744806483388,
+        "hits": null,
+        "example_query_indices": [
+          30,
+          40,
+          218,
+          310,
+          433,
+          703,
+          972,
+          1010,
+          1098,
+          1268
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.39229566255856924,
+        "entropy": 1.5346696568587999
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1400"
+      }
+    },
+    {
+      "doc_index": 4862,
+      "risk_score": 2.7746100425720215,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.030625820159912,
+        "hub_rate": 0.001886884681880474,
+        "hits": null,
+        "example_query_indices": [
+          245,
+          308,
+          401,
+          405,
+          418,
+          441,
+          451,
+          555,
+          645,
+          775
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.28116596594524956,
+        "entropy": 1.0999277271212429
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4862"
+      }
+    },
+    {
+      "doc_index": 1286,
+      "risk_score": 2.770709753036499,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.986232757568359,
+        "hub_rate": 0.0018740621162578464,
+        "hits": null,
+        "example_query_indices": [
+          16,
+          345,
+          456,
+          464,
+          569,
+          615,
+          648,
+          705,
+          977,
+          1189
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3948445939195054,
+        "entropy": 1.5446411349820393
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1286"
+      }
+    },
+    {
+      "doc_index": 1444,
+      "risk_score": 2.7482080459594727,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.023185729980469,
+        "hub_rate": 0.0018847357714548707,
+        "hits": null,
+        "example_query_indices": [
+          125,
+          211,
+          259,
+          423,
+          517,
+          830,
+          909,
+          1692,
+          1765,
+          1787
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1714764569267661,
+        "entropy": 0.6708198443868175
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1444"
+      }
+    },
+    {
+      "doc_index": 1532,
+      "risk_score": 2.725416898727417,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 5.031543731689453,
+        "hub_rate": 0.0018871498759835958,
+        "hits": null,
+        "example_query_indices": [
+          204,
+          438,
+          680,
+          833,
+          889,
+          935,
+          1083,
+          1292,
+          1409,
+          1414
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.03244626761276179,
+        "entropy": 0.12693054534140227
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1532"
+      }
+    },
+    {
+      "doc_index": 4621,
+      "risk_score": 2.7234020233154297,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.9854865074157715,
+        "hub_rate": 0.0018738466314971447,
+        "hits": null,
+        "example_query_indices": [
+          430,
+          563,
+          628,
+          716,
+          777,
+          793,
+          842,
+          911,
+          1006,
+          1124
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.16054418965056708,
+        "entropy": 0.6280525633008377
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4621"
+      }
+    },
+    {
+      "doc_index": 3075,
+      "risk_score": 2.7182669639587402,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.947499752044678,
+        "hub_rate": 0.001862874487414956,
+        "hits": null,
+        "example_query_indices": [
+          55,
+          462,
+          572,
+          599,
+          653,
+          707,
+          727,
+          749,
+          1114,
+          1130
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.24882905739791966,
+        "entropy": 0.9734249969596623
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3075"
+      }
+    },
+    {
+      "doc_index": 2784,
+      "risk_score": 2.699481725692749,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.999134063720703,
+        "hub_rate": 0.0018777885707095265,
+        "hits": null,
+        "example_query_indices": [
+          8,
+          105,
+          158,
+          298,
+          349,
+          358,
+          525,
+          694,
+          778,
+          837
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2784"
+      }
+    },
+    {
+      "doc_index": 3357,
+      "risk_score": 2.689723253250122,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.957962989807129,
+        "hub_rate": 0.0018658967455849051,
+        "hits": null,
+        "example_query_indices": [
+          46,
+          66,
+          105,
+          170,
+          242,
+          342,
+          385,
+          805,
+          1008,
+          1205
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.07472066811468606,
+        "entropy": 0.2923089726456132
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3357"
+      }
+    },
+    {
+      "doc_index": 4884,
+      "risk_score": 2.6616528034210205,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.7963433265686035,
+        "hub_rate": 0.0018192142015323043,
+        "hits": null,
+        "example_query_indices": [
+          174,
+          178,
+          195,
+          212,
+          414,
+          469,
+          557,
+          718,
+          722,
+          772
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.41922828709991394,
+        "entropy": 1.640030703661099
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4884"
+      }
+    },
+    {
+      "doc_index": 944,
+      "risk_score": 2.596761703491211,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.789841175079346,
+        "hub_rate": 0.0018173361895605922,
+        "hits": null,
+        "example_query_indices": [
+          70,
+          305,
+          373,
+          426,
+          804,
+          925,
+          1011,
+          1050,
+          1062,
+          1237
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.11427899419647196,
+        "entropy": 0.4470620543337879
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_944"
+      }
+    },
+    {
+      "doc_index": 4165,
+      "risk_score": 2.585998296737671,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.794239521026611,
+        "hub_rate": 0.0018186066299676895,
+        "hits": null,
+        "example_query_indices": [
+          174,
+          560,
+          772,
+          971,
+          998,
+          1053,
+          1153,
+          1163,
+          1261,
+          1389
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.04726643961735566,
+        "entropy": 0.18490739916777568
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4165"
+      }
+    },
+    {
+      "doc_index": 4340,
+      "risk_score": 2.580998659133911,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.654656410217285,
+        "hub_rate": 0.0017782892100512981,
+        "hits": null,
+        "example_query_indices": [
+          35,
+          260,
+          263,
+          306,
+          316,
+          365,
+          395,
+          398,
+          413,
+          493
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.44101775025164397,
+        "entropy": 1.7252715847865958
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4340"
+      }
+    },
+    {
+      "doc_index": 1741,
+      "risk_score": 2.573413610458374,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.6786675453186035,
+        "hub_rate": 0.0017852246528491378,
+        "hits": null,
+        "example_query_indices": [
+          20,
+          559,
+          623,
+          923,
+          934,
+          1042,
+          1096,
+          1154,
+          1307,
+          1360
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3310584091623082,
+        "entropy": 1.2951081127833939
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1741"
+      }
+    },
+    {
+      "doc_index": 1153,
+      "risk_score": 2.55314302444458,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.7046380043029785,
+        "hub_rate": 0.0017927259905263782,
+        "hits": null,
+        "example_query_indices": [
+          492,
+          519,
+          531,
+          550,
+          616,
+          714,
+          762,
+          907,
+          964,
+          1048
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.15179589565930907,
+        "entropy": 0.5938290359487876
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1153"
+      }
+    },
+    {
+      "doc_index": 960,
+      "risk_score": 2.541494131088257,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.660397052764893,
+        "hub_rate": 0.0017799473134800792,
+        "hits": null,
+        "example_query_indices": [
+          7,
+          21,
+          81,
+          128,
+          179,
+          442,
+          529,
+          647,
+          783,
+          794
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.22627406221202184,
+        "entropy": 0.8851893369051089
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_960"
+      }
+    },
+    {
+      "doc_index": 2702,
+      "risk_score": 2.5356838703155518,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.596503734588623,
+        "hub_rate": 0.0017614923417568207,
+        "hits": null,
+        "example_query_indices": [
+          189,
+          247,
+          459,
+          518,
+          561,
+          613,
+          758,
+          818,
+          946,
+          1063
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.38890195495865465,
+        "entropy": 1.5213933946542375
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2702"
+      }
+    },
+    {
+      "doc_index": 1164,
+      "risk_score": 2.534315824508667,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.684291362762451,
+        "hub_rate": 0.001786848995834589,
+        "hits": null,
+        "example_query_indices": [
+          64,
+          236,
+          538,
+          558,
+          577,
+          669,
+          797,
+          956,
+          1168,
+          1445
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.11869987095986807,
+        "entropy": 0.4643566259363562
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1164"
+      }
+    },
+    {
+      "doc_index": 576,
+      "risk_score": 2.4991061687469482,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.665174961090088,
+        "hub_rate": 0.0017813274171203375,
+        "hits": null,
+        "example_query_indices": [
+          118,
+          164,
+          280,
+          348,
+          372,
+          625,
+          638,
+          799,
+          920,
+          953
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_576"
+      }
+    },
+    {
+      "doc_index": 221,
+      "risk_score": 2.4947705268859863,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.64103364944458,
+        "hub_rate": 0.0017743543721735477,
+        "hits": null,
+        "example_query_indices": [
+          198,
+          263,
+          344,
+          1013,
+          1093,
+          1209,
+          1254,
+          1403,
+          1644,
+          1655
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.050744906937004675,
+        "entropy": 0.1985152433458726
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_221"
+      }
+    },
+    {
+      "doc_index": 2296,
+      "risk_score": 2.486680507659912,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.569668769836426,
+        "hub_rate": 0.0017537412932142615,
+        "hits": null,
+        "example_query_indices": [
+          233,
+          332,
+          363,
+          575,
+          590,
+          793,
+          806,
+          911,
+          1217,
+          1290
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.22438981967857277,
+        "entropy": 0.8778181367664499
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2296"
+      }
+    },
+    {
+      "doc_index": 1289,
+      "risk_score": 2.4320240020751953,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.540590763092041,
+        "hub_rate": 0.0017453423934057355,
+        "hits": null,
+        "example_query_indices": [
+          64,
+          236,
+          538,
+          577,
+          669,
+          797,
+          1168,
+          1445,
+          1553,
+          1674
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.03834203515733135,
+        "entropy": 0.14999492361041503
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1289"
+      }
+    },
+    {
+      "doc_index": 1203,
+      "risk_score": 2.426323175430298,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.427403926849365,
+        "hub_rate": 0.0017126493621617556,
+        "hits": null,
+        "example_query_indices": [
+          60,
+          110,
+          176,
+          218,
+          471,
+          500,
+          559,
+          585,
+          643,
+          981
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.34939737506139773,
+        "entropy": 1.3668505692763944
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1203"
+      }
+    },
+    {
+      "doc_index": 2738,
+      "risk_score": 2.425358295440674,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.454908847808838,
+        "hub_rate": 0.001720593892969191,
+        "hits": null,
+        "example_query_indices": [
+          23,
+          80,
+          99,
+          180,
+          349,
+          542,
+          880,
+          954,
+          1323,
+          1571
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2620595553719719,
+        "entropy": 1.0251830094074252
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2738"
+      }
+    },
+    {
+      "doc_index": 2644,
+      "risk_score": 2.4122812747955322,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.4933762550354,
+        "hub_rate": 0.0017317049205303192,
+        "hits": null,
+        "example_query_indices": [
+          137,
+          142,
+          277,
+          626,
+          679,
+          745,
+          747,
+          763,
+          1002,
+          1224
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.08127170515640811,
+        "entropy": 0.3179367802622418
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2644"
+      }
+    },
+    {
+      "doc_index": 80,
+      "risk_score": 2.3777263164520264,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.435060024261475,
+        "hub_rate": 0.00171486078761518,
+        "hits": null,
+        "example_query_indices": [
+          165,
+          166,
+          172,
+          249,
+          343,
+          600,
+          724,
+          807,
+          832,
+          870
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.08344583876518856,
+        "entropy": 0.32644204095666546
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_80"
+      }
+    },
+    {
+      "doc_index": 1695,
+      "risk_score": 2.368382692337036,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.393816947937012,
+        "hub_rate": 0.0017029480077326298,
+        "hits": null,
+        "example_query_indices": [
+          37,
+          100,
+          192,
+          361,
+          382,
+          427,
+          545,
+          744,
+          1303,
+          1345
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.16045541049379694,
+        "entropy": 0.6277052571971504
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1695"
+      }
+    },
+    {
+      "doc_index": 3270,
+      "risk_score": 2.3462390899658203,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.397615909576416,
+        "hub_rate": 0.0017040453385561705,
+        "hits": null,
+        "example_query_indices": [
+          170,
+          322,
+          342,
+          700,
+          891,
+          955,
+          1008,
+          1069,
+          1262,
+          1321
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.03834203515733135,
+        "entropy": 0.14999492361041503
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3270"
+      }
+    },
+    {
+      "doc_index": 2560,
+      "risk_score": 2.319347620010376,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.339777946472168,
+        "hub_rate": 0.001687339274212718,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          196,
+          356,
+          384,
+          876,
+          879,
+          960,
+          1018,
+          1040,
+          1140
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.07739830207006608,
+        "entropy": 0.3027839382791754
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2560"
+      }
+    },
+    {
+      "doc_index": 1777,
+      "risk_score": 2.3136820793151855,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.2544026374816895,
+        "hub_rate": 0.0016626793658360839,
+        "hits": null,
+        "example_query_indices": [
+          125,
+          154,
+          259,
+          304,
+          328,
+          652,
+          710,
+          1193,
+          1652,
+          1727
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.3051969663719874,
+        "entropy": 1.193937553634095
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1777"
+      }
+    },
+    {
+      "doc_index": 1893,
+      "risk_score": 2.308896541595459,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.321648120880127,
+        "hub_rate": 0.0016821026802062988,
+        "hits": null,
+        "example_query_indices": [
+          47,
+          71,
+          233,
+          363,
+          389,
+          490,
+          673,
+          959,
+          1126,
+          1278
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.07953152483514041,
+        "entropy": 0.3111291548118492
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1893"
+      }
+    },
+    {
+      "doc_index": 4755,
+      "risk_score": 2.301271438598633,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.335450172424316,
+        "hub_rate": 0.0016860893229022622,
+        "hits": null,
+        "example_query_indices": [
+          141,
+          174,
+          186,
+          268,
+          614,
+          717,
+          998,
+          1153,
+          1261,
+          1374
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4755"
+      }
+    },
+    {
+      "doc_index": 3843,
+      "risk_score": 2.2797558307647705,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.280102252960205,
+        "hub_rate": 0.0016701024724170566,
+        "hits": null,
+        "example_query_indices": [
+          53,
+          66,
+          115,
+          170,
+          202,
+          322,
+          506,
+          597,
+          732,
+          784
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.058466104227594025,
+        "entropy": 0.2287207447761076
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3843"
+      }
+    },
+    {
+      "doc_index": 4743,
+      "risk_score": 2.230135202407837,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.197409152984619,
+        "hub_rate": 0.0016462173080071807,
+        "hits": null,
+        "example_query_indices": [
+          383,
+          565,
+          578,
+          582,
+          587,
+          771,
+          1035,
+          1184,
+          1283,
+          1373
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.05844338677600363,
+        "entropy": 0.22863187358286127
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4743"
+      }
+    },
+    {
+      "doc_index": 4240,
+      "risk_score": 2.2135684490203857,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.189279079437256,
+        "hub_rate": 0.0016438689781352878,
+        "hits": null,
+        "example_query_indices": [
+          49,
+          661,
+          875,
+          974,
+          1297,
+          1310,
+          1405,
+          1431,
+          1454,
+          1616
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4240"
+      }
+    },
+    {
+      "doc_index": 805,
+      "risk_score": 2.2118022441864014,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.160378456115723,
+        "hub_rate": 0.0016355213010683656,
+        "hits": null,
+        "example_query_indices": [
+          50,
+          51,
+          211,
+          351,
+          423,
+          468,
+          494,
+          517,
+          883,
+          909
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.07787175508082107,
+        "entropy": 0.30463609734923813
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_805"
+      }
+    },
+    {
+      "doc_index": 3898,
+      "risk_score": 2.1843395233154297,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.129509449005127,
+        "hub_rate": 0.0016266051679849625,
+        "hits": null,
+        "example_query_indices": [
+          58,
+          72,
+          278,
+          285,
+          334,
+          691,
+          792,
+          1194,
+          1281,
+          1607
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.033164604231469504,
+        "entropy": 0.12974069471942834
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3898"
+      }
+    },
+    {
+      "doc_index": 1121,
+      "risk_score": 2.1744000911712646,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.068790435791016,
+        "hub_rate": 0.001609066966921091,
+        "hits": null,
+        "example_query_indices": [
+          159,
+          550,
+          701,
+          709,
+          714,
+          762,
+          848,
+          913,
+          1160,
+          1499
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1656250003425322,
+        "entropy": 0.6479288116140305
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1121"
+      }
+    },
+    {
+      "doc_index": 2803,
+      "risk_score": 2.1638522148132324,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.018178462982178,
+        "hub_rate": 0.0015944481128826737,
+        "hits": null,
+        "example_query_indices": [
+          222,
+          247,
+          412,
+          459,
+          592,
+          688,
+          822,
+          835,
+          1502,
+          1785
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.26472066601956273,
+        "entropy": 1.0355933354807902
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2803"
+      }
+    },
+    {
+      "doc_index": 3128,
+      "risk_score": 2.1203811168670654,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.033967018127441,
+        "hub_rate": 0.001599008566699922,
+        "hits": null,
+        "example_query_indices": [
+          349,
+          624,
+          694,
+          761,
+          778,
+          837,
+          932,
+          940,
+          1086,
+          1118
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3128"
+      }
+    },
+    {
+      "doc_index": 273,
+      "risk_score": 2.108961820602417,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.946619749069214,
+        "hub_rate": 0.0015737790381535888,
+        "hits": null,
+        "example_query_indices": [
+          164,
+          348,
+          685,
+          1180,
+          1210,
+          1558,
+          1576,
+          1716,
+          2031,
+          2359
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.20494438785319807,
+        "entropy": 0.8017471601150995
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_273"
+      }
+    },
+    {
+      "doc_index": 3750,
+      "risk_score": 2.106635808944702,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 4.0110578536987305,
+        "hub_rate": 0.0015923914033919573,
+        "hits": null,
+        "example_query_indices": [
+          46,
+          66,
+          242,
+          385,
+          736,
+          993,
+          1205,
+          1336,
+          1668,
+          1915
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3750"
+      }
+    },
+    {
+      "doc_index": 220,
+      "risk_score": 2.0952532291412354,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.99208664894104,
+        "hub_rate": 0.0015869117341935635,
+        "hits": null,
+        "example_query_indices": [
+          98,
+          186,
+          634,
+          644,
+          708,
+          737,
+          1195,
+          1226,
+          1380,
+          1838
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_220"
+      }
+    },
+    {
+      "doc_index": 1092,
+      "risk_score": 2.0912742614746094,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.98545503616333,
+        "hub_rate": 0.001584996236488223,
+        "hits": null,
+        "example_query_indices": [
+          135,
+          505,
+          903,
+          973,
+          1048,
+          1343,
+          1368,
+          1449,
+          1518,
+          1853
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1092"
+      }
+    },
+    {
+      "doc_index": 2975,
+      "risk_score": 2.0887057781219482,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.9563674926757812,
+        "hub_rate": 0.0015765945427119732,
+        "hits": null,
+        "example_query_indices": [
+          36,
+          173,
+          324,
+          483,
+          631,
+          905,
+          944,
+          1293,
+          1329,
+          1411
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.07442181153535973,
+        "entropy": 0.29113983883196504
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2975"
+      }
+    },
+    {
+      "doc_index": 4485,
+      "risk_score": 2.0819623470306396,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.907128095626831,
+        "hub_rate": 0.0015623721992596984,
+        "hits": null,
+        "example_query_indices": [
+          141,
+          199,
+          275,
+          284,
+          399,
+          443,
+          539,
+          844,
+          858,
+          1046
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1884229189772393,
+        "entropy": 0.7371147937888838
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4485"
+      }
+    },
+    {
+      "doc_index": 1785,
+      "risk_score": 2.0780811309814453,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.939854383468628,
+        "hub_rate": 0.0015718248905614018,
+        "hits": null,
+        "example_query_indices": [
+          261,
+          716,
+          777,
+          842,
+          1041,
+          1124,
+          1136,
+          1170,
+          1221,
+          1484
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0708363312554517,
+        "entropy": 0.2771133574914559
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1785"
+      }
+    },
+    {
+      "doc_index": 4133,
+      "risk_score": 2.077181577682495,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.9221200942993164,
+        "hub_rate": 0.0015667024999856949,
+        "hits": null,
+        "example_query_indices": [
+          480,
+          557,
+          676,
+          772,
+          776,
+          1266,
+          1269,
+          1308,
+          1430,
+          1471
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.11954236615203093,
+        "entropy": 0.4676524865100599
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4133"
+      }
+    },
+    {
+      "doc_index": 451,
+      "risk_score": 2.0713768005371094,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.910489082336426,
+        "hub_rate": 0.0015633429866284132,
+        "hits": null,
+        "example_query_indices": [
+          198,
+          263,
+          493,
+          497,
+          658,
+          1093,
+          1103,
+          1209,
+          1254,
+          1403
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.12541052745316308,
+        "entropy": 0.490608868519652
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_451"
+      }
+    },
+    {
+      "doc_index": 1465,
+      "risk_score": 2.0597054958343506,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.8901655673980713,
+        "hub_rate": 0.00155747274402529,
+        "hits": null,
+        "example_query_indices": [
+          34,
+          81,
+          179,
+          205,
+          647,
+          783,
+          868,
+          874,
+          970,
+          981
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.12802493121010441,
+        "entropy": 0.5008364761622843
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1465"
+      }
+    },
+    {
+      "doc_index": 4067,
+      "risk_score": 2.0487101078033447,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.8443868160247803,
+        "hub_rate": 0.0015442499425262213,
+        "hits": null,
+        "example_query_indices": [
+          31,
+          321,
+          375,
+          840,
+          997,
+          1215,
+          1246,
+          1613,
+          1770,
+          1902
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.21038572947128625,
+        "entropy": 0.8230338137054541
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4067"
+      }
+    },
+    {
+      "doc_index": 3224,
+      "risk_score": 2.0380096435546875,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.8966808319091797,
+        "hub_rate": 0.0015593545977026224,
+        "hits": null,
+        "example_query_indices": [
+          137,
+          277,
+          745,
+          747,
+          763,
+          957,
+          1173,
+          1224,
+          1355,
+          1388
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3224"
+      }
+    },
+    {
+      "doc_index": 4742,
+      "risk_score": 2.03129506111145,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.8854899406433105,
+        "hub_rate": 0.0015561222098767757,
+        "hits": null,
+        "example_query_indices": [
+          24,
+          215,
+          391,
+          578,
+          586,
+          587,
+          771,
+          886,
+          1035,
+          1082
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4742"
+      }
+    },
+    {
+      "doc_index": 4799,
+      "risk_score": 2.0207793712615967,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.837076425552368,
+        "hub_rate": 0.0015421384014189243,
+        "hits": null,
+        "example_query_indices": [
+          165,
+          249,
+          331,
+          343,
+          600,
+          765,
+          807,
+          832,
+          870,
+          942
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09266331543467042,
+        "entropy": 0.3625010217396757
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4799"
+      }
+    },
+    {
+      "doc_index": 188,
+      "risk_score": 2.014803647994995,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.82608962059021,
+        "hub_rate": 0.001538964919745922,
+        "hits": null,
+        "example_query_indices": [
+          118,
+          147,
+          216,
+          280,
+          372,
+          440,
+          452,
+          598,
+          638,
+          782
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0957439572620585,
+        "entropy": 0.37455256343990206
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_188"
+      }
+    },
+    {
+      "doc_index": 3345,
+      "risk_score": 2.0119614601135254,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.8532674312591553,
+        "hub_rate": 0.001546815037727356,
+        "hits": null,
+        "example_query_indices": [
+          141,
+          174,
+          268,
+          717,
+          998,
+          1046,
+          1153,
+          1163,
+          1261,
+          1374
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3345"
+      }
+    },
+    {
+      "doc_index": 1085,
+      "risk_score": 2.01166033744812,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7529683113098145,
+        "hub_rate": 0.001517844502814114,
+        "hits": null,
+        "example_query_indices": [
+          283,
+          320,
+          591,
+          639,
+          704,
+          853,
+          965,
+          983,
+          1234,
+          1259
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.29939231772734387,
+        "entropy": 1.1712296345978221
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1085"
+      }
+    },
+    {
+      "doc_index": 1375,
+      "risk_score": 1.999911904335022,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.783257484436035,
+        "hub_rate": 0.00152659323066473,
+        "hits": null,
+        "example_query_indices": [
+          354,
+          438,
+          602,
+          712,
+          854,
+          1023,
+          1148,
+          1292,
+          1560,
+          1791
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1497825083059352,
+        "entropy": 0.5859526183035508
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1375"
+      }
+    },
+    {
+      "doc_index": 3360,
+      "risk_score": 1.975752592086792,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7120628356933594,
+        "hub_rate": 0.0015060292789712548,
+        "hits": null,
+        "example_query_indices": [
+          191,
+          197,
+          289,
+          418,
+          441,
+          451,
+          503,
+          530,
+          775,
+          1021
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2425699256961182,
+        "entropy": 0.9489391297482104
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3360"
+      }
+    },
+    {
+      "doc_index": 2319,
+      "risk_score": 1.9753203392028809,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7157340049743652,
+        "hub_rate": 0.0015070897061377764,
+        "hits": null,
+        "example_query_indices": [
+          54,
+          56,
+          154,
+          304,
+          652,
+          710,
+          1123,
+          1193,
+          1199,
+          1286
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.22939469245210783,
+        "entropy": 0.8973973141957601
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2319"
+      }
+    },
+    {
+      "doc_index": 3156,
+      "risk_score": 1.9564721584320068,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7607853412628174,
+        "hub_rate": 0.0015201023779809475,
+        "hits": null,
+        "example_query_indices": [
+          3,
+          196,
+          356,
+          879,
+          960,
+          1018,
+          1040,
+          1327,
+          1351,
+          2105
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3156"
+      }
+    },
+    {
+      "doc_index": 723,
+      "risk_score": 1.9509209394454956,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6151254177093506,
+        "hub_rate": 0.0014780297642573714,
+        "hits": null,
+        "example_query_indices": [
+          7,
+          21,
+          104,
+          471,
+          643,
+          794,
+          975,
+          1291,
+          1496,
+          1690
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.40922348619317855,
+        "entropy": 1.6008916923492218
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_723"
+      }
+    },
+    {
+      "doc_index": 305,
+      "risk_score": 1.939308762550354,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.7200369834899902,
+        "hub_rate": 0.0015083325561136007,
+        "hits": null,
+        "example_query_indices": [
+          273,
+          309,
+          359,
+          387,
+          448,
+          526,
+          573,
+          660,
+          1282,
+          1304
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.036427665991483976,
+        "entropy": 0.1425058673927378
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_305"
+      }
+    },
+    {
+      "doc_index": 1125,
+      "risk_score": 1.9301570653915405,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.69826340675354,
+        "hub_rate": 0.0015020434511825442,
+        "hits": null,
+        "example_query_indices": [
+          42,
+          224,
+          236,
+          538,
+          558,
+          577,
+          797,
+          1168,
+          1274,
+          1495
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.05598957917300117,
+        "entropy": 0.21903252178902116
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1125"
+      }
+    },
+    {
+      "doc_index": 1538,
+      "risk_score": 1.928801417350769,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6361162662506104,
+        "hub_rate": 0.00148409279063344,
+        "hits": null,
+        "example_query_indices": [
+          19,
+          30,
+          64,
+          224,
+          236,
+          420,
+          538,
+          558,
+          577,
+          797
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.23565353262377361,
+        "entropy": 0.9218820409346145
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1538"
+      }
+    },
+    {
+      "doc_index": 3685,
+      "risk_score": 1.9060380458831787,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.5835635662078857,
+        "hub_rate": 0.001468913396820426,
+        "hits": null,
+        "example_query_indices": [
+          63,
+          76,
+          114,
+          232,
+          483,
+          515,
+          748,
+          1277,
+          1432,
+          1660
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.27949485597655727,
+        "entropy": 1.0933903064791184
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3685"
+      }
+    },
+    {
+      "doc_index": 1575,
+      "risk_score": 1.9048880338668823,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.643216609954834,
+        "hub_rate": 0.0014861436793580651,
+        "hits": null,
+        "example_query_indices": [
+          264,
+          310,
+          596,
+          1010,
+          1096,
+          1097,
+          1299,
+          1364,
+          1532,
+          1672
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09478532145004753,
+        "entropy": 0.37080235808948786
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1575"
+      }
+    },
+    {
+      "doc_index": 1271,
+      "risk_score": 1.9032114744186401,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6180777549743652,
+        "hub_rate": 0.0014788825064897537,
+        "hits": null,
+        "example_query_indices": [
+          34,
+          179,
+          225,
+          424,
+          500,
+          529,
+          593,
+          647,
+          868,
+          874
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.16181896445549807,
+        "entropy": 0.6330395116644678
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1271"
+      }
+    },
+    {
+      "doc_index": 2858,
+      "risk_score": 1.891526460647583,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6525423526763916,
+        "hub_rate": 0.0014888372970744967,
+        "hits": null,
+        "example_query_indices": [
+          137,
+          142,
+          162,
+          368,
+          460,
+          745,
+          747,
+          957,
+          1139,
+          1173
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2858"
+      }
+    },
+    {
+      "doc_index": 3123,
+      "risk_score": 1.8865244388580322,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6442058086395264,
+        "hub_rate": 0.0014864293625578284,
+        "hits": null,
+        "example_query_indices": [
+          307,
+          384,
+          549,
+          654,
+          666,
+          878,
+          1289,
+          1418,
+          1535,
+          1701
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_3123"
+      }
+    },
+    {
+      "doc_index": 1217,
+      "risk_score": 1.8860589265823364,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.61295747756958,
+        "hub_rate": 0.0014774035662412643,
+        "hits": null,
+        "example_query_indices": [
+          271,
+          393,
+          486,
+          746,
+          861,
+          912,
+          1370,
+          1885,
+          2203,
+          2244
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09141744804593284,
+        "entropy": 0.3576271598532216
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1217"
+      }
+    },
+    {
+      "doc_index": 2578,
+      "risk_score": 1.885574460029602,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.5883867740631104,
+        "hub_rate": 0.001470306538976729,
+        "hits": null,
+        "example_query_indices": [
+          222,
+          412,
+          459,
+          592,
+          688,
+          835,
+          1502,
+          1785,
+          1832,
+          1937
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.1627071638923428,
+        "entropy": 0.6365141682948128
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2578"
+      }
+    },
+    {
+      "doc_index": 4765,
+      "risk_score": 1.881227731704712,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.635377883911133,
+        "hub_rate": 0.001483879517763853,
+        "hits": null,
+        "example_query_indices": [
+          145,
+          168,
+          234,
+          375,
+          453,
+          671,
+          699,
+          741,
+          987,
+          1387
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4765"
+      }
+    },
+    {
+      "doc_index": 4124,
+      "risk_score": 1.8751615285873413,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.5742907524108887,
+        "hub_rate": 0.0014662350295111537,
+        "hits": null,
+        "example_query_indices": [
+          27,
+          496,
+          503,
+          695,
+          757,
+          846,
+          950,
+          1333,
+          1457,
+          1639
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.15293099957621042,
+        "entropy": 0.5982695885852573
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4124"
+      }
+    },
+    {
+      "doc_index": 586,
+      "risk_score": 1.8724244832992554,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6098906993865967,
+        "hub_rate": 0.0014765177620574832,
+        "hits": null,
+        "example_query_indices": [
+          43,
+          89,
+          309,
+          359,
+          448,
+          526,
+          553,
+          660,
+          1164,
+          1282
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.03244626761276179,
+        "entropy": 0.12693054534140227
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_586"
+      }
+    },
+    {
+      "doc_index": 2549,
+      "risk_score": 1.8701941967010498,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.6169886589050293,
+        "hub_rate": 0.0014785679522901773,
+        "hits": null,
+        "example_query_indices": [
+          201,
+          299,
+          357,
+          510,
+          666,
+          1252,
+          1335,
+          1418,
+          1423,
+          1489
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.0,
+        "entropy": 0.0
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2549"
+      }
+    },
+    {
+      "doc_index": 2836,
+      "risk_score": 1.8679181337356567,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.537386894226074,
+        "hub_rate": 0.001455575693398714,
+        "hits": null,
+        "example_query_indices": [
+          137,
+          277,
+          370,
+          611,
+          763,
+          931,
+          1002,
+          1224,
+          1355,
+          1367
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.2274245009430353,
+        "entropy": 0.8896898796871692
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_2836"
+      }
+    },
+    {
+      "doc_index": 1759,
+      "risk_score": 1.8584175109863281,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.566096067428589,
+        "hub_rate": 0.0014638680731877685,
+        "hits": null,
+        "example_query_indices": [
+          37,
+          100,
+          336,
+          361,
+          545,
+          828,
+          1198,
+          1301,
+          1345,
+          1600
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.09379418034187967,
+        "entropy": 0.3669249912727096
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1759"
+      }
+    },
+    {
+      "doc_index": 1080,
+      "risk_score": 1.8548914194107056,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.4838600158691406,
+        "hub_rate": 0.0014401149237528443,
+        "hits": null,
+        "example_query_indices": [
+          121,
+          127,
+          310,
+          327,
+          337,
+          1010,
+          1097,
+          1185,
+          1383,
+          1458
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.32287200932989657,
+        "entropy": 1.2630827283073665
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1080"
+      }
+    },
+    {
+      "doc_index": 1110,
+      "risk_score": 1.8442590236663818,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.5453882217407227,
+        "hub_rate": 0.0014578867703676224,
+        "hits": null,
+        "example_query_indices": [
+          438,
+          680,
+          764,
+          833,
+          854,
+          1083,
+          1121,
+          1148,
+          1292,
+          1341
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.08512503531244985,
+        "entropy": 0.3330110964801871
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_1110"
+      }
+    },
+    {
+      "doc_index": 4431,
+      "risk_score": 1.812918782234192,
+      "verdict": "MEDIUM",
+      "hubness": {
+        "hub_z": 3.510474681854248,
+        "hub_rate": 0.0014478022931143641,
+        "hits": null,
+        "example_query_indices": [
+          145,
+          160,
+          168,
+          321,
+          453,
+          671,
+          699,
+          741,
+          987,
+          1387
+        ]
+      },
+      "cluster_spread": {
+        "score": 0.033164604231469504,
+        "entropy": 0.12974069471942834
+      },
+      "deduplication": {
+        "boilerplate_score": 1.0
+      },
+      "metadata": {
+        "doc_id": "gallery_4431"
+      }
+    }
+  ]
+}

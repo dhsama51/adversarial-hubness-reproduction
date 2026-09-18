@@ -1,0 +1,36 @@
+{
+  "full_25000_laion": {
+    "cluster": 0.08896666666666665,
+    "domain_bicycle": 0.16616666666666666,
+    "domain_cat": 0.27108333333333334,
+    "domain_dog": 0.28966666666666663,
+    "domain_elephant": 0.09999999999999996,
+    "domain_kite": 0.06449999999999999,
+    "domain_motorcycle": 0.1225,
+    "domain_pizza": 0.09208333333333332,
+    "domain_skateboard": 0.10125000000000003,
+    "domain_surfboard": 0.1025833333333333,
+    "domain_umbrella": 0.10874999999999999,
+    "universal": 0.6859166666666667
+  },
+  "sub_500_laion": {
+    "cluster": 0.656,
+    "domain_bicycle": 0.646,
+    "domain_cat": 0.898,
+    "domain_dog": 0.896,
+    "domain_elephant": 0.556,
+    "domain_kite": 0.408,
+    "domain_motorcycle": 0.688,
+    "domain_pizza": 0.456,
+    "domain_skateboard": 0.466,
+    "domain_surfboard": 0.528,
+    "domain_umbrella": 0.7,
+    "universal": 0.998
+  },
+  "correlation": {
+    "spearman_r": 0.8251748251748254,
+    "spearman_p": 0.0009513628555555001,
+    "pearson_r": 0.8101144896978134,
+    "pearson_p": 0.0013998432347470397
+  }
+}

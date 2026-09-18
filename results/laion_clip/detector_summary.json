@@ -1,0 +1,3377 @@
+{
+  "config": {
+    "top_k": 10,
+    "n_clusters": 20,
+    "n_hubs_evaluated": 480,
+    "n_queries": 25014,
+    "surrogate": "ViT-B-32_laion2b_s34b_b79k"
+  },
+  "detector_performance": {
+    "roc_auc": 0.9827958333333334,
+    "best_threshold": 4047000.0,
+    "precision": 0.7551369863013698,
+    "recall": 0.91875
+  },
+  "hub_details": [
+    {
+      "tag": "cluster109_gc0",
+      "Nk": 1194,
+      "z_score": 805353000.0,
+      "cluster_spread": 0.6285233347269125,
+      "stability_cv": 0.024888443887449006
+    },
+    {
+      "tag": "cluster109_gc10",
+      "Nk": 354,
+      "z_score": 238773000.0,
+      "cluster_spread": 0.6332420417994497,
+      "stability_cv": 0.05125215265434172
+    },
+    {
+      "tag": "cluster109_gc11",
+      "Nk": 2205,
+      "z_score": 1487272500.0,
+      "cluster_spread": 0.7502227119607646,
+      "stability_cv": 0.015315745325503621
+    },
+    {
+      "tag": "cluster109_gc12",
+      "Nk": 73,
+      "z_score": 49238500.00000001,
+      "cluster_spread": 0.5593916677903434,
+      "stability_cv": 0.09555816481103156
+    },
+    {
+      "tag": "cluster109_gc13",
+      "Nk": 49,
+      "z_score": 33050500.0,
+      "cluster_spread": 0.4818321977551331,
+      "stability_cv": 0.14487559860245564
+    },
+    {
+      "tag": "cluster109_gc14",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.5845604682737481,
+      "stability_cv": 0.11371223459542275
+    },
+    {
+      "tag": "cluster109_gc15",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.46474319820940874
+    },
+    {
+      "tag": "cluster109_gc16",
+      "Nk": 78,
+      "z_score": 52611000.0,
+      "cluster_spread": 0.6401578343389388,
+      "stability_cv": 0.09263019282239311
+    },
+    {
+      "tag": "cluster109_gc17",
+      "Nk": 82,
+      "z_score": 55309000.0,
+      "cluster_spread": 0.5795441862788246,
+      "stability_cv": 0.10517190821076604
+    },
+    {
+      "tag": "cluster109_gc18",
+      "Nk": 234,
+      "z_score": 157833000.0,
+      "cluster_spread": 0.5000507026528006,
+      "stability_cv": 0.0703650862475371
+    },
+    {
+      "tag": "cluster109_gc19",
+      "Nk": 60,
+      "z_score": 40470000.0,
+      "cluster_spread": 0.4228899947449165,
+      "stability_cv": 0.10579285021299982
+    },
+    {
+      "tag": "cluster109_gc1",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8975267199168174
+    },
+    {
+      "tag": "cluster109_gc20",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.414221753778944
+    },
+    {
+      "tag": "cluster109_gc21",
+      "Nk": 255,
+      "z_score": 171997500.0,
+      "cluster_spread": 0.642906677999415,
+      "stability_cv": 0.05326056556570535
+    },
+    {
+      "tag": "cluster109_gc22",
+      "Nk": 197,
+      "z_score": 132876500.0,
+      "cluster_spread": 0.6536364609801398,
+      "stability_cv": 0.08394382206560419
+    },
+    {
+      "tag": "cluster109_gc23",
+      "Nk": 268,
+      "z_score": 180766000.0,
+      "cluster_spread": 0.6715967345404418,
+      "stability_cv": 0.051183563290625705
+    },
+    {
+      "tag": "cluster109_gc24",
+      "Nk": 73,
+      "z_score": 49238500.00000001,
+      "cluster_spread": 0.5861541265895592,
+      "stability_cv": 0.1210395939950903
+    },
+    {
+      "tag": "cluster109_gc25",
+      "Nk": 240,
+      "z_score": 161880000.0,
+      "cluster_spread": 0.5453201890733393,
+      "stability_cv": 0.05891168270139318
+    },
+    {
+      "tag": "cluster109_gc26",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": 0.23137821315975918,
+      "stability_cv": 0.7821941291357087
+    },
+    {
+      "tag": "cluster109_gc27",
+      "Nk": 86,
+      "z_score": 58007000.0,
+      "cluster_spread": 0.6405902257215923,
+      "stability_cv": 0.11687818856153473
+    },
+    {
+      "tag": "cluster109_gc28",
+      "Nk": 108,
+      "z_score": 72846000.0,
+      "cluster_spread": 0.6105679180303574,
+      "stability_cv": 0.07895617867781325
+    },
+    {
+      "tag": "cluster109_gc29",
+      "Nk": 18,
+      "z_score": 12141000.0,
+      "cluster_spread": 0.5385635203056979,
+      "stability_cv": 0.23700992556093428
+    },
+    {
+      "tag": "cluster109_gc2",
+      "Nk": 263,
+      "z_score": 177393500.0,
+      "cluster_spread": 0.6857203063773124,
+      "stability_cv": 0.054316830026232665
+    },
+    {
+      "tag": "cluster109_gc3",
+      "Nk": 78,
+      "z_score": 52611000.0,
+      "cluster_spread": 0.5081498214951977,
+      "stability_cv": 0.11149478676476057
+    },
+    {
+      "tag": "cluster109_gc4",
+      "Nk": 137,
+      "z_score": 92406500.0,
+      "cluster_spread": 0.40324931291179045,
+      "stability_cv": 0.069475473498551
+    },
+    {
+      "tag": "cluster109_gc5",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.856347982229693
+    },
+    {
+      "tag": "cluster109_gc6",
+      "Nk": 1059,
+      "z_score": 714295500.0,
+      "cluster_spread": 0.6181896719198378,
+      "stability_cv": 0.027679954517685342
+    },
+    {
+      "tag": "cluster109_gc7",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.5230874009564627
+    },
+    {
+      "tag": "cluster109_gc8",
+      "Nk": 49,
+      "z_score": 33050500.0,
+      "cluster_spread": 0.6945667097822928,
+      "stability_cv": 0.162902271680369
+    },
+    {
+      "tag": "cluster109_gc9",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.7463864750932218
+    },
+    {
+      "tag": "cluster124_gc0",
+      "Nk": 827,
+      "z_score": 557811500.0,
+      "cluster_spread": 0.40071248681724847,
+      "stability_cv": 0.039917271669516315
+    },
+    {
+      "tag": "cluster124_gc10",
+      "Nk": 153,
+      "z_score": 103198500.0,
+      "cluster_spread": 0.16251800554122892,
+      "stability_cv": 0.08073130760027515
+    },
+    {
+      "tag": "cluster124_gc11",
+      "Nk": 1746,
+      "z_score": 1177677000.0,
+      "cluster_spread": 0.588693025268709,
+      "stability_cv": 0.02373756753145124
+    },
+    {
+      "tag": "cluster124_gc12",
+      "Nk": 593,
+      "z_score": 399978500.0,
+      "cluster_spread": 0.25865262251965127,
+      "stability_cv": 0.044293301906440936
+    },
+    {
+      "tag": "cluster124_gc13",
+      "Nk": 193,
+      "z_score": 130178499.99999999,
+      "cluster_spread": 0.2157327254167425,
+      "stability_cv": 0.07995657540041481
+    },
+    {
+      "tag": "cluster124_gc14",
+      "Nk": 98,
+      "z_score": 66101000.0,
+      "cluster_spread": 0.5102547721762021,
+      "stability_cv": 0.10256462256658704
+    },
+    {
+      "tag": "cluster124_gc15",
+      "Nk": 276,
+      "z_score": 186162000.0,
+      "cluster_spread": 0.4801631909387405,
+      "stability_cv": 0.056953631466178205
+    },
+    {
+      "tag": "cluster124_gc16",
+      "Nk": 246,
+      "z_score": 165927000.0,
+      "cluster_spread": 0.3975055114729907,
+      "stability_cv": 0.05486036567197413
+    },
+    {
+      "tag": "cluster124_gc17",
+      "Nk": 75,
+      "z_score": 50587500.0,
+      "cluster_spread": 0.49386599349002863,
+      "stability_cv": 0.11814652705977013
+    },
+    {
+      "tag": "cluster124_gc18",
+      "Nk": 58,
+      "z_score": 39121000.00000001,
+      "cluster_spread": 0.40968282713526816,
+      "stability_cv": 0.15045745284026635
+    },
+    {
+      "tag": "cluster124_gc19",
+      "Nk": 129,
+      "z_score": 87010500.0,
+      "cluster_spread": 0.3338604328197845,
+      "stability_cv": 0.08122846514517355
+    },
+    {
+      "tag": "cluster124_gc1",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.5169307380385123
+    },
+    {
+      "tag": "cluster124_gc20",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.44738554545887704,
+      "stability_cv": 0.26853557898547176
+    },
+    {
+      "tag": "cluster124_gc21",
+      "Nk": 589,
+      "z_score": 397280500.00000006,
+      "cluster_spread": 0.3344681021149134,
+      "stability_cv": 0.04652545314119344
+    },
+    {
+      "tag": "cluster124_gc22",
+      "Nk": 102,
+      "z_score": 68799000.0,
+      "cluster_spread": 0.23054507322173245,
+      "stability_cv": 0.08677082861745426
+    },
+    {
+      "tag": "cluster124_gc23",
+      "Nk": 428,
+      "z_score": 288686000.0,
+      "cluster_spread": 0.23271241284507774,
+      "stability_cv": 0.05699503148707704
+    },
+    {
+      "tag": "cluster124_gc24",
+      "Nk": 485,
+      "z_score": 327132500.0,
+      "cluster_spread": 0.27733290201676186,
+      "stability_cv": 0.047453867171127304
+    },
+    {
+      "tag": "cluster124_gc25",
+      "Nk": 460,
+      "z_score": 310270000.0,
+      "cluster_spread": 0.4579398039513863,
+      "stability_cv": 0.04656113979575702
+    },
+    {
+      "tag": "cluster124_gc26",
+      "Nk": 44,
+      "z_score": 29678000.000000004,
+      "cluster_spread": 0.44850814549775825,
+      "stability_cv": 0.17809528304309033
+    },
+    {
+      "tag": "cluster124_gc27",
+      "Nk": 564,
+      "z_score": 380418000.0,
+      "cluster_spread": 0.46190572675873715,
+      "stability_cv": 0.046887984567283596
+    },
+    {
+      "tag": "cluster124_gc28",
+      "Nk": 43,
+      "z_score": 29003500.0,
+      "cluster_spread": 0.28146874500861463,
+      "stability_cv": 0.11985973838279584
+    },
+    {
+      "tag": "cluster124_gc29",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.39088844368826003,
+      "stability_cv": 0.2627629021878438
+    },
+    {
+      "tag": "cluster124_gc2",
+      "Nk": 44,
+      "z_score": 29678000.000000004,
+      "cluster_spread": 0.17244905193197058,
+      "stability_cv": 0.13971966466698357
+    },
+    {
+      "tag": "cluster124_gc3",
+      "Nk": 66,
+      "z_score": 44517000.0,
+      "cluster_spread": 0.43498655211213244,
+      "stability_cv": 0.10050650058886564
+    },
+    {
+      "tag": "cluster124_gc4",
+      "Nk": 313,
+      "z_score": 211118500.0,
+      "cluster_spread": 0.21205400564218052,
+      "stability_cv": 0.06761893573534611
+    },
+    {
+      "tag": "cluster124_gc5",
+      "Nk": 24,
+      "z_score": 16188000.0,
+      "cluster_spread": 0.5442718490101077,
+      "stability_cv": 0.2181846046828239
+    },
+    {
+      "tag": "cluster124_gc6",
+      "Nk": 1075,
+      "z_score": 725087500.0,
+      "cluster_spread": 0.464442703624029,
+      "stability_cv": 0.03930060523043929
+    },
+    {
+      "tag": "cluster124_gc7",
+      "Nk": 318,
+      "z_score": 214491000.0,
+      "cluster_spread": 0.3907955885346929,
+      "stability_cv": 0.057858239919123665
+    },
+    {
+      "tag": "cluster124_gc8",
+      "Nk": 101,
+      "z_score": 68124500.0,
+      "cluster_spread": 0.050943973066615536,
+      "stability_cv": 0.10763407536917605
+    },
+    {
+      "tag": "cluster124_gc9",
+      "Nk": 361,
+      "z_score": 243494500.0,
+      "cluster_spread": 0.2756640025811229,
+      "stability_cv": 0.05776133902211171
+    },
+    {
+      "tag": "cluster22_gc0",
+      "Nk": 573,
+      "z_score": 386488500.0,
+      "cluster_spread": 0.5641907864275187,
+      "stability_cv": 0.04999885419333345
+    },
+    {
+      "tag": "cluster22_gc10",
+      "Nk": 258,
+      "z_score": 174021000.0,
+      "cluster_spread": 0.5432005852070538,
+      "stability_cv": 0.05554805315195069
+    },
+    {
+      "tag": "cluster22_gc11",
+      "Nk": 1633,
+      "z_score": 1101458500.0,
+      "cluster_spread": 0.7265994444854448,
+      "stability_cv": 0.023288874902413298
+    },
+    {
+      "tag": "cluster22_gc12",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.7877167227023645
+    },
+    {
+      "tag": "cluster22_gc13",
+      "Nk": 30,
+      "z_score": 20235000.0,
+      "cluster_spread": 0.3924672316088654,
+      "stability_cv": 0.2046401513018045
+    },
+    {
+      "tag": "cluster22_gc14",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.36017644747590194,
+      "stability_cv": 0.409912165662562
+    },
+    {
+      "tag": "cluster22_gc15",
+      "Nk": 51,
+      "z_score": 34399500.0,
+      "cluster_spread": 0.5598606092252028,
+      "stability_cv": 0.12684569932367773
+    },
+    {
+      "tag": "cluster22_gc16",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.31902046105700177,
+      "stability_cv": 0.4029367022983866
+    },
+    {
+      "tag": "cluster22_gc17",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.5588286499294777
+    },
+    {
+      "tag": "cluster22_gc18",
+      "Nk": 60,
+      "z_score": 40470000.0,
+      "cluster_spread": 0.5259763445585041,
+      "stability_cv": 0.12835294702536607
+    },
+    {
+      "tag": "cluster22_gc19",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": 0.424634030233663,
+      "stability_cv": 0.2497915816796918
+    },
+    {
+      "tag": "cluster22_gc1",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.5121353004408546
+    },
+    {
+      "tag": "cluster22_gc20",
+      "Nk": 9,
+      "z_score": 6070500.0,
+      "cluster_spread": 0.4375503410872775,
+      "stability_cv": 0.33485840535755196
+    },
+    {
+      "tag": "cluster22_gc21",
+      "Nk": 489,
+      "z_score": 329830500.0,
+      "cluster_spread": 0.6112432576224194,
+      "stability_cv": 0.054975029311553375
+    },
+    {
+      "tag": "cluster22_gc22",
+      "Nk": 17,
+      "z_score": 11466500.0,
+      "cluster_spread": 0.4774625035877424,
+      "stability_cv": 0.320506064270378
+    },
+    {
+      "tag": "cluster22_gc23",
+      "Nk": 28,
+      "z_score": 18886000.0,
+      "cluster_spread": 0.5657773470792592,
+      "stability_cv": 0.20361138112888263
+    },
+    {
+      "tag": "cluster22_gc24",
+      "Nk": 255,
+      "z_score": 171997500.0,
+      "cluster_spread": 0.5141805496074299,
+      "stability_cv": 0.0780441847360527
+    },
+    {
+      "tag": "cluster22_gc25",
+      "Nk": 76,
+      "z_score": 51262000.0,
+      "cluster_spread": 0.5992757039778649,
+      "stability_cv": 0.10838348090633657
+    },
+    {
+      "tag": "cluster22_gc26",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8514686796948104
+    },
+    {
+      "tag": "cluster22_gc27",
+      "Nk": 166,
+      "z_score": 111967000.0,
+      "cluster_spread": 0.5473082147659477,
+      "stability_cv": 0.0819956009539079
+    },
+    {
+      "tag": "cluster22_gc28",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": 0.45696537885070654,
+      "stability_cv": 0.175003840000305
+    },
+    {
+      "tag": "cluster22_gc29",
+      "Nk": 35,
+      "z_score": 23607500.0,
+      "cluster_spread": 0.5488191213372777,
+      "stability_cv": 0.19030432229320202
+    },
+    {
+      "tag": "cluster22_gc2",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.46275642631951835,
+      "stability_cv": 0.6325493649559966
+    },
+    {
+      "tag": "cluster22_gc3",
+      "Nk": 217,
+      "z_score": 146366500.0,
+      "cluster_spread": 0.5856207495572539,
+      "stability_cv": 0.09065580793831746
+    },
+    {
+      "tag": "cluster22_gc4",
+      "Nk": 53,
+      "z_score": 35748500.0,
+      "cluster_spread": 0.4701312261668719,
+      "stability_cv": 0.12428569644964058
+    },
+    {
+      "tag": "cluster22_gc5",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0
+    },
+    {
+      "tag": "cluster22_gc6",
+      "Nk": 94,
+      "z_score": 63403000.0,
+      "cluster_spread": 0.6190221915409825,
+      "stability_cv": 0.11816064816448528
+    },
+    {
+      "tag": "cluster22_gc7",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": 0.32032728771640495,
+      "stability_cv": 0.2484402180920914
+    },
+    {
+      "tag": "cluster22_gc8",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.815193292611688
+    },
+    {
+      "tag": "cluster22_gc9",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.5595269260718743,
+      "stability_cv": 0.07120761990511462
+    },
+    {
+      "tag": "cluster53_gc0",
+      "Nk": 797,
+      "z_score": 537576500.0,
+      "cluster_spread": 0.055792480055295385,
+      "stability_cv": 0.03139440187203706
+    },
+    {
+      "tag": "cluster53_gc10",
+      "Nk": 79,
+      "z_score": 53285500.0,
+      "cluster_spread": 0.2638921237658193,
+      "stability_cv": 0.1041302086337469
+    },
+    {
+      "tag": "cluster53_gc11",
+      "Nk": 1539,
+      "z_score": 1038055500.0,
+      "cluster_spread": 0.2859892152615139,
+      "stability_cv": 0.024236509165358522
+    },
+    {
+      "tag": "cluster53_gc12",
+      "Nk": 112,
+      "z_score": 75544000.0,
+      "cluster_spread": 0.09195072572644447,
+      "stability_cv": 0.10423095334989355
+    },
+    {
+      "tag": "cluster53_gc13",
+      "Nk": 173,
+      "z_score": 116688500.00000001,
+      "cluster_spread": 0.011867355882350357,
+      "stability_cv": 0.08000837950087653
+    },
+    {
+      "tag": "cluster53_gc14",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.5269421774267358
+    },
+    {
+      "tag": "cluster53_gc15",
+      "Nk": 23,
+      "z_score": 15513500.000000002,
+      "cluster_spread": 0.2513298052129911,
+      "stability_cv": 0.13573501907236799
+    },
+    {
+      "tag": "cluster53_gc16",
+      "Nk": 424,
+      "z_score": 285988000.0,
+      "cluster_spread": 0.08075806469924178,
+      "stability_cv": 0.04039285604485423
+    },
+    {
+      "tag": "cluster53_gc17",
+      "Nk": 749,
+      "z_score": 505200500.0,
+      "cluster_spread": 0.05485341940945935,
+      "stability_cv": 0.029399924374913067
+    },
+    {
+      "tag": "cluster53_gc18",
+      "Nk": 404,
+      "z_score": 272498000.0,
+      "cluster_spread": 0.08482508974803445,
+      "stability_cv": 0.0516320227389922
+    },
+    {
+      "tag": "cluster53_gc19",
+      "Nk": 234,
+      "z_score": 157833000.0,
+      "cluster_spread": 0.11692259716649851,
+      "stability_cv": 0.06634215161834905
+    },
+    {
+      "tag": "cluster53_gc1",
+      "Nk": 176,
+      "z_score": 118712000.00000001,
+      "cluster_spread": 0.04146721826422359,
+      "stability_cv": 0.07758749640586085
+    },
+    {
+      "tag": "cluster53_gc20",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.5650247286166276
+    },
+    {
+      "tag": "cluster53_gc21",
+      "Nk": 1252,
+      "z_score": 844474000.0,
+      "cluster_spread": 0.22642379821191258,
+      "stability_cv": 0.024768788959945304
+    },
+    {
+      "tag": "cluster53_gc22",
+      "Nk": 365,
+      "z_score": 246192500.0,
+      "cluster_spread": 0.1367441423420774,
+      "stability_cv": 0.04776536719915676
+    },
+    {
+      "tag": "cluster53_gc23",
+      "Nk": 397,
+      "z_score": 267776500.0,
+      "cluster_spread": 0.061958635686128805,
+      "stability_cv": 0.037554400452694085
+    },
+    {
+      "tag": "cluster53_gc24",
+      "Nk": 17,
+      "z_score": 11466500.0,
+      "cluster_spread": 0.14812982060432803,
+      "stability_cv": 0.29689732955094683
+    },
+    {
+      "tag": "cluster53_gc25",
+      "Nk": 160,
+      "z_score": 107920000.0,
+      "cluster_spread": 0.11583809261988419,
+      "stability_cv": 0.06005916224744814
+    },
+    {
+      "tag": "cluster53_gc26",
+      "Nk": 191,
+      "z_score": 128829500.0,
+      "cluster_spread": 0.10072306506730143,
+      "stability_cv": 0.0808927955670069
+    },
+    {
+      "tag": "cluster53_gc27",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.1997072948963825,
+      "stability_cv": 0.2999684532329902
+    },
+    {
+      "tag": "cluster53_gc28",
+      "Nk": 81,
+      "z_score": 54634500.0,
+      "cluster_spread": 0.044359405770011066,
+      "stability_cv": 0.11141757629117148
+    },
+    {
+      "tag": "cluster53_gc29",
+      "Nk": 23,
+      "z_score": 15513500.000000002,
+      "cluster_spread": 0.1187398696763024,
+      "stability_cv": 0.20031933102162552
+    },
+    {
+      "tag": "cluster53_gc2",
+      "Nk": 590,
+      "z_score": 397955000.0,
+      "cluster_spread": 0.0722983968115838,
+      "stability_cv": 0.0369565313260443
+    },
+    {
+      "tag": "cluster53_gc3",
+      "Nk": 195,
+      "z_score": 131527500.00000001,
+      "cluster_spread": 0.04793914293558025,
+      "stability_cv": 0.07297178200221166
+    },
+    {
+      "tag": "cluster53_gc4",
+      "Nk": 370,
+      "z_score": 249565000.0,
+      "cluster_spread": 0.09817645577770803,
+      "stability_cv": 0.04518881085955831
+    },
+    {
+      "tag": "cluster53_gc5",
+      "Nk": 16,
+      "z_score": 10792000.0,
+      "cluster_spread": 0.12576896960470202,
+      "stability_cv": 0.17026524261945047
+    },
+    {
+      "tag": "cluster53_gc6",
+      "Nk": 649,
+      "z_score": 437750500.0,
+      "cluster_spread": 0.07826946361447432,
+      "stability_cv": 0.032006233311046586
+    },
+    {
+      "tag": "cluster53_gc7",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": 0.10169002752299781,
+      "stability_cv": 0.31151614631299507
+    },
+    {
+      "tag": "cluster53_gc8",
+      "Nk": 28,
+      "z_score": 18886000.0,
+      "cluster_spread": 0.16371620211407087,
+      "stability_cv": 0.1544111218509692
+    },
+    {
+      "tag": "cluster53_gc9",
+      "Nk": 617,
+      "z_score": 416166500.0,
+      "cluster_spread": 0.06438751923485841,
+      "stability_cv": 0.028818244947275216
+    },
+    {
+      "tag": "cluster64_gc0",
+      "Nk": 712,
+      "z_score": 480244000.0,
+      "cluster_spread": 0.6535260805290581,
+      "stability_cv": 0.03873455493504568
+    },
+    {
+      "tag": "cluster64_gc10",
+      "Nk": 16,
+      "z_score": 10792000.0,
+      "cluster_spread": 0.39725723079931186,
+      "stability_cv": 0.22252048349415932
+    },
+    {
+      "tag": "cluster64_gc11",
+      "Nk": 577,
+      "z_score": 389186500.0,
+      "cluster_spread": 0.6779100380319302,
+      "stability_cv": 0.051876194801402827
+    },
+    {
+      "tag": "cluster64_gc12",
+      "Nk": 49,
+      "z_score": 33050500.0,
+      "cluster_spread": 0.5032493319991275,
+      "stability_cv": 0.1381298292894724
+    },
+    {
+      "tag": "cluster64_gc13",
+      "Nk": 77,
+      "z_score": 51936500.00000001,
+      "cluster_spread": 0.5430981603870716,
+      "stability_cv": 0.10398320560280734
+    },
+    {
+      "tag": "cluster64_gc14",
+      "Nk": 6,
+      "z_score": 4047000.0,
+      "cluster_spread": 0.15040102643477574,
+      "stability_cv": 0.43337176641475866
+    },
+    {
+      "tag": "cluster64_gc15",
+      "Nk": 41,
+      "z_score": 27654500.0,
+      "cluster_spread": 0.5171040720165765,
+      "stability_cv": 0.16353474727528305
+    },
+    {
+      "tag": "cluster64_gc16",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 1.0510161992334608
+    },
+    {
+      "tag": "cluster64_gc17",
+      "Nk": 99,
+      "z_score": 66775500.0,
+      "cluster_spread": 0.4952051707643651,
+      "stability_cv": 0.08306853725021475
+    },
+    {
+      "tag": "cluster64_gc18",
+      "Nk": 102,
+      "z_score": 68799000.0,
+      "cluster_spread": 0.5291934515904304,
+      "stability_cv": 0.09692194232124775
+    },
+    {
+      "tag": "cluster64_gc19",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": 0.4806474695604253,
+      "stability_cv": 0.27063157792299153
+    },
+    {
+      "tag": "cluster64_gc1",
+      "Nk": 38,
+      "z_score": 25631000.0,
+      "cluster_spread": 0.40346715973443265,
+      "stability_cv": 0.13046075769871457
+    },
+    {
+      "tag": "cluster64_gc20",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8713541150581332
+    },
+    {
+      "tag": "cluster64_gc21",
+      "Nk": 104,
+      "z_score": 70148000.0,
+      "cluster_spread": 0.48296966008557773,
+      "stability_cv": 0.08026461232630049
+    },
+    {
+      "tag": "cluster64_gc22",
+      "Nk": 47,
+      "z_score": 31701500.0,
+      "cluster_spread": 0.3373240269518815,
+      "stability_cv": 0.11856777443955104
+    },
+    {
+      "tag": "cluster64_gc23",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": 0.45594768180960266,
+      "stability_cv": 0.18428789513314672
+    },
+    {
+      "tag": "cluster64_gc24",
+      "Nk": 33,
+      "z_score": 22258500.0,
+      "cluster_spread": 0.49526731330413576,
+      "stability_cv": 0.1746052125405443
+    },
+    {
+      "tag": "cluster64_gc25",
+      "Nk": 18,
+      "z_score": 12141000.0,
+      "cluster_spread": 0.4459702203848794,
+      "stability_cv": 0.2337904356339889
+    },
+    {
+      "tag": "cluster64_gc26",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8268446071515085
+    },
+    {
+      "tag": "cluster64_gc27",
+      "Nk": 140,
+      "z_score": 94430000.0,
+      "cluster_spread": 0.6057209642483485,
+      "stability_cv": 0.08594477749059869
+    },
+    {
+      "tag": "cluster64_gc28",
+      "Nk": 85,
+      "z_score": 57332500.0,
+      "cluster_spread": 0.5318941252740681,
+      "stability_cv": 0.07750635508809528
+    },
+    {
+      "tag": "cluster64_gc29",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.3899822625973746,
+      "stability_cv": 0.3249875609038045
+    },
+    {
+      "tag": "cluster64_gc2",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0
+    },
+    {
+      "tag": "cluster64_gc3",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": 0.41415059112792757,
+      "stability_cv": 0.26355350558176033
+    },
+    {
+      "tag": "cluster64_gc4",
+      "Nk": 37,
+      "z_score": 24956500.0,
+      "cluster_spread": 0.29462224699966705,
+      "stability_cv": 0.16004476266577772
+    },
+    {
+      "tag": "cluster64_gc5",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0
+    },
+    {
+      "tag": "cluster64_gc6",
+      "Nk": 278,
+      "z_score": 187511000.0,
+      "cluster_spread": 0.6475449848056609,
+      "stability_cv": 0.06206179401370925
+    },
+    {
+      "tag": "cluster64_gc7",
+      "Nk": 29,
+      "z_score": 19560500.000000004,
+      "cluster_spread": 0.42469841553185095,
+      "stability_cv": 0.16765094735126748
+    },
+    {
+      "tag": "cluster64_gc8",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.6470584429067984
+    },
+    {
+      "tag": "cluster64_gc9",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": 0.20034035699980554,
+      "stability_cv": 0.2634448209268614
+    },
+    {
+      "tag": "domain_bicycle_gc0",
+      "Nk": 1572,
+      "z_score": 1060314000.0000001,
+      "cluster_spread": 0.5965772530666991,
+      "stability_cv": 0.023916227111897437
+    },
+    {
+      "tag": "domain_bicycle_gc10",
+      "Nk": 19,
+      "z_score": 12815500.0,
+      "cluster_spread": 0.22050664990446459,
+      "stability_cv": 0.22409233506224835
+    },
+    {
+      "tag": "domain_bicycle_gc11",
+      "Nk": 829,
+      "z_score": 559160500.0,
+      "cluster_spread": 0.49782609914364984,
+      "stability_cv": 0.032541761218232934
+    },
+    {
+      "tag": "domain_bicycle_gc12",
+      "Nk": 964,
+      "z_score": 650218000.0,
+      "cluster_spread": 0.49323917941826656,
+      "stability_cv": 0.03730187608713158
+    },
+    {
+      "tag": "domain_bicycle_gc13",
+      "Nk": 2057,
+      "z_score": 1387446500.0,
+      "cluster_spread": 0.5693766896022765,
+      "stability_cv": 0.021597472357783424
+    },
+    {
+      "tag": "domain_bicycle_gc14",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.6178858477619089,
+      "stability_cv": 0.15946228936089318
+    },
+    {
+      "tag": "domain_bicycle_gc15",
+      "Nk": 90,
+      "z_score": 60705000.0,
+      "cluster_spread": 0.45066743462529135,
+      "stability_cv": 0.12522425606525556
+    },
+    {
+      "tag": "domain_bicycle_gc16",
+      "Nk": 70,
+      "z_score": 47215000.0,
+      "cluster_spread": 0.7122158384797656,
+      "stability_cv": 0.1084187080739968
+    },
+    {
+      "tag": "domain_bicycle_gc17",
+      "Nk": 766,
+      "z_score": 516667000.00000006,
+      "cluster_spread": 0.5550708330635473,
+      "stability_cv": 0.03317396920905497
+    },
+    {
+      "tag": "domain_bicycle_gc18",
+      "Nk": 127,
+      "z_score": 85661500.00000001,
+      "cluster_spread": 0.5083248738186973,
+      "stability_cv": 0.09056187771124785
+    },
+    {
+      "tag": "domain_bicycle_gc19",
+      "Nk": 308,
+      "z_score": 207746000.00000003,
+      "cluster_spread": 0.7028801978344019,
+      "stability_cv": 0.07107417014536502
+    },
+    {
+      "tag": "domain_bicycle_gc1",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.5548088527603491
+    },
+    {
+      "tag": "domain_bicycle_gc20",
+      "Nk": 76,
+      "z_score": 51262000.0,
+      "cluster_spread": 0.4351321862168029,
+      "stability_cv": 0.12336366349273929
+    },
+    {
+      "tag": "domain_bicycle_gc21",
+      "Nk": 6,
+      "z_score": 4047000.0,
+      "cluster_spread": 0.3376150377775485,
+      "stability_cv": 0.37330296597122603
+    },
+    {
+      "tag": "domain_bicycle_gc22",
+      "Nk": 311,
+      "z_score": 209769500.0,
+      "cluster_spread": 0.2759963538859882,
+      "stability_cv": 0.05861169083839619
+    },
+    {
+      "tag": "domain_bicycle_gc23",
+      "Nk": 130,
+      "z_score": 87685000.0,
+      "cluster_spread": 0.6874451265852536,
+      "stability_cv": 0.07764608669916587
+    },
+    {
+      "tag": "domain_bicycle_gc24",
+      "Nk": 20,
+      "z_score": 13490000.0,
+      "cluster_spread": 0.5386977512641101,
+      "stability_cv": 0.24170852598159573
+    },
+    {
+      "tag": "domain_bicycle_gc25",
+      "Nk": 414,
+      "z_score": 279243000.0,
+      "cluster_spread": 0.5256287351815733,
+      "stability_cv": 0.042632002864282086
+    },
+    {
+      "tag": "domain_bicycle_gc26",
+      "Nk": 145,
+      "z_score": 97802500.0,
+      "cluster_spread": 0.10883861594034129,
+      "stability_cv": 0.06566696591110759
+    },
+    {
+      "tag": "domain_bicycle_gc27",
+      "Nk": 38,
+      "z_score": 25631000.0,
+      "cluster_spread": 0.5400379037125533,
+      "stability_cv": 0.1744551615141639
+    },
+    {
+      "tag": "domain_bicycle_gc28",
+      "Nk": 84,
+      "z_score": 56658000.00000001,
+      "cluster_spread": 0.4832750934898985,
+      "stability_cv": 0.09782015065831895
+    },
+    {
+      "tag": "domain_bicycle_gc29",
+      "Nk": 238,
+      "z_score": 160531000.0,
+      "cluster_spread": 0.42215236694892505,
+      "stability_cv": 0.04851858958292556
+    },
+    {
+      "tag": "domain_bicycle_gc2",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.611730721041445,
+      "stability_cv": 0.21021626683205732
+    },
+    {
+      "tag": "domain_bicycle_gc3",
+      "Nk": 304,
+      "z_score": 205048000.0,
+      "cluster_spread": 0.4511826805841398,
+      "stability_cv": 0.05905151788340458
+    },
+    {
+      "tag": "domain_bicycle_gc4",
+      "Nk": 153,
+      "z_score": 103198500.0,
+      "cluster_spread": 0.5715868855403141,
+      "stability_cv": 0.060933589924270275
+    },
+    {
+      "tag": "domain_bicycle_gc5",
+      "Nk": 19,
+      "z_score": 12815500.0,
+      "cluster_spread": 0.34318622716687447,
+      "stability_cv": 0.2654701219621484
+    },
+    {
+      "tag": "domain_bicycle_gc6",
+      "Nk": 120,
+      "z_score": 80940000.0,
+      "cluster_spread": 0.5653738473081267,
+      "stability_cv": 0.0887871792162299
+    },
+    {
+      "tag": "domain_bicycle_gc7",
+      "Nk": 133,
+      "z_score": 89708500.0,
+      "cluster_spread": 0.3475969781362895,
+      "stability_cv": 0.0763361737365622
+    },
+    {
+      "tag": "domain_bicycle_gc8",
+      "Nk": 224,
+      "z_score": 151088000.0,
+      "cluster_spread": 0.6323930840417643,
+      "stability_cv": 0.06282170585845016
+    },
+    {
+      "tag": "domain_bicycle_gc9",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": 0.48414260428355427,
+      "stability_cv": 0.19353840621637597
+    },
+    {
+      "tag": "domain_cat_gc0",
+      "Nk": 1019,
+      "z_score": 687315500.0000001,
+      "cluster_spread": 0.46814564849852897,
+      "stability_cv": 0.029856418392351248
+    },
+    {
+      "tag": "domain_cat_gc10",
+      "Nk": 162,
+      "z_score": 109269000.0,
+      "cluster_spread": 0.3283717894348755,
+      "stability_cv": 0.0912349359765189
+    },
+    {
+      "tag": "domain_cat_gc11",
+      "Nk": 5323,
+      "z_score": 3590363500.0,
+      "cluster_spread": 0.7546596148577752,
+      "stability_cv": 0.013327026903654234
+    },
+    {
+      "tag": "domain_cat_gc12",
+      "Nk": 1648,
+      "z_score": 1111576000.0,
+      "cluster_spread": 0.6060721424768196,
+      "stability_cv": 0.02394113721683376
+    },
+    {
+      "tag": "domain_cat_gc13",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.3789589468648893,
+      "stability_cv": 0.110071680559355
+    },
+    {
+      "tag": "domain_cat_gc14",
+      "Nk": 135,
+      "z_score": 91057500.00000001,
+      "cluster_spread": 0.3838727750155116,
+      "stability_cv": 0.08561771235199878
+    },
+    {
+      "tag": "domain_cat_gc15",
+      "Nk": 259,
+      "z_score": 174695500.00000003,
+      "cluster_spread": 0.4219626055096856,
+      "stability_cv": 0.05419054975007347
+    },
+    {
+      "tag": "domain_cat_gc16",
+      "Nk": 307,
+      "z_score": 207071500.0,
+      "cluster_spread": 0.5259705258805277,
+      "stability_cv": 0.05198626568999692
+    },
+    {
+      "tag": "domain_cat_gc17",
+      "Nk": 1202,
+      "z_score": 810749000.0000001,
+      "cluster_spread": 0.5710150867209958,
+      "stability_cv": 0.025616362754596285
+    },
+    {
+      "tag": "domain_cat_gc18",
+      "Nk": 837,
+      "z_score": 564556500.0,
+      "cluster_spread": 0.19911494083108502,
+      "stability_cv": 0.03074169645433601
+    },
+    {
+      "tag": "domain_cat_gc19",
+      "Nk": 281,
+      "z_score": 189534500.00000003,
+      "cluster_spread": 0.2024747920256623,
+      "stability_cv": 0.05633674070619798
+    },
+    {
+      "tag": "domain_cat_gc1",
+      "Nk": 102,
+      "z_score": 68799000.0,
+      "cluster_spread": 0.5614395589999333,
+      "stability_cv": 0.09256567925870797
+    },
+    {
+      "tag": "domain_cat_gc20",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.5244604020910043,
+      "stability_cv": 0.0722251429396945
+    },
+    {
+      "tag": "domain_cat_gc21",
+      "Nk": 125,
+      "z_score": 84312500.0,
+      "cluster_spread": 0.563813930272548,
+      "stability_cv": 0.08560446718136729
+    },
+    {
+      "tag": "domain_cat_gc22",
+      "Nk": 632,
+      "z_score": 426284000.0,
+      "cluster_spread": 0.3684599307579364,
+      "stability_cv": 0.04306033001168751
+    },
+    {
+      "tag": "domain_cat_gc23",
+      "Nk": 1792,
+      "z_score": 1208704000.0,
+      "cluster_spread": 0.5433475023377209,
+      "stability_cv": 0.02447938915042489
+    },
+    {
+      "tag": "domain_cat_gc24",
+      "Nk": 835,
+      "z_score": 563207500.0,
+      "cluster_spread": 0.48903367415223237,
+      "stability_cv": 0.03431996466606542
+    },
+    {
+      "tag": "domain_cat_gc25",
+      "Nk": 1543,
+      "z_score": 1040753500.0000001,
+      "cluster_spread": 0.612965937629762,
+      "stability_cv": 0.022805932172843078
+    },
+    {
+      "tag": "domain_cat_gc26",
+      "Nk": 101,
+      "z_score": 68124500.0,
+      "cluster_spread": 0.3096846383024204,
+      "stability_cv": 0.11477476964504718
+    },
+    {
+      "tag": "domain_cat_gc27",
+      "Nk": 765,
+      "z_score": 515992500.0,
+      "cluster_spread": 0.5206313854550154,
+      "stability_cv": 0.03430222173254028
+    },
+    {
+      "tag": "domain_cat_gc28",
+      "Nk": 198,
+      "z_score": 133551000.0,
+      "cluster_spread": 0.5818603260552613,
+      "stability_cv": 0.05438985223849525
+    },
+    {
+      "tag": "domain_cat_gc29",
+      "Nk": 1479,
+      "z_score": 997585500.0000001,
+      "cluster_spread": 0.5539874788437187,
+      "stability_cv": 0.022080279169486274
+    },
+    {
+      "tag": "domain_cat_gc2",
+      "Nk": 1167,
+      "z_score": 787141500.0,
+      "cluster_spread": 0.45642451786397803,
+      "stability_cv": 0.02377259164269519
+    },
+    {
+      "tag": "domain_cat_gc3",
+      "Nk": 349,
+      "z_score": 235400500.0,
+      "cluster_spread": 0.22707098249142654,
+      "stability_cv": 0.04387672623171243
+    },
+    {
+      "tag": "domain_cat_gc4",
+      "Nk": 263,
+      "z_score": 177393500.0,
+      "cluster_spread": 0.25424600165410877,
+      "stability_cv": 0.06383271859853816
+    },
+    {
+      "tag": "domain_cat_gc5",
+      "Nk": 6,
+      "z_score": 4047000.0,
+      "cluster_spread": 0.2895997202888316,
+      "stability_cv": 0.33654285939123096
+    },
+    {
+      "tag": "domain_cat_gc6",
+      "Nk": 904,
+      "z_score": 609748000.0,
+      "cluster_spread": 0.3493570121241418,
+      "stability_cv": 0.037199500199036596
+    },
+    {
+      "tag": "domain_cat_gc7",
+      "Nk": 93,
+      "z_score": 62728500.0,
+      "cluster_spread": 0.42001651072919305,
+      "stability_cv": 0.0796905317062366
+    },
+    {
+      "tag": "domain_cat_gc8",
+      "Nk": 169,
+      "z_score": 113990500.0,
+      "cluster_spread": 0.49432337307230134,
+      "stability_cv": 0.061163961281893754
+    },
+    {
+      "tag": "domain_cat_gc9",
+      "Nk": 67,
+      "z_score": 45191500.0,
+      "cluster_spread": 0.1148872412659496,
+      "stability_cv": 0.09596909147115106
+    },
+    {
+      "tag": "domain_dog_gc0",
+      "Nk": 1277,
+      "z_score": 861336500.0,
+      "cluster_spread": 0.67423354354898,
+      "stability_cv": 0.03010018022434879
+    },
+    {
+      "tag": "domain_dog_gc10",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 1.0204987579954021
+    },
+    {
+      "tag": "domain_dog_gc11",
+      "Nk": 2438,
+      "z_score": 1644431000.0,
+      "cluster_spread": 0.7938047576330192,
+      "stability_cv": 0.02128278300798588
+    },
+    {
+      "tag": "domain_dog_gc12",
+      "Nk": 869,
+      "z_score": 586140500.0,
+      "cluster_spread": 0.5159092792362303,
+      "stability_cv": 0.03420420260009746
+    },
+    {
+      "tag": "domain_dog_gc13",
+      "Nk": 582,
+      "z_score": 392559000.0,
+      "cluster_spread": 0.6117973184165947,
+      "stability_cv": 0.034752551102363624
+    },
+    {
+      "tag": "domain_dog_gc14",
+      "Nk": 67,
+      "z_score": 45191500.0,
+      "cluster_spread": 0.5801535136600736,
+      "stability_cv": 0.12354881614848459
+    },
+    {
+      "tag": "domain_dog_gc15",
+      "Nk": 65,
+      "z_score": 43842500.0,
+      "cluster_spread": 0.5061338326926255,
+      "stability_cv": 0.12933084344277998
+    },
+    {
+      "tag": "domain_dog_gc16",
+      "Nk": 364,
+      "z_score": 245518000.0,
+      "cluster_spread": 0.6041649764805593,
+      "stability_cv": 0.05582626547598443
+    },
+    {
+      "tag": "domain_dog_gc17",
+      "Nk": 170,
+      "z_score": 114665000.0,
+      "cluster_spread": 0.5692354495439986,
+      "stability_cv": 0.06951237708340847
+    },
+    {
+      "tag": "domain_dog_gc18",
+      "Nk": 386,
+      "z_score": 260356999.99999997,
+      "cluster_spread": 0.4845397959721573,
+      "stability_cv": 0.0553457354547133
+    },
+    {
+      "tag": "domain_dog_gc19",
+      "Nk": 407,
+      "z_score": 274521500.0,
+      "cluster_spread": 0.6108305474122493,
+      "stability_cv": 0.048737894287164275
+    },
+    {
+      "tag": "domain_dog_gc1",
+      "Nk": 138,
+      "z_score": 93081000.0,
+      "cluster_spread": 0.4275246032081908,
+      "stability_cv": 0.07545758638577699
+    },
+    {
+      "tag": "domain_dog_gc20",
+      "Nk": 24,
+      "z_score": 16188000.0,
+      "cluster_spread": 0.5316420300637047,
+      "stability_cv": 0.20958977751692506
+    },
+    {
+      "tag": "domain_dog_gc21",
+      "Nk": 1153,
+      "z_score": 777698500.0,
+      "cluster_spread": 0.7723370882398906,
+      "stability_cv": 0.02789071896080439
+    },
+    {
+      "tag": "domain_dog_gc22",
+      "Nk": 640,
+      "z_score": 431680000.0,
+      "cluster_spread": 0.5766820831363402,
+      "stability_cv": 0.045492043675681236
+    },
+    {
+      "tag": "domain_dog_gc23",
+      "Nk": 356,
+      "z_score": 240122000.0,
+      "cluster_spread": 0.7085409356807342,
+      "stability_cv": 0.059785461882253525
+    },
+    {
+      "tag": "domain_dog_gc24",
+      "Nk": 253,
+      "z_score": 170648500.0,
+      "cluster_spread": 0.66613731062216,
+      "stability_cv": 0.056775632184913556
+    },
+    {
+      "tag": "domain_dog_gc25",
+      "Nk": 578,
+      "z_score": 389861000.0,
+      "cluster_spread": 0.7158957820789792,
+      "stability_cv": 0.04456873984757772
+    },
+    {
+      "tag": "domain_dog_gc26",
+      "Nk": 158,
+      "z_score": 106571000.0,
+      "cluster_spread": 0.5738912517230252,
+      "stability_cv": 0.0905824770923686
+    },
+    {
+      "tag": "domain_dog_gc27",
+      "Nk": 786,
+      "z_score": 530157000.00000006,
+      "cluster_spread": 0.7527535908599504,
+      "stability_cv": 0.03184279416770721
+    },
+    {
+      "tag": "domain_dog_gc28",
+      "Nk": 246,
+      "z_score": 165927000.0,
+      "cluster_spread": 0.3684173540014297,
+      "stability_cv": 0.05688021886001256
+    },
+    {
+      "tag": "domain_dog_gc29",
+      "Nk": 404,
+      "z_score": 272498000.0,
+      "cluster_spread": 0.6675545494444012,
+      "stability_cv": 0.05066912959930589
+    },
+    {
+      "tag": "domain_dog_gc2",
+      "Nk": 173,
+      "z_score": 116688500.00000001,
+      "cluster_spread": 0.6061269170191997,
+      "stability_cv": 0.05466326357013023
+    },
+    {
+      "tag": "domain_dog_gc3",
+      "Nk": 405,
+      "z_score": 273172500.0,
+      "cluster_spread": 0.7126484375979054,
+      "stability_cv": 0.044179041945132606
+    },
+    {
+      "tag": "domain_dog_gc4",
+      "Nk": 577,
+      "z_score": 389186500.0,
+      "cluster_spread": 0.6245280655859249,
+      "stability_cv": 0.04733433626889796
+    },
+    {
+      "tag": "domain_dog_gc5",
+      "Nk": 304,
+      "z_score": 205048000.0,
+      "cluster_spread": 0.6710070667543566,
+      "stability_cv": 0.05108105478491741
+    },
+    {
+      "tag": "domain_dog_gc6",
+      "Nk": 1258,
+      "z_score": 848521000.0,
+      "cluster_spread": 0.6757768330099075,
+      "stability_cv": 0.030860370937487506
+    },
+    {
+      "tag": "domain_dog_gc7",
+      "Nk": 154,
+      "z_score": 103873000.00000001,
+      "cluster_spread": 0.48984872060240386,
+      "stability_cv": 0.06978292499270014
+    },
+    {
+      "tag": "domain_dog_gc8",
+      "Nk": 239,
+      "z_score": 161205500.0,
+      "cluster_spread": 0.4400826723489867,
+      "stability_cv": 0.056440162246860645
+    },
+    {
+      "tag": "domain_dog_gc9",
+      "Nk": 255,
+      "z_score": 171997500.0,
+      "cluster_spread": 0.633319618085082,
+      "stability_cv": 0.0590979929276597
+    },
+    {
+      "tag": "domain_elephant_gc0",
+      "Nk": 869,
+      "z_score": 586140500.0,
+      "cluster_spread": 0.2964541495951685,
+      "stability_cv": 0.030526763041739163
+    },
+    {
+      "tag": "domain_elephant_gc10",
+      "Nk": 584,
+      "z_score": 393908000.00000006,
+      "cluster_spread": 0.33309048158953614,
+      "stability_cv": 0.04203672649421856
+    },
+    {
+      "tag": "domain_elephant_gc11",
+      "Nk": 2885,
+      "z_score": 1945932500.0,
+      "cluster_spread": 0.4830347645346763,
+      "stability_cv": 0.015697755325683998
+    },
+    {
+      "tag": "domain_elephant_gc12",
+      "Nk": 1609,
+      "z_score": 1085270500.0000002,
+      "cluster_spread": 0.38621707943905836,
+      "stability_cv": 0.01907996878442583
+    },
+    {
+      "tag": "domain_elephant_gc13",
+      "Nk": 124,
+      "z_score": 83638000.00000001,
+      "cluster_spread": 0.1481292535117198,
+      "stability_cv": 0.0983902811050692
+    },
+    {
+      "tag": "domain_elephant_gc14",
+      "Nk": 238,
+      "z_score": 160531000.0,
+      "cluster_spread": 0.4036304083462935,
+      "stability_cv": 0.06307547377652933
+    },
+    {
+      "tag": "domain_elephant_gc15",
+      "Nk": 314,
+      "z_score": 211793000.00000003,
+      "cluster_spread": 0.41493388046400126,
+      "stability_cv": 0.05581347225086421
+    },
+    {
+      "tag": "domain_elephant_gc16",
+      "Nk": 63,
+      "z_score": 42493500.0,
+      "cluster_spread": 0.28507609495385106,
+      "stability_cv": 0.10849902090055456
+    },
+    {
+      "tag": "domain_elephant_gc17",
+      "Nk": 101,
+      "z_score": 68124500.0,
+      "cluster_spread": 0.25035383057325405,
+      "stability_cv": 0.10001581912124473
+    },
+    {
+      "tag": "domain_elephant_gc18",
+      "Nk": 293,
+      "z_score": 197628500.0,
+      "cluster_spread": 0.08254996189068167,
+      "stability_cv": 0.07347151048837532
+    },
+    {
+      "tag": "domain_elephant_gc19",
+      "Nk": 400,
+      "z_score": 269800000.0,
+      "cluster_spread": 0.24286171996914585,
+      "stability_cv": 0.047342681383637585
+    },
+    {
+      "tag": "domain_elephant_gc1",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8207026261240181
+    },
+    {
+      "tag": "domain_elephant_gc20",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0
+    },
+    {
+      "tag": "domain_elephant_gc21",
+      "Nk": 961,
+      "z_score": 648194500.0,
+      "cluster_spread": 0.2901882613970739,
+      "stability_cv": 0.04316989774168767
+    },
+    {
+      "tag": "domain_elephant_gc22",
+      "Nk": 694,
+      "z_score": 468103000.00000006,
+      "cluster_spread": 0.3312706201835852,
+      "stability_cv": 0.03625904322488581
+    },
+    {
+      "tag": "domain_elephant_gc23",
+      "Nk": 657,
+      "z_score": 443146500.0,
+      "cluster_spread": 0.30172681415239483,
+      "stability_cv": 0.03551748880640975
+    },
+    {
+      "tag": "domain_elephant_gc24",
+      "Nk": 334,
+      "z_score": 225283000.0,
+      "cluster_spread": 0.1839321019931008,
+      "stability_cv": 0.0507281799096598
+    },
+    {
+      "tag": "domain_elephant_gc25",
+      "Nk": 246,
+      "z_score": 165927000.0,
+      "cluster_spread": 0.312700597958212,
+      "stability_cv": 0.0601241124549833
+    },
+    {
+      "tag": "domain_elephant_gc26",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": 0.25184583715516645,
+      "stability_cv": 0.16631382229757039
+    },
+    {
+      "tag": "domain_elephant_gc27",
+      "Nk": 1219,
+      "z_score": 822215500.0,
+      "cluster_spread": 0.3282132489448757,
+      "stability_cv": 0.030923576031461494
+    },
+    {
+      "tag": "domain_elephant_gc28",
+      "Nk": 95,
+      "z_score": 64077500.0,
+      "cluster_spread": 0.375599539475175,
+      "stability_cv": 0.09716553557142803
+    },
+    {
+      "tag": "domain_elephant_gc29",
+      "Nk": 25,
+      "z_score": 16862500.0,
+      "cluster_spread": 0.2534589321033461,
+      "stability_cv": 0.22789518473641635
+    },
+    {
+      "tag": "domain_elephant_gc2",
+      "Nk": 17,
+      "z_score": 11466500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.250743338370432
+    },
+    {
+      "tag": "domain_elephant_gc3",
+      "Nk": 412,
+      "z_score": 277894000.0,
+      "cluster_spread": 0.3176940783444109,
+      "stability_cv": 0.04429827175570445
+    },
+    {
+      "tag": "domain_elephant_gc4",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": 0.061723606211449115,
+      "stability_cv": 0.22995764290644202
+    },
+    {
+      "tag": "domain_elephant_gc5",
+      "Nk": 11,
+      "z_score": 7419500.000000001,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.3027797476178839
+    },
+    {
+      "tag": "domain_elephant_gc6",
+      "Nk": 1852,
+      "z_score": 1249174000.0,
+      "cluster_spread": 0.3775337177748144,
+      "stability_cv": 0.02025604773668118
+    },
+    {
+      "tag": "domain_elephant_gc7",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.16834788480513185,
+      "stability_cv": 0.07146000536525707
+    },
+    {
+      "tag": "domain_elephant_gc8",
+      "Nk": 57,
+      "z_score": 38446500.0,
+      "cluster_spread": 0.3532093216415154,
+      "stability_cv": 0.10241003525314145
+    },
+    {
+      "tag": "domain_elephant_gc9",
+      "Nk": 897,
+      "z_score": 605026500.0,
+      "cluster_spread": 0.268248764065567,
+      "stability_cv": 0.03111713150973073
+    },
+    {
+      "tag": "domain_kite_gc0",
+      "Nk": 382,
+      "z_score": 257659000.0,
+      "cluster_spread": 0.3055748230109496,
+      "stability_cv": 0.04674310955329598
+    },
+    {
+      "tag": "domain_kite_gc10",
+      "Nk": 393,
+      "z_score": 265078500.00000003,
+      "cluster_spread": 0.25569437610652335,
+      "stability_cv": 0.047978024748226065
+    },
+    {
+      "tag": "domain_kite_gc11",
+      "Nk": 1047,
+      "z_score": 706201500.0,
+      "cluster_spread": 0.5109111249663107,
+      "stability_cv": 0.028955945603089672
+    },
+    {
+      "tag": "domain_kite_gc12",
+      "Nk": 179,
+      "z_score": 120735500.0,
+      "cluster_spread": 0.2521584962398323,
+      "stability_cv": 0.07647628606129807
+    },
+    {
+      "tag": "domain_kite_gc13",
+      "Nk": 23,
+      "z_score": 15513500.000000002,
+      "cluster_spread": 0.1569686204960446,
+      "stability_cv": 0.1776713711071106
+    },
+    {
+      "tag": "domain_kite_gc14",
+      "Nk": 127,
+      "z_score": 85661500.00000001,
+      "cluster_spread": 0.2333585048745067,
+      "stability_cv": 0.07507655876964572
+    },
+    {
+      "tag": "domain_kite_gc15",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.07227845673849109,
+      "stability_cv": 0.10149044582152324
+    },
+    {
+      "tag": "domain_kite_gc16",
+      "Nk": 9,
+      "z_score": 6070500.0,
+      "cluster_spread": 0.5083748908324703,
+      "stability_cv": 0.30137747328967207
+    },
+    {
+      "tag": "domain_kite_gc17",
+      "Nk": 456,
+      "z_score": 307572000.0,
+      "cluster_spread": 0.33411456029395853,
+      "stability_cv": 0.04732701877651037
+    },
+    {
+      "tag": "domain_kite_gc18",
+      "Nk": 88,
+      "z_score": 59356000.00000001,
+      "cluster_spread": 0.3030190057618346,
+      "stability_cv": 0.11132861993373819
+    },
+    {
+      "tag": "domain_kite_gc19",
+      "Nk": 114,
+      "z_score": 76893000.0,
+      "cluster_spread": 0.05885915310144713,
+      "stability_cv": 0.0844890735847131
+    },
+    {
+      "tag": "domain_kite_gc1",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.2658153557991708,
+      "stability_cv": 0.35351395566439503
+    },
+    {
+      "tag": "domain_kite_gc20",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.3470673197396387,
+      "stability_cv": 0.4444206037554176
+    },
+    {
+      "tag": "domain_kite_gc21",
+      "Nk": 607,
+      "z_score": 409421500.0,
+      "cluster_spread": 0.40262426605714824,
+      "stability_cv": 0.04134819493323561
+    },
+    {
+      "tag": "domain_kite_gc22",
+      "Nk": 217,
+      "z_score": 146366500.0,
+      "cluster_spread": 0.20371045887019776,
+      "stability_cv": 0.06119557669579594
+    },
+    {
+      "tag": "domain_kite_gc23",
+      "Nk": 367,
+      "z_score": 247541500.0,
+      "cluster_spread": 0.3325184881468411,
+      "stability_cv": 0.05682828008881927
+    },
+    {
+      "tag": "domain_kite_gc24",
+      "Nk": 40,
+      "z_score": 26980000.0,
+      "cluster_spread": 0.16366391398330016,
+      "stability_cv": 0.12146902657322937
+    },
+    {
+      "tag": "domain_kite_gc25",
+      "Nk": 334,
+      "z_score": 225283000.0,
+      "cluster_spread": 0.40564681821385756,
+      "stability_cv": 0.05520357233470816
+    },
+    {
+      "tag": "domain_kite_gc26",
+      "Nk": 2,
+      "z_score": 1349000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.5977795112529177
+    },
+    {
+      "tag": "domain_kite_gc27",
+      "Nk": 99,
+      "z_score": 66775500.0,
+      "cluster_spread": 0.2249490075784101,
+      "stability_cv": 0.1066040866220329
+    },
+    {
+      "tag": "domain_kite_gc28",
+      "Nk": 165,
+      "z_score": 111292500.00000001,
+      "cluster_spread": 0.20018091762108636,
+      "stability_cv": 0.07713315422500946
+    },
+    {
+      "tag": "domain_kite_gc29",
+      "Nk": 59,
+      "z_score": 39795500.0,
+      "cluster_spread": 0.07790019828019115,
+      "stability_cv": 0.14056022886220543
+    },
+    {
+      "tag": "domain_kite_gc2",
+      "Nk": 154,
+      "z_score": 103873000.00000001,
+      "cluster_spread": 0.19580935903542207,
+      "stability_cv": 0.057892718261992514
+    },
+    {
+      "tag": "domain_kite_gc3",
+      "Nk": 72,
+      "z_score": 48564000.0,
+      "cluster_spread": 0.2927530722438485,
+      "stability_cv": 0.10613361309968845
+    },
+    {
+      "tag": "domain_kite_gc4",
+      "Nk": 60,
+      "z_score": 40470000.0,
+      "cluster_spread": 0.279022825548289,
+      "stability_cv": 0.10630183544765609
+    },
+    {
+      "tag": "domain_kite_gc5",
+      "Nk": 68,
+      "z_score": 45866000.0,
+      "cluster_spread": 0.4579175279747589,
+      "stability_cv": 0.10039658470787648
+    },
+    {
+      "tag": "domain_kite_gc6",
+      "Nk": 389,
+      "z_score": 262380500.0,
+      "cluster_spread": 0.13578867504510844,
+      "stability_cv": 0.05376909754239346
+    },
+    {
+      "tag": "domain_kite_gc7",
+      "Nk": 69,
+      "z_score": 46540500.0,
+      "cluster_spread": 0.27728204936912915,
+      "stability_cv": 0.10393283899380801
+    },
+    {
+      "tag": "domain_kite_gc8",
+      "Nk": 203,
+      "z_score": 136923500.0,
+      "cluster_spread": 0.15454562261286545,
+      "stability_cv": 0.07831424350290503
+    },
+    {
+      "tag": "domain_kite_gc9",
+      "Nk": 118,
+      "z_score": 79591000.0,
+      "cluster_spread": 0.08698659646263629,
+      "stability_cv": 0.09132395981347728
+    },
+    {
+      "tag": "domain_motorcycle_gc0",
+      "Nk": 598,
+      "z_score": 403351000.0,
+      "cluster_spread": 0.49467431876182016,
+      "stability_cv": 0.0357285388107993
+    },
+    {
+      "tag": "domain_motorcycle_gc10",
+      "Nk": 57,
+      "z_score": 38446500.0,
+      "cluster_spread": 0.428436292942504,
+      "stability_cv": 0.14291406696078635
+    },
+    {
+      "tag": "domain_motorcycle_gc11",
+      "Nk": 1347,
+      "z_score": 908551500.0000001,
+      "cluster_spread": 0.5164556949313828,
+      "stability_cv": 0.02939249716446608
+    },
+    {
+      "tag": "domain_motorcycle_gc12",
+      "Nk": 17,
+      "z_score": 11466500.0,
+      "cluster_spread": 0.586915885387401,
+      "stability_cv": 0.21903909738953756
+    },
+    {
+      "tag": "domain_motorcycle_gc13",
+      "Nk": 28,
+      "z_score": 18886000.0,
+      "cluster_spread": 0.3934197676425099,
+      "stability_cv": 0.17568775384560958
+    },
+    {
+      "tag": "domain_motorcycle_gc14",
+      "Nk": 174,
+      "z_score": 117363000.0,
+      "cluster_spread": 0.2763149789560544,
+      "stability_cv": 0.07732759693622229
+    },
+    {
+      "tag": "domain_motorcycle_gc15",
+      "Nk": 188,
+      "z_score": 126806000.0,
+      "cluster_spread": 0.333473622497358,
+      "stability_cv": 0.06615793701715607
+    },
+    {
+      "tag": "domain_motorcycle_gc16",
+      "Nk": 203,
+      "z_score": 136923500.0,
+      "cluster_spread": 0.6168980433753827,
+      "stability_cv": 0.07349442957634693
+    },
+    {
+      "tag": "domain_motorcycle_gc17",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": 0.560127341613868,
+      "stability_cv": 0.19219714733162657
+    },
+    {
+      "tag": "domain_motorcycle_gc18",
+      "Nk": 809,
+      "z_score": 545670500.0,
+      "cluster_spread": 0.41379206595147877,
+      "stability_cv": 0.03640512568132671
+    },
+    {
+      "tag": "domain_motorcycle_gc19",
+      "Nk": 94,
+      "z_score": 63403000.0,
+      "cluster_spread": 0.37061824777478114,
+      "stability_cv": 0.09238911108291363
+    },
+    {
+      "tag": "domain_motorcycle_gc1",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": 0.21247364923557852,
+      "stability_cv": 0.5349362856326217
+    },
+    {
+      "tag": "domain_motorcycle_gc20",
+      "Nk": 13,
+      "z_score": 8768500.0,
+      "cluster_spread": 0.29980549701204173,
+      "stability_cv": 0.27697959173103787
+    },
+    {
+      "tag": "domain_motorcycle_gc21",
+      "Nk": 1059,
+      "z_score": 714295500.0,
+      "cluster_spread": 0.47681946313913404,
+      "stability_cv": 0.029647912935625832
+    },
+    {
+      "tag": "domain_motorcycle_gc22",
+      "Nk": 64,
+      "z_score": 43168000.0,
+      "cluster_spread": 0.4579575371509057,
+      "stability_cv": 0.11792339934006328
+    },
+    {
+      "tag": "domain_motorcycle_gc23",
+      "Nk": 226,
+      "z_score": 152437000.0,
+      "cluster_spread": 0.6339430230823179,
+      "stability_cv": 0.06708822276984422
+    },
+    {
+      "tag": "domain_motorcycle_gc24",
+      "Nk": 191,
+      "z_score": 128829500.0,
+      "cluster_spread": 0.5863283757484065,
+      "stability_cv": 0.06148759318466107
+    },
+    {
+      "tag": "domain_motorcycle_gc25",
+      "Nk": 393,
+      "z_score": 265078500.00000003,
+      "cluster_spread": 0.4596230783695388,
+      "stability_cv": 0.05472396718808395
+    },
+    {
+      "tag": "domain_motorcycle_gc26",
+      "Nk": 57,
+      "z_score": 38446500.0,
+      "cluster_spread": 0.5818049869176148,
+      "stability_cv": 0.102905021545668
+    },
+    {
+      "tag": "domain_motorcycle_gc27",
+      "Nk": 71,
+      "z_score": 47889500.0,
+      "cluster_spread": 0.418430242819107,
+      "stability_cv": 0.11061525010299213
+    },
+    {
+      "tag": "domain_motorcycle_gc28",
+      "Nk": 36,
+      "z_score": 24282000.0,
+      "cluster_spread": 0.1834136023153924,
+      "stability_cv": 0.13490963200032485
+    },
+    {
+      "tag": "domain_motorcycle_gc29",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.3470673197396387,
+      "stability_cv": 0.45102362547850366
+    },
+    {
+      "tag": "domain_motorcycle_gc2",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": 0.24083049512184948,
+      "stability_cv": 0.29251269550611697
+    },
+    {
+      "tag": "domain_motorcycle_gc3",
+      "Nk": 247,
+      "z_score": 166601500.0,
+      "cluster_spread": 0.45008487826821814,
+      "stability_cv": 0.06894743288231782
+    },
+    {
+      "tag": "domain_motorcycle_gc4",
+      "Nk": 91,
+      "z_score": 61379500.0,
+      "cluster_spread": 0.19885974229476988,
+      "stability_cv": 0.10457516225952984
+    },
+    {
+      "tag": "domain_motorcycle_gc5",
+      "Nk": 107,
+      "z_score": 72171500.0,
+      "cluster_spread": 0.5129619672418102,
+      "stability_cv": 0.08087550075846009
+    },
+    {
+      "tag": "domain_motorcycle_gc6",
+      "Nk": 698,
+      "z_score": 470801000.0,
+      "cluster_spread": 0.5967153696502175,
+      "stability_cv": 0.041888332571778375
+    },
+    {
+      "tag": "domain_motorcycle_gc7",
+      "Nk": 33,
+      "z_score": 22258500.0,
+      "cluster_spread": 0.46140951904915256,
+      "stability_cv": 0.16198959703913116
+    },
+    {
+      "tag": "domain_motorcycle_gc8",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.3470673197396387,
+      "stability_cv": 0.43603138911188205
+    },
+    {
+      "tag": "domain_motorcycle_gc9",
+      "Nk": 251,
+      "z_score": 169299500.0,
+      "cluster_spread": 0.43616672023062303,
+      "stability_cv": 0.06404335726775404
+    },
+    {
+      "tag": "domain_pizza_gc0",
+      "Nk": 76,
+      "z_score": 51262000.0,
+      "cluster_spread": 0.10896903032305706,
+      "stability_cv": 0.10530803807693309
+    },
+    {
+      "tag": "domain_pizza_gc10",
+      "Nk": 1141,
+      "z_score": 769604500.0000001,
+      "cluster_spread": 0.5127920318193714,
+      "stability_cv": 0.025075424720068226
+    },
+    {
+      "tag": "domain_pizza_gc11",
+      "Nk": 1784,
+      "z_score": 1203308000.0,
+      "cluster_spread": 0.42986912786464754,
+      "stability_cv": 0.016945923850661022
+    },
+    {
+      "tag": "domain_pizza_gc12",
+      "Nk": 1134,
+      "z_score": 764883000.0000001,
+      "cluster_spread": 0.339673593282195,
+      "stability_cv": 0.02828706116563154
+    },
+    {
+      "tag": "domain_pizza_gc13",
+      "Nk": 257,
+      "z_score": 173346500.0,
+      "cluster_spread": 0.4967332379282215,
+      "stability_cv": 0.05635998675373301
+    },
+    {
+      "tag": "domain_pizza_gc14",
+      "Nk": 53,
+      "z_score": 35748500.0,
+      "cluster_spread": 0.4531551909325774,
+      "stability_cv": 0.15291541235377218
+    },
+    {
+      "tag": "domain_pizza_gc15",
+      "Nk": 314,
+      "z_score": 211793000.00000003,
+      "cluster_spread": 0.4135483758637371,
+      "stability_cv": 0.05659980061261102
+    },
+    {
+      "tag": "domain_pizza_gc16",
+      "Nk": 886,
+      "z_score": 597607000.0,
+      "cluster_spread": 0.2392553840883093,
+      "stability_cv": 0.03159554668921894
+    },
+    {
+      "tag": "domain_pizza_gc17",
+      "Nk": 84,
+      "z_score": 56658000.00000001,
+      "cluster_spread": 0.2609627799726016,
+      "stability_cv": 0.10792810030840756
+    },
+    {
+      "tag": "domain_pizza_gc18",
+      "Nk": 451,
+      "z_score": 304199500.0,
+      "cluster_spread": 0.262121761531456,
+      "stability_cv": 0.03577330814748981
+    },
+    {
+      "tag": "domain_pizza_gc19",
+      "Nk": 427,
+      "z_score": 288011500.0,
+      "cluster_spread": 0.5622836067241338,
+      "stability_cv": 0.04453142965671887
+    },
+    {
+      "tag": "domain_pizza_gc1",
+      "Nk": 348,
+      "z_score": 234726000.0,
+      "cluster_spread": 0.5073833344919653,
+      "stability_cv": 0.044918180509790795
+    },
+    {
+      "tag": "domain_pizza_gc20",
+      "Nk": 17,
+      "z_score": 11466500.0,
+      "cluster_spread": 0.44549807238079553,
+      "stability_cv": 0.21614724620426612
+    },
+    {
+      "tag": "domain_pizza_gc21",
+      "Nk": 211,
+      "z_score": 142319500.0,
+      "cluster_spread": 0.48871784637894955,
+      "stability_cv": 0.07094820306365501
+    },
+    {
+      "tag": "domain_pizza_gc22",
+      "Nk": 1475,
+      "z_score": 994887500.0,
+      "cluster_spread": 0.30843418287120783,
+      "stability_cv": 0.02010530615537737
+    },
+    {
+      "tag": "domain_pizza_gc23",
+      "Nk": 493,
+      "z_score": 332528500.0,
+      "cluster_spread": 0.4235603900566454,
+      "stability_cv": 0.044108933609603176
+    },
+    {
+      "tag": "domain_pizza_gc24",
+      "Nk": 683,
+      "z_score": 460683500.0,
+      "cluster_spread": 0.36640741187303283,
+      "stability_cv": 0.03957642432215495
+    },
+    {
+      "tag": "domain_pizza_gc25",
+      "Nk": 1052,
+      "z_score": 709574000.0,
+      "cluster_spread": 0.3358612789486479,
+      "stability_cv": 0.02701252807461254
+    },
+    {
+      "tag": "domain_pizza_gc26",
+      "Nk": 642,
+      "z_score": 433029000.0,
+      "cluster_spread": 0.3058549615292761,
+      "stability_cv": 0.03795798458861553
+    },
+    {
+      "tag": "domain_pizza_gc27",
+      "Nk": 616,
+      "z_score": 415492000.00000006,
+      "cluster_spread": 0.549869865302524,
+      "stability_cv": 0.034791457872096775
+    },
+    {
+      "tag": "domain_pizza_gc28",
+      "Nk": 401,
+      "z_score": 270474500.0,
+      "cluster_spread": 0.5429325664265086,
+      "stability_cv": 0.04389011222440199
+    },
+    {
+      "tag": "domain_pizza_gc29",
+      "Nk": 135,
+      "z_score": 91057500.00000001,
+      "cluster_spread": 0.48586356569648104,
+      "stability_cv": 0.09021431423264517
+    },
+    {
+      "tag": "domain_pizza_gc2",
+      "Nk": 734,
+      "z_score": 495083000.0,
+      "cluster_spread": 0.4612606696929997,
+      "stability_cv": 0.036148741733945444
+    },
+    {
+      "tag": "domain_pizza_gc3",
+      "Nk": 349,
+      "z_score": 235400500.0,
+      "cluster_spread": 0.5196884547585047,
+      "stability_cv": 0.043841796068837834
+    },
+    {
+      "tag": "domain_pizza_gc4",
+      "Nk": 585,
+      "z_score": 394582500.0,
+      "cluster_spread": 0.46815311518913033,
+      "stability_cv": 0.038944399032122684
+    },
+    {
+      "tag": "domain_pizza_gc5",
+      "Nk": 238,
+      "z_score": 160531000.0,
+      "cluster_spread": 0.40019564521052003,
+      "stability_cv": 0.05774681217187398
+    },
+    {
+      "tag": "domain_pizza_gc6",
+      "Nk": 153,
+      "z_score": 103198500.0,
+      "cluster_spread": 0.5359632789094969,
+      "stability_cv": 0.08789627136854904
+    },
+    {
+      "tag": "domain_pizza_gc7",
+      "Nk": 172,
+      "z_score": 116014000.0,
+      "cluster_spread": 0.22854356623761782,
+      "stability_cv": 0.07278007059181413
+    },
+    {
+      "tag": "domain_pizza_gc8",
+      "Nk": 271,
+      "z_score": 182789500.0,
+      "cluster_spread": 0.5096730281021288,
+      "stability_cv": 0.03754199043064371
+    },
+    {
+      "tag": "domain_pizza_gc9",
+      "Nk": 624,
+      "z_score": 420888000.0,
+      "cluster_spread": 0.4639190489699045,
+      "stability_cv": 0.04349621234235521
+    },
+    {
+      "tag": "domain_skateboard_gc0",
+      "Nk": 190,
+      "z_score": 128155000.0,
+      "cluster_spread": 0.09862084816554517,
+      "stability_cv": 0.0926038511757912
+    },
+    {
+      "tag": "domain_skateboard_gc10",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.3470673197396387,
+      "stability_cv": 0.48764008990707997
+    },
+    {
+      "tag": "domain_skateboard_gc11",
+      "Nk": 1567,
+      "z_score": 1056941500.0,
+      "cluster_spread": 0.5990122505883426,
+      "stability_cv": 0.022630814154961224
+    },
+    {
+      "tag": "domain_skateboard_gc12",
+      "Nk": 55,
+      "z_score": 37097500.0,
+      "cluster_spread": 0.13370284599142276,
+      "stability_cv": 0.11463208185464918
+    },
+    {
+      "tag": "domain_skateboard_gc13",
+      "Nk": 1108,
+      "z_score": 747346000.0,
+      "cluster_spread": 0.4242535984394716,
+      "stability_cv": 0.026826885609830098
+    },
+    {
+      "tag": "domain_skateboard_gc14",
+      "Nk": 12,
+      "z_score": 8094000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.3085561738669297
+    },
+    {
+      "tag": "domain_skateboard_gc15",
+      "Nk": 106,
+      "z_score": 71497000.0,
+      "cluster_spread": 0.2847703652457517,
+      "stability_cv": 0.09873058606334821
+    },
+    {
+      "tag": "domain_skateboard_gc16",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.3188241243423598,
+      "stability_cv": 0.15577230247779006
+    },
+    {
+      "tag": "domain_skateboard_gc17",
+      "Nk": 3,
+      "z_score": 2023500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.677002988822896
+    },
+    {
+      "tag": "domain_skateboard_gc18",
+      "Nk": 330,
+      "z_score": 222585000.00000003,
+      "cluster_spread": 0.03434926008674846,
+      "stability_cv": 0.03848725624473125
+    },
+    {
+      "tag": "domain_skateboard_gc19",
+      "Nk": 289,
+      "z_score": 194930500.0,
+      "cluster_spread": 0.0735592679885141,
+      "stability_cv": 0.06747109039815458
+    },
+    {
+      "tag": "domain_skateboard_gc1",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.9491179107028586
+    },
+    {
+      "tag": "domain_skateboard_gc20",
+      "Nk": 0,
+      "z_score": 0.0,
+      "cluster_spread": 0.0,
+      "stability_cv": 0.0
+    },
+    {
+      "tag": "domain_skateboard_gc21",
+      "Nk": 430,
+      "z_score": 290035000.0,
+      "cluster_spread": 0.11727231956818455,
+      "stability_cv": 0.03847844830578842
+    },
+    {
+      "tag": "domain_skateboard_gc22",
+      "Nk": 22,
+      "z_score": 14839000.000000002,
+      "cluster_spread": 0.3080985137538441,
+      "stability_cv": 0.2086917542432526
+    },
+    {
+      "tag": "domain_skateboard_gc23",
+      "Nk": 303,
+      "z_score": 204373500.00000003,
+      "cluster_spread": 0.06312403235586361,
+      "stability_cv": 0.055554225047785954
+    },
+    {
+      "tag": "domain_skateboard_gc24",
+      "Nk": 172,
+      "z_score": 116014000.0,
+      "cluster_spread": 0.12883897837022532,
+      "stability_cv": 0.06730764809860754
+    },
+    {
+      "tag": "domain_skateboard_gc25",
+      "Nk": 601,
+      "z_score": 405374500.00000006,
+      "cluster_spread": 0.1893550128274303,
+      "stability_cv": 0.03813321719677353
+    },
+    {
+      "tag": "domain_skateboard_gc26",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.3148974294721927,
+      "stability_cv": 0.3280895070277147
+    },
+    {
+      "tag": "domain_skateboard_gc27",
+      "Nk": 152,
+      "z_score": 102524000.0,
+      "cluster_spread": 0.05279972266887482,
+      "stability_cv": 0.08386393124265384
+    },
+    {
+      "tag": "domain_skateboard_gc28",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.16703843262486698,
+      "stability_cv": 0.28744086779534134
+    },
+    {
+      "tag": "domain_skateboard_gc29",
+      "Nk": 254,
+      "z_score": 171323000.00000003,
+      "cluster_spread": 0.3858037273258212,
+      "stability_cv": 0.06308263756682633
+    },
+    {
+      "tag": "domain_skateboard_gc2",
+      "Nk": 58,
+      "z_score": 39121000.00000001,
+      "cluster_spread": 0.05804809463830117,
+      "stability_cv": 0.11601130240648702
+    },
+    {
+      "tag": "domain_skateboard_gc3",
+      "Nk": 312,
+      "z_score": 210444000.0,
+      "cluster_spread": 0.14976428265165737,
+      "stability_cv": 0.04790031482915373
+    },
+    {
+      "tag": "domain_skateboard_gc4",
+      "Nk": 70,
+      "z_score": 47215000.0,
+      "cluster_spread": 0.16737362960605146,
+      "stability_cv": 0.09295565131178937
+    },
+    {
+      "tag": "domain_skateboard_gc5",
+      "Nk": 171,
+      "z_score": 115339500.0,
+      "cluster_spread": 0.09829134855296241,
+      "stability_cv": 0.07854457414712565
+    },
+    {
+      "tag": "domain_skateboard_gc6",
+      "Nk": 188,
+      "z_score": 126806000.0,
+      "cluster_spread": 0.1055370856776346,
+      "stability_cv": 0.07499678225261545
+    },
+    {
+      "tag": "domain_skateboard_gc7",
+      "Nk": 14,
+      "z_score": 9443000.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.2654580638994684
+    },
+    {
+      "tag": "domain_skateboard_gc8",
+      "Nk": 34,
+      "z_score": 22933000.0,
+      "cluster_spread": 0.08828941156160251,
+      "stability_cv": 0.20359683875280657
+    },
+    {
+      "tag": "domain_skateboard_gc9",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.03980560193877945,
+      "stability_cv": 0.15074608693239216
+    },
+    {
+      "tag": "domain_surfboard_gc0",
+      "Nk": 396,
+      "z_score": 267102000.0,
+      "cluster_spread": 0.10191277242263772,
+      "stability_cv": 0.04516029661294722
+    },
+    {
+      "tag": "domain_surfboard_gc10",
+      "Nk": 112,
+      "z_score": 75544000.0,
+      "cluster_spread": 0.3333185923763741,
+      "stability_cv": 0.0966092840875643
+    },
+    {
+      "tag": "domain_surfboard_gc11",
+      "Nk": 903,
+      "z_score": 609073500.0,
+      "cluster_spread": 0.38202963452518895,
+      "stability_cv": 0.030007465919836385
+    },
+    {
+      "tag": "domain_surfboard_gc12",
+      "Nk": 329,
+      "z_score": 221910500.0,
+      "cluster_spread": 0.2697946311926712,
+      "stability_cv": 0.05763304815585729
+    },
+    {
+      "tag": "domain_surfboard_gc13",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.8164955603082755
+    },
+    {
+      "tag": "domain_surfboard_gc14",
+      "Nk": 7,
+      "z_score": 4721500.0,
+      "cluster_spread": 0.1997072948963825,
+      "stability_cv": 0.3452583069838532
+    },
+    {
+      "tag": "domain_surfboard_gc15",
+      "Nk": 106,
+      "z_score": 71497000.0,
+      "cluster_spread": 0.1689902990531378,
+      "stability_cv": 0.08641610653723028
+    },
+    {
+      "tag": "domain_surfboard_gc16",
+      "Nk": 31,
+      "z_score": 20909500.000000004,
+      "cluster_spread": 0.19864017725317717,
+      "stability_cv": 0.19299753665924715
+    },
+    {
+      "tag": "domain_surfboard_gc17",
+      "Nk": 756,
+      "z_score": 509922000.0,
+      "cluster_spread": 0.33753406160628424,
+      "stability_cv": 0.025256096570952215
+    },
+    {
+      "tag": "domain_surfboard_gc18",
+      "Nk": 311,
+      "z_score": 209769500.0,
+      "cluster_spread": 0.5460088060705328,
+      "stability_cv": 0.04917930486193628
+    },
+    {
+      "tag": "domain_surfboard_gc19",
+      "Nk": 134,
+      "z_score": 90383000.0,
+      "cluster_spread": 0.10311643088910168,
+      "stability_cv": 0.07201484164652783
+    },
+    {
+      "tag": "domain_surfboard_gc1",
+      "Nk": 1,
+      "z_score": 674500.0,
+      "cluster_spread": -0.0,
+      "stability_cv": 0.9051304256172623
+    },
+    {
+      "tag": "domain_surfboard_gc20",
+      "Nk": 26,
+      "z_score": 17537000.0,
+      "cluster_spread": 0.5888783111607366,
+      "stability_cv": 0.1462062027706703
+    },
+    {
+      "tag": "domain_surfboard_gc21",
+      "Nk": 306,
+      "z_score": 206397000.0,
+      "cluster_spread": 0.3009174401876263,
+      "stability_cv": 0.059350010229535975
+    },
+    {
+      "tag": "domain_surfboard_gc22",
+      "Nk": 661,
+      "z_score": 445844500.0,
+      "cluster_spread": 0.19357069570756613,
+      "stability_cv": 0.032517089384172394
+    },
+    {
+      "tag": "domain_surfboard_gc23",
+      "Nk": 611,
+      "z_score": 412119500.00000006,
+      "cluster_spread": 0.14674788087478097,
+      "stability_cv": 0.03730977099712064
+    },
+    {
+      "tag": "domain_surfboard_gc24",
+      "Nk": 32,
+      "z_score": 21584000.0,
+      "cluster_spread": 0.2443105729267995,
+      "stability_cv": 0.1663726457235861
+    },
+    {
+      "tag": "domain_surfboard_gc25",
+      "Nk": 793,
+      "z_score": 534878500.00000006,
+      "cluster_spread": 0.30339248113211154,
+      "stability_cv": 0.028039118764342594
+    },
+    {
+      "tag": "domain_surfboard_gc26",
+      "Nk": 70,
+      "z_score": 47215000.0,
+      "cluster_spread": 0.5172278952487662,
+      "stability_cv": 0.12203673294092618
+    },
+    {
+      "tag": "domain_surfboard_gc27",
+      "Nk": 582,
+      "z_score": 392559000.0,
+      "cluster_spread": 0.13187425433833425,
+      "stability_cv": 0.03022308944425347
+    },
+    {
+      "tag": "domain_surfboard_gc28",
+      "Nk": 208,
+      "z_score": 140296000.0,
+      "cluster_spread": 0.33679642232954177,
+      "stability_cv": 0.06592723408858402
+    },
+    {
+      "tag": "domain_surfboard_gc29",
+      "Nk": 4,
+      "z_score": 2698000.0,
+      "cluster_spread": 0.18771208281295487,
+      "stability_cv": 0.5477670010845499
+    },
+    {
+      "tag": "domain_surfboard_gc2",
+      "Nk": 400,
+      "z_score": 269800000.0,
+      "cluster_spread": 0.22459338236600507,
+      "stability_cv": 0.04532442807071712
+    },
+    {
+      "tag": "domain_surfboard_gc3",
+      "Nk": 126,
+      "z_score": 84987000.0,
+      "cluster_spread": 0.1948736475783169,
+      "stability_cv": 0.0721504632631338
+    },
+    {
+      "tag": "domain_surfboard_gc4",
+      "Nk": 13,
+      "z_score": 8768500.0,
+      "cluster_spread": 0.357848055390946,
+      "stability_cv": 0.264842852071918
+    },
+    {
+      "tag": "domain_surfboard_gc5",
+      "Nk": 10,
+      "z_score": 6745000.0,
+      "cluster_spread": 0.2676536083086286,
+      "stability_cv": 0.3356128629428511
+    },
+    {
+      "tag": "domain_surfboard_gc6",
+      "Nk": 1451,
+      "z_score": 978699500.0,
+      "cluster_spread": 0.5122316929377135,
+      "stability_cv": 0.02369849168624687
+    },
+    {
+      "tag": "domain_surfboard_gc7",
+      "Nk": 31,
+      "z_score": 20909500.000000004,
+      "cluster_spread": 0.2499159435960153,
+      "stability_cv": 0.20609797110917205
+    },
+    {
+      "tag": "domain_surfboard_gc8",
+      "Nk": 60,
+      "z_score": 40470000.0,
+      "cluster_spread": 0.1126100799618784,
+      "stability_cv": 0.12149976830768451
+    },
+    {
+      "tag": "domain_surfboard_gc9",
+      "Nk": 45,
+      "z_score": 30352500.0,
+      "cluster_spread": 0.5554308976176721,
+      "stability_cv": 0.10866489742682386
+    },
+    {
+      "tag": "domain_umbrella_gc0",
+      "Nk": 333,
+      "z_score": 224608500.0,
+      "cluster_spread": 0.5073798893814041,
+      "stability_cv": 0.06988602963647154
+    },
+    {
+      "tag": "domain_umbrella_gc10",
+      "Nk": 280,
+      "z_score": 188860000.0,
+      "cluster_spread": 0.5310463550286417,
+      "stability_cv": 0.0761653285586916
+    },
+    {
+      "tag": "domain_umbrella_gc11",
+      "Nk": 1334,
+      "z_score": 899783000.0,
+      "cluster_spread": 0.7422605460747822,
+      "stability_cv": 0.0305066012435865
+    },
+    {
+      "tag": "domain_umbrella_gc12",
+      "Nk": 346,
+      "z_score": 233377000.00000003,
+      "cluster_spread": 0.5415211060718407,
+      "stability_cv": 0.07392776983128013
+    },
+    {
+      "tag": "domain_umbrella_gc13",
+      "Nk": 172,
+      "z_score": 116014000.0,
+      "cluster_spread": 0.43713158904864974,
+      "stability_cv": 0.07672535027247174
+    },
+    {
+      "tag": "domain_umbrella_gc14",
+      "Nk": 47,
+      "z_score": 31701500.0,
+      "cluster_spread": 0.5058768998021697,
+      "stability_cv": 0.16156289778737876
+    },
+    {
+      "tag": "domain_umbrella_gc15",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": 0.37806600205359076,
+      "stability_cv": 0.2555215758583795
+    },
+    {
+      "tag": "domain_umbrella_gc16",
+      "Nk": 89,
+      "z_score": 60030500.0,
+      "cluster_spread": 0.4766545731048568,
+      "stability_cv": 0.13258817965259057
+    },
+    {
+      "tag": "domain_umbrella_gc17",
+      "Nk": 56,
+      "z_score": 37772000.0,
+      "cluster_spread": 0.24118343576253637,
+      "stability_cv": 0.12494895648162532
+    },
+    {
+      "tag": "domain_umbrella_gc18",
+      "Nk": 96,
+      "z_score": 64752000.0,
+      "cluster_spread": 0.5794939494244179,
+      "stability_cv": 0.12229915394658893
+    },
+    {
+      "tag": "domain_umbrella_gc19",
+      "Nk": 113,
+      "z_score": 76218500.0,
+      "cluster_spread": 0.4722079301858884,
+      "stability_cv": 0.09121925594612942
+    },
+    {
+      "tag": "domain_umbrella_gc1",
+      "Nk": 21,
+      "z_score": 14164500.000000002,
+      "cluster_spread": 0.40695788412496364,
+      "stability_cv": 0.2007776908262752
+    },
+    {
+      "tag": "domain_umbrella_gc20",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.5264012830021513,
+      "stability_cv": 0.16488312438128647
+    },
+    {
+      "tag": "domain_umbrella_gc21",
+      "Nk": 538,
+      "z_score": 362881000.0,
+      "cluster_spread": 0.6355457820367042,
+      "stability_cv": 0.05963030130278763
+    },
+    {
+      "tag": "domain_umbrella_gc22",
+      "Nk": 8,
+      "z_score": 5396000.0,
+      "cluster_spread": 0.12576896960470202,
+      "stability_cv": 0.3525160265857306
+    },
+    {
+      "tag": "domain_umbrella_gc23",
+      "Nk": 170,
+      "z_score": 114665000.0,
+      "cluster_spread": 0.47400025693630154,
+      "stability_cv": 0.10252880446040075
+    },
+    {
+      "tag": "domain_umbrella_gc24",
+      "Nk": 13,
+      "z_score": 8768500.0,
+      "cluster_spread": 0.3088156747981201,
+      "stability_cv": 0.2648647182343982
+    },
+    {
+      "tag": "domain_umbrella_gc25",
+      "Nk": 459,
+      "z_score": 309595500.0,
+      "cluster_spread": 0.5961327613757818,
+      "stability_cv": 0.059241748305191994
+    },
+    {
+      "tag": "domain_umbrella_gc26",
+      "Nk": 28,
+      "z_score": 18886000.0,
+      "cluster_spread": 0.2839942133029024,
+      "stability_cv": 0.1638794214582724
+    },
+    {
+      "tag": "domain_umbrella_gc27",
+      "Nk": 310,
+      "z_score": 209095000.0,
+      "cluster_spread": 0.5345324234645434,
+      "stability_cv": 0.07643133550711144
+    },
+    {
+      "tag": "domain_umbrella_gc28",
+      "Nk": 27,
+      "z_score": 18211500.0,
+      "cluster_spread": 0.5547354538466588,
+      "stability_cv": 0.2019295735950631
+    },
+    {
+      "tag": "domain_umbrella_gc29",
+      "Nk": 120,
+      "z_score": 80940000.0,
+      "cluster_spread": 0.5498546912710592,
+      "stability_cv": 0.09790347408370681
+    },
+    {
+      "tag": "domain_umbrella_gc2",
+      "Nk": 105,
+      "z_score": 70822500.00000001,
+      "cluster_spread": 0.6819039541926287,
+      "stability_cv": 0.0941515183732876
+    },
+    {
+      "tag": "domain_umbrella_gc3",
+      "Nk": 183,
+      "z_score": 123433500.0,
+      "cluster_spread": 0.6550167200768987,
+      "stability_cv": 0.08560965087758629
+    },
+    {
+      "tag": "domain_umbrella_gc4",
+      "Nk": 101,
+      "z_score": 68124500.0,
+      "cluster_spread": 0.4650124000282002,
+      "stability_cv": 0.09180584888288694
+    },
+    {
+      "tag": "domain_umbrella_gc5",
+      "Nk": 42,
+      "z_score": 28329000.000000004,
+      "cluster_spread": 0.6325912920604656,
+      "stability_cv": 0.12155676212179159
+    },
+    {
+      "tag": "domain_umbrella_gc6",
+      "Nk": 1562,
+      "z_score": 1053569000.0,
+      "cluster_spread": 0.7442971586514161,
+      "stability_cv": 0.029779830317757834
+    },
+    {
+      "tag": "domain_umbrella_gc7",
+      "Nk": 39,
+      "z_score": 26305500.0,
+      "cluster_spread": 0.4747087588649932,
+      "stability_cv": 0.16581914955800373
+    },
+    {
+      "tag": "domain_umbrella_gc8",
+      "Nk": 85,
+      "z_score": 57332500.0,
+      "cluster_spread": 0.5611026918763398,
+      "stability_cv": 0.06988127603482248
+    },
+    {
+      "tag": "domain_umbrella_gc9",
+      "Nk": 94,
+      "z_score": 63403000.0,
+      "cluster_spread": 0.6460604258519785,
+      "stability_cv": 0.08621622502884033
+    },
+    {
+      "tag": "universal_gc0",
+      "Nk": 6175,
+      "z_score": 4165037500.0000005,
+      "cluster_spread": 0.9122272569926994,
+      "stability_cv": 0.013512727126240274
+    },
+    {
+      "tag": "universal_gc10",
+      "Nk": 2856,
+      "z_score": 1926372000.0000002,
+      "cluster_spread": 0.7594232952106088,
+      "stability_cv": 0.01213152795082029
+    },
+    {
+      "tag": "universal_gc11",
+      "Nk": 16411,
+      "z_score": 11069219500.0,
+      "cluster_spread": 0.9273708429526407,
+      "stability_cv": 0.004196694674079254
+    },
+    {
+      "tag": "universal_gc12",
+      "Nk": 784,
+      "z_score": 528808000.0,
+      "cluster_spread": 0.6678298036339606,
+      "stability_cv": 0.029304600813377435
+    },
+    {
+      "tag": "universal_gc13",
+      "Nk": 6078,
+      "z_score": 4099611000.0,
+      "cluster_spread": 0.8371339882687839,
+      "stability_cv": 0.014355922290042825
+    },
+    {
+      "tag": "universal_gc14",
+      "Nk": 3380,
+      "z_score": 2279810000.0,
+      "cluster_spread": 0.8220814332051009,
+      "stability_cv": 0.014411803642088529
+    },
+    {
+      "tag": "universal_gc15",
+      "Nk": 1540,
+      "z_score": 1038730000.0000001,
+      "cluster_spread": 0.7822570302239642,
+      "stability_cv": 0.027534400948058927
+    },
+    {
+      "tag": "universal_gc16",
+      "Nk": 913,
+      "z_score": 615818500.0,
+      "cluster_spread": 0.7539736827110904,
+      "stability_cv": 0.03657061651686026
+    },
+    {
+      "tag": "universal_gc17",
+      "Nk": 2433,
+      "z_score": 1641058500.0,
+      "cluster_spread": 0.774366206948255,
+      "stability_cv": 0.016839020247206023
+    },
+    {
+      "tag": "universal_gc18",
+      "Nk": 499,
+      "z_score": 336575500.0,
+      "cluster_spread": 0.6474438955638885,
+      "stability_cv": 0.04542906217613149
+    },
+    {
+      "tag": "universal_gc19",
+      "Nk": 2173,
+      "z_score": 1465688500.0,
+      "cluster_spread": 0.7387459318763279,
+      "stability_cv": 0.021928965239782307
+    },
+    {
+      "tag": "universal_gc1",
+      "Nk": 418,
+      "z_score": 281941000.0,
+      "cluster_spread": 0.6805507823278227,
+      "stability_cv": 0.060934070048788806
+    },
+    {
+      "tag": "universal_gc20",
+      "Nk": 2718,
+      "z_score": 1833291000.0,
+      "cluster_spread": 0.7903916394996302,
+      "stability_cv": 0.015468296119892718
+    },
+    {
+      "tag": "universal_gc21",
+      "Nk": 2227,
+      "z_score": 1502111500.0,
+      "cluster_spread": 0.8849829796689954,
+      "stability_cv": 0.02053909159002032
+    },
+    {
+      "tag": "universal_gc22",
+      "Nk": 2000,
+      "z_score": 1349000000.0,
+      "cluster_spread": 0.8356402592076856,
+      "stability_cv": 0.024825134691271213
+    },
+    {
+      "tag": "universal_gc23",
+      "Nk": 4888,
+      "z_score": 3296956000.0000005,
+      "cluster_spread": 0.8799108475420158,
+      "stability_cv": 0.014170845718965142
+    },
+    {
+      "tag": "universal_gc24",
+      "Nk": 2561,
+      "z_score": 1727394500.0,
+      "cluster_spread": 0.7146391145528076,
+      "stability_cv": 0.01625422087341066
+    },
+    {
+      "tag": "universal_gc25",
+      "Nk": 5637,
+      "z_score": 3802156500.0,
+      "cluster_spread": 0.8837771283130829,
+      "stability_cv": 0.009797461398875693
+    },
+    {
+      "tag": "universal_gc26",
+      "Nk": 1079,
+      "z_score": 727785500.0,
+      "cluster_spread": 0.6681681801332884,
+      "stability_cv": 0.030279441983748958
+    },
+    {
+      "tag": "universal_gc27",
+      "Nk": 11504,
+      "z_score": 7759448000.000001,
+      "cluster_spread": 0.9085102949911884,
+      "stability_cv": 0.006331862215553563
+    },
+    {
+      "tag": "universal_gc28",
+      "Nk": 1584,
+      "z_score": 1068408000.0,
+      "cluster_spread": 0.7891738262642887,
+      "stability_cv": 0.02247467691816496
+    },
+    {
+      "tag": "universal_gc29",
+      "Nk": 613,
+      "z_score": 413468500.0,
+      "cluster_spread": 0.6506101652852527,
+      "stability_cv": 0.03614764052418163
+    },
+    {
+      "tag": "universal_gc2",
+      "Nk": 2194,
+      "z_score": 1479853000.0000002,
+      "cluster_spread": 0.7581343510787423,
+      "stability_cv": 0.0186454926234813
+    },
+    {
+      "tag": "universal_gc3",
+      "Nk": 3154,
+      "z_score": 2127373000.0000002,
+      "cluster_spread": 0.7335938945669893,
+      "stability_cv": 0.014794416310936595
+    },
+    {
+      "tag": "universal_gc4",
+      "Nk": 1234,
+      "z_score": 832333000.0,
+      "cluster_spread": 0.6166914196982178,
+      "stability_cv": 0.028484032211940794
+    },
+    {
+      "tag": "universal_gc5",
+      "Nk": 1794,
+      "z_score": 1210053000.0,
+      "cluster_spread": 0.6999051257944111,
+      "stability_cv": 0.019983979967105887
+    },
+    {
+      "tag": "universal_gc6",
+      "Nk": 4920,
+      "z_score": 3318540000.0,
+      "cluster_spread": 0.765664212217234,
+      "stability_cv": 0.011027689445063672
+    },
+    {
+      "tag": "universal_gc7",
+      "Nk": 367,
+      "z_score": 247541500.0,
+      "cluster_spread": 0.6464154159648282,
+      "stability_cv": 0.046766210460445226
+    },
+    {
+      "tag": "universal_gc8",
+      "Nk": 4211,
+      "z_score": 2840319500.0,
+      "cluster_spread": 0.8045513112902153,
+      "stability_cv": 0.010857182529592734
+    },
+    {
+      "tag": "universal_gc9",
+      "Nk": 4590,
+      "z_score": 3095955000.0,
+      "cluster_spread": 0.801926721915584,
+      "stability_cv": 0.011204111779505992
+    }
+  ]
+}

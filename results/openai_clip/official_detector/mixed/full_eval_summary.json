@@ -1,0 +1,8 @@
+{
+  "n_hubs_true": 480,
+  "n_total": 5480,
+  "roc_auc": 0.4738720833333333,
+  "best_threshold": -1.1300119161605835,
+  "precision_at_best_threshold": 0.08843537414965986,
+  "recall_at_best_threshold": 0.975
+}

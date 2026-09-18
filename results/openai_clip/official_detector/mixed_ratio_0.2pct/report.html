@@ -1,0 +1,1440 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adversarial Hubness Detector Report - Adversarial Hubness Detection</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .summary-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+        }
+        .summary-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .summary-card .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .summary-card.concept {
+            border-left-color: #6366f1;
+        }
+        .summary-card.modality {
+            border-left-color: #f59e0b;
+        }
+        .verdict-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .verdict-high {
+            background-color: #fee;
+            color: #c33;
+        }
+        .verdict-medium {
+            background-color: #ffe;
+            color: #c93;
+        }
+        .verdict-low {
+            background-color: #efe;
+            color: #3c3;
+        }
+        .concept-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 11px;
+            background-color: #e0e7ff;
+            color: #3730a3;
+        }
+        .modality-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 11px;
+        }
+        .modality-cross {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .modality-same {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .score {
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .text-preview {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+        .feature-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .feature-section.disabled {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Adversarial Hubness Detector Report - Adversarial Hubness Detection</h1>
+        
+        <div class="summary">
+            <div class="summary-card">
+                <h3>Total Documents</h3>
+                <div class="value">5010</div>
+            </div>
+            <div class="summary-card">
+                <h3>Queries Processed</h3>
+                <div class="value">5000</div>
+            </div>
+            <div class="summary-card">
+                <h3>High Risk</h3>
+                <div class="value">6</div>
+            </div>
+            <div class="summary-card">
+                <h3>Medium Risk</h3>
+                <div class="value">155</div>
+            </div>
+            <div class="summary-card">
+                <h3>Low Risk</h3>
+                <div class="value">4849</div>
+            </div>
+            <div class="summary-card">
+                <h3>Runtime</h3>
+                <div class="value">29.19s</div>
+            </div>
+        </div>
+        
+        <h2>Scan Information</h2>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Timestamp</td>
+                <td>2026-09-16T21:23:37.103479</td>
+            </tr>
+            <tr>
+                <td>Index Type</td>
+                <td>hnsw</td>
+            </tr>
+            <tr>
+                <td>Metric</td>
+                <td>cosine</td>
+            </tr>
+            <tr>
+                <td>k (nearest neighbors)</td>
+                <td>10</td>
+            </tr>
+        </table>
+        
+        
+        
+        
+        
+        
+        
+        <h2>Top Suspicious Documents</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Doc Index</th>
+                    <th>Risk Score</th>
+                    <th>Verdict</th>
+                    <th>Hub Z-Score</th>
+                    <th>Hub Rate</th>
+                    
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>202</td>
+                    <td class="score">4.6445</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            8.19
+                        
+                    </td>
+                    <td>
+                        
+                            0.0028
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>287</td>
+                    <td class="score">4.5374</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            8.05
+                        
+                    </td>
+                    <td>
+                        
+                            0.0028
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>550</td>
+                    <td class="score">4.4777</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            7.94
+                        
+                    </td>
+                    <td>
+                        
+                            0.0028
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>342</td>
+                    <td class="score">4.0149</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            7.18
+                        
+                    </td>
+                    <td>
+                        
+                            0.0025
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>5</td>
+                    <td>1890</td>
+                    <td class="score">3.8732</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            6.85
+                        
+                    </td>
+                    <td>
+                        
+                            0.0024
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>6</td>
+                    <td>3443</td>
+                    <td class="score">3.4198</td>
+                    <td>
+                        <span class="verdict-badge verdict-high">
+                            HIGH
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            6.16
+                        
+                    </td>
+                    <td>
+                        
+                            0.0022
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>7</td>
+                    <td>1295</td>
+                    <td class="score">3.2184</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.77
+                        
+                    </td>
+                    <td>
+                        
+                            0.0021
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>8</td>
+                    <td>1595</td>
+                    <td class="score">3.0666</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.56
+                        
+                    </td>
+                    <td>
+                        
+                            0.0021
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>9</td>
+                    <td>3728</td>
+                    <td class="score">3.0504</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.57
+                        
+                    </td>
+                    <td>
+                        
+                            0.0021
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>10</td>
+                    <td>1252</td>
+                    <td class="score">3.0473</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.46
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>11</td>
+                    <td>751</td>
+                    <td class="score">3.0468</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.55
+                        
+                    </td>
+                    <td>
+                        
+                            0.0021
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>12</td>
+                    <td>657</td>
+                    <td class="score">3.0354</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.54
+                        
+                    </td>
+                    <td>
+                        
+                            0.0021
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>13</td>
+                    <td>1585</td>
+                    <td class="score">3.0088</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.42
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>14</td>
+                    <td>218</td>
+                    <td class="score">2.9637</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.30
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>15</td>
+                    <td>1069</td>
+                    <td class="score">2.9476</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.27
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>16</td>
+                    <td>3357</td>
+                    <td class="score">2.9386</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.37
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>17</td>
+                    <td>1286</td>
+                    <td class="score">2.8694</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.15
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>18</td>
+                    <td>3236</td>
+                    <td class="score">2.8659</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.23
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>19</td>
+                    <td>553</td>
+                    <td class="score">2.8417</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.23
+                        
+                    </td>
+                    <td>
+                        
+                            0.0020
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>20</td>
+                    <td>1400</td>
+                    <td class="score">2.8249</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.06
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>21</td>
+                    <td>1532</td>
+                    <td class="score">2.7742</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.06
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>22</td>
+                    <td>960</td>
+                    <td class="score">2.7400</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.94
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>23</td>
+                    <td>3075</td>
+                    <td class="score">2.7309</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            5.02
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>24</td>
+                    <td>1289</td>
+                    <td class="score">2.7018</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.99
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>25</td>
+                    <td>1483</td>
+                    <td class="score">2.6941</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.93
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>26</td>
+                    <td>4165</td>
+                    <td class="score">2.6652</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.85
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>27</td>
+                    <td>1444</td>
+                    <td class="score">2.6534</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.88
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>28</td>
+                    <td>221</td>
+                    <td class="score">2.6437</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.89
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>29</td>
+                    <td>3437</td>
+                    <td class="score">2.6316</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.89
+                        
+                    </td>
+                    <td>
+                        
+                            0.0019
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>30</td>
+                    <td>4862</td>
+                    <td class="score">2.6249</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.80
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>31</td>
+                    <td>4621</td>
+                    <td class="score">2.5980</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.81
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>32</td>
+                    <td>944</td>
+                    <td class="score">2.5910</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.79
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>33</td>
+                    <td>4884</td>
+                    <td class="score">2.5772</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.70
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>34</td>
+                    <td>2784</td>
+                    <td class="score">2.5421</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.72
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>35</td>
+                    <td>576</td>
+                    <td class="score">2.4958</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.62
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>36</td>
+                    <td>1153</td>
+                    <td class="score">2.4917</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.61
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>37</td>
+                    <td>4133</td>
+                    <td class="score">2.4818</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.54
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>38</td>
+                    <td>1164</td>
+                    <td class="score">2.4579</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.57
+                        
+                    </td>
+                    <td>
+                        
+                            0.0018
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>39</td>
+                    <td>2296</td>
+                    <td class="score">2.4197</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.46
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>40</td>
+                    <td>2702</td>
+                    <td class="score">2.4193</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.43
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>41</td>
+                    <td>2738</td>
+                    <td class="score">2.4135</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.43
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>42</td>
+                    <td>2644</td>
+                    <td class="score">2.4072</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.48
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>43</td>
+                    <td>1203</td>
+                    <td class="score">2.3982</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.34
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>44</td>
+                    <td>80</td>
+                    <td class="score">2.3973</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.43
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>45</td>
+                    <td>451</td>
+                    <td class="score">2.3748</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.41
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>46</td>
+                    <td>1741</td>
+                    <td class="score">2.3306</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.27
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>47</td>
+                    <td>4755</td>
+                    <td class="score">2.3165</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.28
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>48</td>
+                    <td>805</td>
+                    <td class="score">2.2817</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.28
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>49</td>
+                    <td>3843</td>
+                    <td class="score">2.2808</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.28
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+                <tr>
+                    <td>50</td>
+                    <td>2560</td>
+                    <td class="score">2.2807</td>
+                    <td>
+                        <span class="verdict-badge verdict-medium">
+                            MEDIUM
+                        </span>
+                    </td>
+                    <td class="score">
+                        
+                            4.29
+                        
+                    </td>
+                    <td>
+                        
+                            0.0017
+                        
+                    </td>
+                    
+                    
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            <p>Generated by Adversarial Hubness Detector on 2026-09-16T21:23:37.103479</p>
+            <p>For more details, see the JSON report.</p>
+        </div>
+    </div>
+</body>
+</html>
