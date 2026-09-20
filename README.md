@@ -1,181 +1,186 @@
-# Adversarial Hubness in Multi-Modal Retrieval — 재현 및 확장 실험
+# Adversarial Hubness in Multi-Modal Retrieval — Reproduction & Extension
 
-[Adversarial Hubness in Multi-Modal Retrieval (Zhang et al.)](https://arxiv.org/abs/2412.14113)의 핵심 공격 기법(adversarial hub)을 재현하고, 후속 논문 [Adversarial Hubness Detector (Habler et al.)](https://arxiv.org/abs/2602.22427)의 탐지 기법을 자체 구현 및 공식 구현체와 비교한 프로젝트입니다.
+Reproduces the core attack technique (*adversarial hub*) from [Adversarial Hubness in Multi-Modal Retrieval (Zhang et al.)](https://arxiv.org/abs/2412.14113), and compares a self-implemented detector against the official implementation of the follow-up paper, [Adversarial Hubness Detector (Habler et al.)](https://arxiv.org/abs/2602.22427).
 
-원 논문은 ImageBind가 OpenCLIP-ViT의 구조를 확장하면서도 핵심 비전 인코더(core visual encoder)는 그대로 보존한다는 사실("extends OpenCLIP-ViT's architecture with additional modalities while preserving the core visual encoder")을 근거로, 두 모델 사이의 강한 공격 전이(transfer)를 설명한 바 있습니다. 본 프로젝트는 이 서술로부터 **"인코딩된 이미지의 분포가 유사한 모델일수록, 한 모델에서 만든 hub가 다른 모델에서도 유사한 공격 성공률(ASR)을 보일 것"**이라는 가설을 도출하고, 8개 모델을 대상으로 이를 정량적으로 검증하는 확장 실험을 수행하였습니다.
+The original paper explains the strong attack transfer between ImageBind and OpenCLIP-ViT by noting that ImageBind "extends OpenCLIP-ViT's architecture with additional modalities while preserving the core visual encoder." Building on this observation, this project formulates and tests an extended hypothesis — **models with more similar image-encoding distributions should show more similar attack success rates (ASR) when a hub generated on one is transferred to another** — and evaluates it quantitatively across 8 models.
 
-## Key Findings (핵심 결과 요약)
+## Key Findings
 
-### 1. Hub Attack Reproduction (Hub 공격 재현)
+### 1. Hub Attack Reproduction
 
-원 논문이 보고한 현상을 **성공적으로 재현**하였습니다. 소수의 쿼리로 최적화한 이미지(hub)가 이와 무관한 대규모 쿼리 집합에서도 높은 확률로 검색됨을 확인하였으며, Universal hub의 held-out ASR@1은 약 70%대로 나타났습니다. 이 현상은 CLIP·LAION·ImageBind 세 가지 surrogate 모델 전반에서 일관되게 재현되어, 견고한 현상임을 확인하였습니다.
+The phenomenon reported in the original paper was **successfully reproduced**: an image (hub) optimized on a small set of queries is retrieved with high probability across a much larger set of unrelated queries. The held-out ASR@1 of a universal hub reached roughly 70%. This held consistently across three surrogate models — CLIP, LAION-CLIP, and ImageBind — confirming the phenomenon is robust.
 
 **Supporting Files**
 
-| 근거 | 파일 |
-|---|---|
+| Evidence | File |
+| --- | --- |
 | Baseline Recall@1/5/10 | `results/openai_clip/recall_baseline.json` |
 | Universal hub held-out ASR@1 (CLIP, OpenAI) | `results/openai_clip/asr_summary.json` |
-| Universal hub held-out ASR@1 (CLIP, LAION 재현) | `results/laion_clip/asr_summary.json` |
-| Universal hub held-out ASR@1 (ImageBind 재현) | `results/imagebind/asr_summary.json` |
+| Universal hub held-out ASR@1 (CLIP, LAION reproduction) | `results/laion_clip/asr_summary.json` |
+| Universal hub held-out ASR@1 (ImageBind reproduction) | `results/imagebind/asr_summary.json` |
 
-### 2. Word vs Cluster Attack Strength — Discrepancy with the Original Paper (원 논문과의 불일치)
+### 2. Word vs Cluster Attack Strength — Discrepancy with the Original Paper
 
-[원 논문](https://arxiv.org/abs/2412.14113)이 보고한 결과(Cluster R@1=100% ≫ Word R@1=28.6%)와 달리, 본 실험에서는 Word 기반 공격이 Cluster 기반 공격보다 일관되게 강한 것으로 나타났습니다(CLIP 기준 dog 39.7% vs cluster 8.9%). 이러한 **불일치의 원인 후보로 평가 규모, surrogate 모델 종류, Qt/클러스터 크기 제한 세 가지를 설정하여 각각 검증하였으나 모두 기각**되었습니다. 위 세 요인 외의 다른 원인에 기인한 것으로 추정되나, 시간 및 자원의 제약으로 명확한 원인은 규명하지 못하였습니다.
+Unlike the [original paper](https://arxiv.org/abs/2412.14113)'s result (Cluster R@1 = 100% ≫ Word R@1 = 28.6%), this reproduction consistently found word-based attacks to be stronger than cluster-based ones (CLIP: "dog" 39.7% vs. cluster 8.9%). Three candidate explanations for this discrepancy — **evaluation scale, choice of surrogate model, and the Qt/cluster size cap** — were each tested and **all were rejected**. The true cause likely lies outside these three factors, but time and resource constraints prevented pinning it down.
 
-이 불일치의 배경이 될 수 있는 추가 요인으로, 개념(단어)별 공격 강도 편차의 원인을 별도로 분석하였습니다. Qt 캡션 풀 크기 및 캡션 간 의미적 응집도(pairwise cosine similarity)를 ASR과 상관분석한 결과, 두 변수 모두 Pearson 기준으로는 유의미하였으나(풀 크기 r=0.79, p=0.006; 응집도 r=-0.74, p=0.015) Spearman 기준으로는 유의미하지 않았고(각각 p=0.128, p=0.260), 두 변수 자체가 서로 강하게 얽혀 있어(r=-0.66, p=0.037) 어느 것이 실제 원인인지 이 데이터만으로는 분리하지 못하였습니다.
-
-**Supporting Files**
-
-| 근거 | 파일 |
-|---|---|
-| Word/Cluster별 ASR (CLIP, OpenAI) | `results/openai_clip/asr_summary.json` |
-| Word/Cluster별 ASR (ImageBind, 모델 차이 검증용) | `results/imagebind/asr_summary.json` |
-| 평가 규모(500 vs 25,000쿼리) 순위 비교 | `results/laion_clip/scale_effect_analysis.json` |
-| Qt 풀 크기 상관분석 | `results/openai_clip/word_variance/pool_size_analysis.json` |
-| 캡션 응집도 상관분석 | `results/openai_clip/word_variance/cohesion_analysis.json` |
-
-### 3. Hub Detection — Query Sampling Strategy as the Dominant Factor (쿼리 샘플링 방식의 지배적 영향)
-
-자체 구현 detector의 탐지 성능은 480개 hub 기준 ROC-AUC(Receiver Operating Characteristic – Area Under Curve) **0.994**로 나타났습니다. 공식 구현체는 쿼리 소스의 종류에 따라 성능이 극단적으로 갈리는 양상을 보였습니다.
-
-- `mixed`(detector가 gallery 이미지 임베딩을 기반으로 자체 샘플링한 쿼리 사용): ROC-AUC **0.36~0.57** (사실상 무작위 수준)
-- `real_queries`(실제 caption 기반 쿼리 사용): ROC-AUC **0.94**
-
-`mixed` 방식의 성능 저하 원인으로 corpus 대비 hub 비율, hub 유형 혼합, surrogate 모델 차이(CLIP/ImageBind)를 각각 검증하였으나 모두 기각되었습니다. 가장 유력한 설명은 **hub가 텍스트 캡션의 centroid를 겨냥하도록 최적화된 반면 `mixed`의 검사 쿼리는 이미지 임베딩 기반이라는 모달리티 불일치**이나, 시간 및 자원의 제약으로 이를 정량적으로 격리하여 검증하지는 못하였습니다.
-
-한편 `real_queries` 방식은 전체 480개 hub 중 top alert budget 내에서 28개(5.8%)만을 탐지하였는데(HIGH 12개 + MEDIUM 16개, 정밀도는 100%), 이는 후속 논문(Habler et al.)이 스스로 명시한 한계("작은 alert budget에서는 domain-specific hub가 다른 고득점 항목에 밀려 top-K 밖으로 나가는 budget saturation이 발생한다")와 정확히 일치하는 결과입니다. 다만 이와는 별개로, `mixed` 방식에 대해 corpus 대비 hub 비율을 8.8%→2.0%→0.2%로 낮춰가며 반복 검증한 결과, **비율이 낮을수록 성능이 계속 개선되는 단조적 관계는 관찰되지 않았습니다**(2.0%에서 평균 ROC-AUC 0.566으로 최고치를 보인 반면, 논문과 동일한 0.2%에서는 오히려 0.414로 가장 낮았습니다. 각 8회 반복 기준).
+As a related line of investigation, the source of per-concept (per-word) variance in attack strength was analyzed separately. Correlating Qt caption-pool size and pairwise caption cohesion (semantic similarity) with ASR showed both variables to be significant under Pearson's test (pool size r=0.79, p=0.006; cohesion r=−0.74, p=0.015) but not under Spearman's (p=0.128 and p=0.260, respectively), and the two variables were themselves strongly confounded (r=−0.66, p=0.037) — so this dataset alone could not isolate which one actually drives the effect.
 
 **Supporting Files**
 
-| 근거 | 파일 |
-|---|---|
-| 자체 구현 detector 성능 | `results/openai_clip/detector_summary.json` |
-| `mixed` / `real_queries` 기본 결과 (corpus 비율 8.8%) | `results/openai_clip/official_detector/mixed/report.json`, `results/openai_clip/official_detector/real_queries/report.json` (verdict_counts 및 suspicious_documents 배열에서 hub 개수를 직접 확인한 값이며, 별도의 recall 필드로 저장되어 있지는 않음) |
-| Hub 비율 2.0%/0.2% 단일 측정 | `results/openai_clip/official_detector/mixed_ratio_2pct/full_eval_summary.json`, `results/openai_clip/official_detector/mixed_ratio_0.2pct/full_eval_summary.json` |
-| Hub 비율 2.0%/0.2% 8회 반복 (평균·표준편차) | `results/openai_clip/detector_ratio_repeat_summary.json` |
-| Universal hub만 분리 재검증 | `results/openai_clip/official_detector/mixed_universal_only/full_eval_summary.json` |
-| surrogate 모델 차이(ImageBind) 재검증 | `results/imagebind/official_detector/mixed/full_eval_summary.json` |
+| Evidence | File |
+| --- | --- |
+| Word/Cluster ASR by concept (CLIP, OpenAI) | `results/openai_clip/asr_summary.json` |
+| Word/Cluster ASR by concept (ImageBind, model-difference check) | `results/imagebind/asr_summary.json` |
+| Ranking comparison across evaluation scale (500 vs. 25,000 queries) | `results/laion_clip/scale_effect_analysis.json` |
+| Qt pool-size correlation | `results/openai_clip/word_variance/pool_size_analysis.json` |
+| Caption-cohesion correlation | `results/openai_clip/word_variance/cohesion_analysis.json` |
 
-### 4. Architectural Similarity and Transfer Attack Performance (아키텍처 유사성과 전이 공격의 관계)
+### 3. Hub Detection — Query Sampling Strategy as the Dominant Factor
 
-RSA(Representational Similarity Analysis, 표현 구조 유사도)와 Alignment(쿼리 정렬도)를 8개 모델(ViT-B/16·B/32·L/14·H/14, RN50, ImageBind 등)을 대상으로 측정하였습니다.
+The self-built detector achieved a ROC-AUC of **0.994** on 480 hubs. The official implementation's performance, in contrast, varied dramatically depending on the source of its evaluation queries:
 
-- **RSA-Alignment 상관관계는 강하게 유의미**하였습니다(Pearson r=0.82, p<0.0001). 이는 두 지표가 측정 도구로서 타당함을 뒷받침합니다. 실제로 OpenCLIP ViT-H/14와 ImageBind의 임베딩이 사실상 완전히 동일함을 확인하였으며(**RSA=1.0000**), 이는 두 지표의 타당성을 추가로 뒷받침하는 근거가 되었습니다.
-- **RSA-ASR 상관관계는 유의미하지 않았습니다**(Pearson r=0.43, p=0.33). 즉 "아키텍처가 유사하면 공격 전이가 잘 이루어진다"는 확장 가설은 통계적으로 지지되지 않았습니다.
-- surrogate 모델을 벗어나는 즉시(자기 공간 ASR 99.8% → 타 모델 12~16%) 모든 대상 모델에서 공격력이 유사한 수준으로 하락하였으며, "인코딩 결과가 유사할수록 하락 폭이 작다"는 패턴은 관찰되지 않았습니다. 이는 **원본 encoder를 완전히 계승한 모델을 surrogate로 구성하지 않는 한, 전이 공격(transfer attack)의 성능이 전반적으로 낮게 유지**될 것임을 시사합니다.
-- 자기 공간에서 가장 강력한 유형(Universal, self-space ASR@1 최대 99.8%)이 다른 모델로 전이 시 오히려 가장 크게 무너지는 역설적 패턴이 관찰되었습니다. 이는 surrogate와 target 조합을 달리한 네 차례의 독립적 실험 모두에서 일관되게 재현되어, 본 프로젝트에서 확보한 가장 신뢰도 높은 독자적 발견 중 하나입니다.
+- `mixed` (queries self-sampled by the detector from gallery image embeddings): ROC-AUC **0.36–0.57** (effectively random)
+- `real_queries` (queries drawn from actual captions): ROC-AUC **0.94**
+
+Three candidate explanations for the `mixed` mode's poor performance — hub-to-corpus ratio, mixing of hub types, and surrogate-model choice (CLIP vs. ImageBind) — were each tested and rejected. The most plausible remaining explanation is a **modality mismatch**: hubs are optimized to target a text-caption centroid, while `mixed`'s evaluation queries are image-embedding based. This explanation was not, however, quantitatively isolated within the scope of this project.
+
+Separately, `real_queries` detected only 28 of the 480 hubs (5.8%) within its top alert budget (12 HIGH + 16 MEDIUM, 100% precision) — matching exactly the limitation the follow-up paper (Habler et al.) itself notes: at small alert budgets, budget saturation can push domain-specific hubs out of the top-K. Independently, repeated tests of `mixed` at hub-to-corpus ratios of 8.8% → 2.0% → 0.2% found **no monotonic improvement as the ratio decreased** — the mean ROC-AUC peaked at 2.0% (0.566) and was actually lowest at 0.2% (0.414), the ratio matching the original paper (means over 8 repetitions each).
+
+**Why the self-built detector catches word/cluster hubs just as well as universal ones, while the official detector's own paper reports a specific weakness there.** Breaking down the self-built detector's per-hub results by type shows near-uniform detection across every category (100% for universal and cluster, 96.7–100% for each of the 10 word-based concepts) — so on its own, this looks inconsistent with the follow-up paper's documented budget-saturation limitation. Tracing this to the official `real_queries` scan's raw output resolves the apparent contradiction: it doesn't score every gallery+hub item independently, but first narrows 5,480 items down to a **fixed top-100 candidate list by risk score**, and only issues an actionable HIGH/MEDIUM verdict for a subset of those. Breaking that top-100 list down by hub type shows universal hubs dominating the actionable verdicts (13 of 30 universal hubs rated HIGH/MEDIUM) while several word-based concepts get none at all (e.g., 0 of 30 for "umbrella") and most individual word/cluster hubs never even enter the top-100 list. The underlying anomaly signal (`hub_z`) for a word/cluster hub is still far above a clean gallery item's — which is why an unconstrained threshold, as used by the self-built detector, flags it easily — but it is systematically smaller than a universal hub's signal, since a word hub only dominates the narrow slice of queries containing that concept. Once candidates have to compete for a small, realistic alert budget, the larger-signal universal hubs crowd out the smaller-signal word/cluster hubs — reproducing, at the level of individual hubs, exactly the budget-saturation limitation the follow-up paper reports in its own ablation.
 
 **Supporting Files**
 
-| 근거 | 파일 |
-|---|---|
-| 8개 모델 RSA / Alignment / Transfer ASR 전체 결과 | `results/model_comparison/summary.json` |
-| 비교에 사용한 샘플 구성(gallery/query/hub 500개 서브샘플) | `results/model_comparison/manifest.json` |
-| Universal hub 자기 공간 ASR (25,000쿼리 기준, surrogate별) | `results/openai_clip/asr_summary.json`, `results/laion_clip/asr_summary.json` |
+| Evidence | File |
+| --- | --- |
+| Self-built detector performance | `results/openai_clip/detector_summary.json` |
+| Self-built detector, per-hub-type detection breakdown | `results/openai_clip/detector_summary.json` (`hub_details`, grouped by tag prefix) |
+| `mixed` / `real_queries` baseline (8.8% hub ratio) | `results/openai_clip/official_detector/mixed/report.json`, `results/openai_clip/official_detector/real_queries/report.json` (hub counts taken directly from the `verdict_counts` and `suspicious_documents` arrays; not stored as a separate recall field) |
+| `real_queries` top-100 candidate list, per-hub-type verdict breakdown | `results/openai_clip/official_detector/real_queries/report.json` (`suspicious_documents`, grouped by `metadata.doc_id` prefix) |
+| Single-run 2.0% / 0.2% hub ratio | `results/openai_clip/official_detector/mixed_ratio_2pct/full_eval_summary.json`, `results/openai_clip/official_detector/mixed_ratio_0.2pct/full_eval_summary.json` |
+| 2.0% / 0.2% hub ratio, 8-run mean & std | `results/openai_clip/detector_ratio_repeat_summary.json` |
+| Universal-hub-only re-check | `results/openai_clip/official_detector/mixed_universal_only/full_eval_summary.json` |
+| Surrogate-model difference (ImageBind) re-check | `results/imagebind/official_detector/mixed/full_eval_summary.json` |
 
-## Environment (환경)
+### 4. Architectural Similarity and Transfer Attack Performance
 
-| conda 환경 | 용도 |
-|---|---|
-| `hubness` (Python 3.10, torch cu121) | CLIP 기반 파이프라인 전체, 자체 detector, 모델 비교 |
-| `ahd` (Python 3.11, CPU) | 공식 Adversarial Hubness Detector 실행 |
-| `imagebind` (Python 3.10, torch cu121) | ImageBind 기반 hub 생성 및 임베딩 추출 |
+RSA (Representational Similarity Analysis) and Alignment (query alignment) were measured across 8 models (ViT-B/16, ViT-B/32, ViT-L/14, ViT-H/14, RN50, ImageBind, etc.).
 
-하드웨어: RTX 2070 SUPER (8GB VRAM), WSL2 + Ubuntu. 본 프로젝트 전반에 걸친 방법론적 축소(아래 "Methodological Differences" 참고)는 이러한 자원 제약에 기인합니다.
+- **RSA–Alignment correlation was strongly significant** (Pearson r=0.82, p<0.0001), supporting the validity of both metrics as measurement tools. In fact, OpenCLIP ViT-H/14 and ImageBind were found to produce essentially identical embeddings (**RSA = 1.0000**), further corroborating this validity.
+- **RSA–ASR correlation was not significant** (Pearson r=0.43, p=0.33). In other words, the extended hypothesis — "more similar architectures transfer attacks better" — was not statistically supported.
+- The moment a hub left the surrogate model (self-space ASR of 99.8% vs. 12–16% on every other target), attack strength dropped to a similarly low level across all targets, with no pattern of "more similar encoding → smaller drop." This suggests that **transfer-attack performance stays broadly low unless the surrogate shares the exact same underlying encoder as the target**.
+- The type strongest in its own space (Universal, self-space ASR@1 up to 99.8%) paradoxically suffered the largest collapse when transferred to other models. This pattern reproduced consistently across four independent experiments with different surrogate/target combinations, making it one of the most reliable original findings of this project.
 
-## Dataset (데이터)
+**Supporting Files**
 
-- 갤러리: MS-COCO val2017 이미지 5,000장
-- 쿼리: 이미지당 caption 5개, 총 25,000개
-- FAISS `IndexFlatIP`(완전탐색)로 인덱스 구축, Baseline Recall@1/5/10 = 28.7% / 53.1% / 64.7%
+| Evidence | File |
+| --- | --- |
+| Full RSA / Alignment / Transfer ASR results across 8 models | `results/model_comparison/summary.json` |
+| Sample composition used for comparison (500-item gallery/query/hub subsample) | `results/model_comparison/manifest.json` |
+| Universal hub self-space ASR (25,000 queries, per surrogate) | `results/openai_clip/asr_summary.json`, `results/laion_clip/asr_summary.json` |
 
-## External Tools (외부 도구)
+## Environment
 
-`external/`, git 추적 제외 — 재현 시 각자 clone/설치 필요.
+| Conda Environment | Purpose |
+| --- | --- |
+| `hubness` (Python 3.10, torch cu121) | Full CLIP-based pipeline, self-built detector, model comparison |
+| `ahd` (Python 3.11, CPU) | Running the official Adversarial Hubness Detector |
+| `imagebind` (Python 3.10, torch cu121) | ImageBind-based hub generation and embedding extraction |
 
-- [`adv-hubness-detector`](https://github.com/cisco-ai-defense/adversarial-hubness-detector): Adversarial Hubness Detector (Habler et al.)의 공식 구현체
-- [`ImageBind`](https://github.com/facebookresearch/ImageBind): Meta의 ImageBind 공식 구현체
-- [`adv_hub`](https://github.com/Tingwei-Zhang/adv_hub): 원 논문(Zhang et al.) 저자 공개 코드 (구조 확인용)
+Hardware: RTX 2070 SUPER (8 GB VRAM), WSL2 + Ubuntu. The methodological reductions relative to the original paper (see "Methodological Differences" below) stem from this hardware constraint.
 
-## Methodological Differences from the Original Paper (방법론적 노트)
+## Dataset
 
-자원 제약으로 인해 원 논문 대비 다음과 같은 축소가 있었습니다.
+- Gallery: 5,000 images from MS-COCO val2017
+- Queries: 5 captions per image, 25,000 total
+- Indexed with FAISS `IndexFlatIP` (exhaustive search); baseline Recall@1/5/10 = 28.7% / 53.1% / 64.7%
 
-| 항목 | 원 논문 | 본 프로젝트 |
-|---|---|---|
-| PGD 반복 횟수 | T=1,000 | T=600 (ImageBind는 T=300) |
-| Qt 크기 상한 | 제한 없음(해당 단어를 포함하는 caption 전체 사용) | 100개로 제한 |
-| Cluster 개수 | 25,000개 쿼리를 1,000개로 분할 | 동일하게 1,000개로 분할한 뒤, 크기 15~80인 클러스터 중 5개를 임의로 선정 |
-| 반복 횟수(hub 개수) | 조건당 100회, 평균±표준편차 보고 | CLIP 조건당 30회, ImageBind 조건당 10회 |
-| Word 선정 방식 | ChatGPT로 추출한 100개 개념 | 임의로 선정한 10개 단어 |
+## External Tools
 
-이 외에도 다음과 같은 구조적 차이를 확인하였습니다.
+Kept under `external/`, excluded from git tracking — clone/install separately to reproduce.
 
-- 원 논문은 concept-specific(word/cluster) hub의 **클러스터 선별 기준을 본문에 명시하지 않았으며**, 공개 코드(`adv_hub`)에도 해당 로직이 포함되어 있지 않아 정확한 재현에 근본적 한계가 있음을 확인하였습니다.
-- 원 논문이 보고한 76% 수준의 transfer 성능은 **3개 모델을 앙상블한 surrogate에서만 보고된 수치**이며, 논문은 단일 모델 surrogate의 경우 성능이 낮아 결과를 생략하였다고 명시하였습니다(§7.1: "we omit the results using individual models as surrogates because ensembles work better"). 본 프로젝트의 단일 surrogate 실험(Key Findings 4)은 이와 다른 조건에서의 독자적 검증이며, 앙상블 surrogate 자체를 직접 구현·재현한 것은 아닙니다.
+- [`adv-hubness-detector`](https://github.com/cisco-ai-defense/adversarial-hubness-detector): official implementation of the Adversarial Hubness Detector (Habler et al.)
+- [`ImageBind`](https://github.com/facebookresearch/ImageBind): Meta's official ImageBind implementation
+- [`adv_hub`](https://github.com/Tingwei-Zhang/adv_hub): original authors' (Zhang et al.) public code (used to check implementation details)
 
-## Script Structure (스크립트 구성)
+## Methodological Differences from the Original Paper
+
+Resource constraints led to the following reductions relative to the original paper:
+
+| Item | Original Paper | This Project |
+| --- | --- | --- |
+| PGD iterations | T = 1,000 | T = 600 (T = 300 for ImageBind) |
+| Qt size cap | Unbounded (all captions containing the target word) | Capped at 100 |
+| Number of clusters | 25,000 queries split into 1,000 clusters | Same 1,000-way split, then 5 clusters of size 15–80 randomly selected |
+| Repetitions (hubs per condition) | 100 per condition, mean ± std reported | 30 per condition (CLIP), 10 per condition (ImageBind) |
+| Word selection | 100 concepts extracted via ChatGPT | 10 words chosen manually |
+
+Additional structural differences were also identified:
+
+- The original paper does **not specify its cluster-selection criteria** for concept-specific (word/cluster) hubs, and the public code (`adv_hub`) contains no logic for this step either — meaning exact reproduction is fundamentally limited.
+- The ~76% transfer performance reported in the original paper was obtained **only with a 3-model ensemble surrogate**; the paper explicitly states that single-model surrogate results were omitted because "ensembles work better" (§7.1: "we omit the results using individual models as surrogates because ensembles work better"). This project's single-surrogate experiments (Key Finding 4) are an independent check under different conditions, not a direct reproduction of the ensemble surrogate itself.
+
+## Script Structure
 
 ```
 scripts/
-├── 01_baseline/                 갤러리·쿼리 구축, baseline 성능 측정
-├── 02_hub_generation/           adversarial hub 생성 및 공격 성공률(ASR) 평가
-├── 03_detector/                 hub 탐지 (자체 구현 + 공식 구현체, 각종 변형 실험)
-├── 04_model_comparison/         8개 모델 간 표현 구조 유사도(RSA)·정렬도(Alignment)·전이 ASR 비교
-└── 05_word_variance_analysis/   개념(단어)별 공격 강도 편차의 원인 분석
+├── 01_baseline/                 Build gallery/queries, measure baseline performance
+├── 02_hub_generation/           Generate adversarial hubs, evaluate attack success rate (ASR)
+├── 03_detector/                 Hub detection (self-built + official implementation, various ablations)
+├── 04_model_comparison/         Compare representational similarity (RSA), alignment, and transfer ASR across 8 models
+└── 05_word_variance_analysis/   Analyze the source of per-concept (per-word) variance in attack strength
 ```
 
-| 폴더 | 스크립트 | 역할 |
-|---|---|---|
-| `01_baseline` | `01_cache_images.py` | 이미지 5,000장 + caption 5개씩 로컬 캐싱 |
-| | `02_build_index.py` / `02_build_index_laion.py` | CLIP(OpenAI/LAION) 임베딩 + FAISS 인덱스 구축 |
-| | `03_query_test.py` | 검색 파이프라인 정성 테스트 |
-| | `04_recall_eval.py` | Baseline Recall@1/5/10 측정 |
-| `02_hub_generation` | `01_generate_hub.py` / `01_generate_hub_laion.py` | Universal/Word-based/Cluster-based hub 단발 생성 (PGD) |
-| | `02_generate_hub_imagebind.py` | ImageBind gradient로 hub 생성 (클러스터 크기 제한 없음) |
-| | `03_batch_generate.py` / `04_batch_generate_laion.py` | 조건별 hub 30회씩 배치 생성 (각 480개) |
-| | `05~07_evaluate_hub_asr*.py` | hub별 in-sample/held-out ASR 평가 |
-| `03_detector` | `01~02_hubness_detector*.py` | 자체 구현 detector (median/MAD z-score, cluster spread, stability) |
-| | `03~07_prepare_for_official*.py` | 공식 detector 입력용 데이터 준비 (전체/축소 비율/universal만/ImageBind) |
-| | `08~12_run_official_scan*.py` | 공식 detector 실행 (mixed/real_queries 모드) |
-| | `13~14_repeat_ratio_test*.py` | corpus 대비 hub 비율을 바꿔가며 반복 검증 |
-| `04_model_comparison` | `01_build_gallery_imagebind.py` | ImageBind로 gallery/query 전체 재인코딩 |
-| | `02~03_extract_embeddings*.py` | 8개 모델(CLIP 계열 6종 + RN50 + ImageBind)로 gallery/query/hub 재인코딩 |
-| | `04_compare_models.py` | RSA / Alignment / Transfer ASR 계산 |
-| `05_word_variance_analysis` | `01_pool_size_correlation.py` | Qt 캡션 풀 크기와 ASR의 상관관계 |
-| | `02_cohesion_correlation.py` | 캡션 의미적 응집도와 ASR의 상관관계 |
-| | `03_scale_effect_analysis.py` | 평가 규모(500 vs 25,000쿼리)가 Word/Cluster 순위에 미치는 영향 |
+| Folder | Script | Role |
+| --- | --- | --- |
+| `01_baseline` | `01_cache_images.py` | Cache 5,000 images + 5 captions each locally |
+| | `02_build_index.py` / `02_build_index_laion.py` | Build CLIP (OpenAI/LAION) embeddings + FAISS index |
+| | `03_query_test.py` | Qualitative sanity check of the retrieval pipeline |
+| | `04_recall_eval.py` | Measure baseline Recall@1/5/10 |
+| `02_hub_generation` | `01_generate_hub.py` / `01_generate_hub_laion.py` | Generate a single Universal/Word-based/Cluster-based hub (PGD) |
+| | `02_generate_hub_imagebind.py` | Generate a hub via ImageBind gradients (no cluster-size cap) |
+| | `03_batch_generate.py` / `04_batch_generate_laion.py` | Batch-generate 30 hubs per condition (480 total) |
+| | `05~07_evaluate_hub_asr*.py` | Evaluate in-sample / held-out ASR per hub |
+| `03_detector` | `01~02_hubness_detector*.py` | Self-built detector (median/MAD z-score, cluster spread, stability) |
+| | `03~07_prepare_for_official*.py` | Prepare inputs for the official detector (full/reduced ratio/universal-only/ImageBind) |
+| | `08~12_run_official_scan*.py` | Run the official detector (`mixed`/`real_queries` modes) |
+| | `13~14_repeat_ratio_test*.py` | Repeated verification across different hub-to-corpus ratios |
+| `04_model_comparison` | `01_build_gallery_imagebind.py` | Re-encode the full gallery/query set with ImageBind |
+| | `02~03_extract_embeddings*.py` | Re-encode gallery/query/hub with 8 models (6 CLIP variants + RN50 + ImageBind) |
+| | `04_compare_models.py` | Compute RSA / Alignment / Transfer ASR |
+| `05_word_variance_analysis` | `01_pool_size_correlation.py` | Correlation between Qt caption-pool size and ASR |
+| | `02_cohesion_correlation.py` | Correlation between caption semantic cohesion and ASR |
+| | `03_scale_effect_analysis.py` | Effect of evaluation scale (500 vs. 25,000 queries) on Word/Cluster ranking |
 
-## Results Structure (결과 구조)
+## Results Structure
 
 ```
 results/
-├── openai_clip/          CLIP ViT-B/32(OpenAI) surrogate — hub 480개, 메인 실험
-├── laion_clip/            OpenCLIP ViT-B/32(LAION-2B) surrogate — hub 480개, surrogate 검증용
-├── imagebind/              ImageBind surrogate — hub 150개, 모델 차이 검증용
-└── model_comparison/       8개 모델 간 RSA·Alignment·ASR 비교
+├── openai_clip/          CLIP ViT-B/32 (OpenAI) surrogate — 480 hubs, main experiment
+├── laion_clip/            OpenCLIP ViT-B/32 (LAION-2B) surrogate — 480 hubs, surrogate-check
+├── imagebind/              ImageBind surrogate — 150 hubs, model-difference check
+└── model_comparison/       RSA / Alignment / ASR comparison across 8 models
 ```
 
-각 surrogate 폴더 내부:
+Inside each surrogate folder:
+
 ```
-hubs/                       hub 이미지·임베딩·메타데이터
-asr_summary.json            held-out ASR@k
-detector_summary.json       자체 detector 결과 (openai_clip, laion_clip만)
+hubs/                       Hub images, embeddings, metadata
+asr_summary.json            Held-out ASR@k
+detector_summary.json       Self-built detector results (openai_clip, laion_clip only)
 official_detector/
-  mixed/                     공식 detector, 자체 샘플링 쿼리
-  real_queries/              공식 detector, 실제 caption 쿼리
-  mixed_ratio_*/             corpus 대비 hub 비율을 2.0%/0.2%로 축소한 재검증 (openai_clip만)
-  mixed_universal_only/      Universal hub만 분리한 재검증 (openai_clip만)
+  mixed/                     Official detector, self-sampled queries
+  real_queries/              Official detector, real caption-based queries
+  mixed_ratio_*/             Re-checks with hub-to-corpus ratio reduced to 2.0%/0.2% (openai_clip only)
+  mixed_universal_only/      Re-check isolating universal hubs only (openai_clip only)
 ```
 
 ## Limitations
 
-본 프로젝트는 자원 및 시간의 제약으로 인해 다음과 같은 한계를 가집니다.
+Given resource and time constraints, this project has the following limitations:
 
-- **개념별 공격 강도 편차의 원인 미규명**: Qt 캡션 풀 크기 및 의미적 응집도와 ASR 간의 상관관계를 분석하였으나(결과: Key Findings 2 참고), 두 변수가 서로 강하게 얽혀 있고 표본(10개 단어)이 작아 두 변수의 독립적 효과를 통계적으로 분리하지 못하였습니다. 이미지 내 현저성(saliency) 역시 원인 후보로 남아 있으나, 별도의 object detection 기반 라벨링 도구가 요구되어 본 프로젝트 범위에서 다루지 못하였습니다.
-- **Word vs Cluster 불일치의 정확한 원인 미규명**: 세 가지 후보(평가 규모, surrogate 모델, Qt/클러스터 크기 제한)를 모두 기각하였으나, 대안적 원인을 제시하지는 못하였습니다.
-- **`mixed` detector 실패의 정량적 원인 미규명**: 모달리티 불일치라는 정성적 설명에 도달하였으나, hub 최적화 강도(PGD step 수, 타겟 쿼리 수)를 논문 수준(1,000 step, 200쿼리)까지 확대하여 검증하지는 못하였습니다.
-- **앙상블 surrogate 미검증**: 원 논문이 보고한 76% 수준의 transfer 성능이 3-모델 앙상블에서만 나온다는 사실은 논문 원문으로 확인하였으나, 이를 본 프로젝트에서 직접 구현·재현하지는 못하였습니다.
-- **모델 비교 범위의 제한**: AudioCLIP은 설치 및 환경 구성의 리스크가 높아 비교 대상에서 제외하였습니다.
-- **개념 단어 표본의 제한**: 10개 단어로 진행한 상관분석은 통계적 검정력이 낮아, 30~50개로 확장한 다중회귀 분석이 후속 검증으로 요구됩니다.
+- **Source of per-concept attack-strength variance not identified**: correlations between Qt caption-pool size, semantic cohesion, and ASR were analyzed (see Key Finding 2), but the two variables are strongly confounded and the sample (10 words) is too small to statistically isolate their independent effects. Image-level saliency remains a candidate cause but was out of scope, requiring a separate object-detection-based labeling tool.
+- **Exact cause of the Word vs. Cluster discrepancy not identified**: three candidates (evaluation scale, surrogate model, Qt/cluster size cap) were all rejected, but no alternative explanation was established.
+- **Quantitative cause of `mixed` detector failure not identified**: a qualitative explanation (modality mismatch) was reached, but hub-optimization strength (PGD steps, number of target queries) was not scaled up to the original paper's level (1,000 steps, 200 queries) to verify it directly.
+- **Ensemble surrogate not tested**: the fact that the original paper's ~76% transfer performance came only from a 3-model ensemble was confirmed by reading the paper itself, not by direct reproduction in this project.
+- **Limited scope of model comparison**: AudioCLIP was excluded due to installation and environment-setup risk.
+- **Limited concept-word sample**: the correlation analysis over 10 words has low statistical power; a multiple regression over 30–50 words is needed as follow-up.
