@@ -25,6 +25,8 @@ Unlike the [original paper](https://arxiv.org/abs/2412.14113)'s result (Cluster 
 
 As a related line of investigation, the source of per-concept (per-word) variance in attack strength was analyzed separately. Correlating Qt caption-pool size and pairwise caption cohesion (semantic similarity) with ASR showed both variables to be significant under Pearson's test (pool size r=0.79, p=0.006; cohesion r=−0.74, p=0.015) but not under Spearman's (p=0.128 and p=0.260, respectively), and the two variables were themselves strongly confounded (r=−0.66, p=0.037) — so this dataset alone could not isolate which one actually drives the effect.
 
+![Word vs Cluster attack strength: original paper vs. this reproduction, CLIP and ImageBind](./figures/fig3_word_vs_cluster_reversal.png)
+
 **Supporting Files**
 
 | Evidence | File |
@@ -41,6 +43,8 @@ The self-built detector achieved a ROC-AUC of **0.994** on 480 hubs. The officia
 
 - `mixed` (queries self-sampled by the detector from gallery image embeddings): ROC-AUC **0.36–0.57** (effectively random)
 - `real_queries` (queries drawn from actual captions): ROC-AUC **0.94**
+
+![Detector ROC-AUC by query-sampling strategy and hub ratio](./figures/fig2_detector_auc_by_sampling.png)
 
 Three candidate explanations for the `mixed` mode's poor performance — hub-to-corpus ratio, mixing of hub types, and surrogate-model choice (CLIP vs. ImageBind) — were each tested and rejected. The most plausible remaining explanation is a **modality mismatch**: hubs are optimized to target a text-caption centroid, while `mixed`'s evaluation queries are image-embedding based. This explanation was not, however, quantitatively isolated within the scope of this project.
 
@@ -67,14 +71,19 @@ RSA (Representational Similarity Analysis) and Alignment (query alignment) were 
 
 - **RSA–Alignment correlation was strongly significant** (Pearson r=0.82, p<0.0001), supporting the validity of both metrics as measurement tools. In fact, OpenCLIP ViT-H/14 and ImageBind were found to produce essentially identical embeddings (**RSA = 1.0000**), further corroborating this validity.
 - **RSA–ASR correlation was not significant** (Pearson r=0.43, p=0.33). In other words, the extended hypothesis — "more similar architectures transfer attacks better" — was not statistically supported.
+
+![RSA vs. Alignment (n=28, significant) and RSA vs. transfer ASR (n=7, not significant)](./figures/fig4_rsa_alignment_asr_correlation.png)
+
 - The moment a hub left the surrogate model (self-space ASR of 99.8% vs. 12–16% on every other target), attack strength dropped to a similarly low level across all targets, with no pattern of "more similar encoding → smaller drop." This suggests that **transfer-attack performance stays broadly low unless the surrogate shares the exact same underlying encoder as the target**.
-- The type strongest in its own space (Universal, self-space ASR@1 up to 99.8%) paradoxically suffered the largest collapse when transferred to other models. This pattern reproduced consistently across four independent experiments with different surrogate/target combinations, making it one of the most reliable original findings of this project.
+- The type strongest in its own space (Universal, self-space ASR@1 up to 99.8%) paradoxically suffered the largest collapse when transferred to other models — down to single digits (3.2–7.4%) once evaluated on the universal-hub type alone, rather than pooled across all hub types. This pattern reproduced consistently across four independent experiments with different surrogate/target combinations, making it one of the most reliable original findings of this project.
+
+![Universal hub paradox: self-space vs. cross-model transfer ASR, universal-hub type only](./figures/fig1_universal_hub_paradox.png)
 
 **Supporting Files**
 
 | Evidence | File |
 | --- | --- |
-| Full RSA / Alignment / Transfer ASR results across 8 models | `results/model_comparison/summary.json` |
+| Full RSA / Alignment / Transfer ASR results across 8 models | `results/model_comparison/summary.json` (`transfer_asr.<model>.by_type.universal.asr@1` for the universal-only figures above; `.overall.asr@1` pools all 12 hub types together and is not the same quantity) |
 | Sample composition used for comparison (500-item gallery/query/hub subsample) | `results/model_comparison/manifest.json` |
 | Universal hub self-space ASR (25,000 queries, per surrogate) | `results/openai_clip/asr_summary.json`, `results/laion_clip/asr_summary.json` |
 
